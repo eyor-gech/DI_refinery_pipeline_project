@@ -1,0 +1,12 @@
+confidence_thresholds:
+  digital_pdf: 0.85
+  scanned_pdf: 0.75
+  table_extraction: 0.80
+
+escalation_rules:
+  fasttext_fail: layout
+  layout_fail: vision
+
+chunking:
+  max_tokens: 512
+  overlap: 50
