@@ -15,6 +15,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
+import requests
+from dotenv import load_dotenv
+
 import pdfplumber
 import pytesseract
 from pydantic import BaseModel, ConfigDict, Field
@@ -24,7 +27,7 @@ from src.models.extracted import BoundingBox, ExtractedDocument, PageExtractionR
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
-
+load_dotenv() 
 @dataclass
 class CostTracker:
     """Tracks token usage and cost per document."""
@@ -150,10 +153,54 @@ class VisionExtractor(BaseModel):
 
     def _call_vlm(self, image_b64: str, model: str) -> Tuple[str, int]:
         """
-        Placeholder that should call the OpenRouter API with image input.
-        In production, implement the actual HTTP request. Kept simple for unit testing.
+        Call OpenRouter API with the given model and base64-encoded page image.
+        Returns: (extracted_text, tokens_used)
         """
-        raise RuntimeError("VLM integration not configured")
+        # Choose API key based on model
+        if "qwen" in model.lower():
+            api_key = os.getenv("VLM_qwen")
+        elif "gemini" in model.lower():
+            api_key = os.getenv("VLM_gemini")
+        else:
+            raise RuntimeError(f"No API key configured for model {model}")
+
+        if not api_key:
+            raise RuntimeError(f"API key not found for model {model}")
+
+        endpoint = "https://openrouter.ai/api/v1/chat/completions"
+
+        # Build a prompt for image-to-text extraction
+        prompt = (
+            "Extract all readable text from this document page image. "
+            "Keep the structure, tables, and figures in text form. "
+            "Return only text output."
+        )
+
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "user", "content": prompt, "image": image_b64}
+            ],
+            "max_tokens": 2000,
+            "temperature": 0.0,
+        }
+
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+
+        try:
+            resp = requests.post(endpoint, json=payload, headers=headers, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+            # Extract text from response structure
+            text = data["choices"][0]["message"]["content"]
+            # Estimate tokens (for tracking budget; simple placeholder)
+            tokens_used = len(text.split())
+            return text, tokens_used
+        except Exception as e:
+            raise RuntimeError(f"VLM API call failed for model {model}: {e}")
 
     # Helpers ------------------------------------------------------------------
     def _page_image_b64(self, page) -> str:
