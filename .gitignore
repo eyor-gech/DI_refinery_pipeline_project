@@ -12,3 +12,4 @@ run_fasttext.py
 test_outputs/
 run_layout_extractor.py
 .env
+run_extraction_pipeline.py
