@@ -3,6 +3,8 @@ from .extracted import (
     ExtractedDocument,
     PageExtractionResult,
     TextBlock,
+    TableBlock,
+    FigureBlock,
 )
 
 __all__ = [
@@ -10,4 +12,6 @@ __all__ = [
     "ExtractedDocument",
     "PageExtractionResult",
     "TextBlock",
+    "TableBlock",
+    "FigureBlock",
 ]

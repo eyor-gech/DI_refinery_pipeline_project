@@ -26,6 +26,21 @@ class TextBlock(BaseModel):
     reading_order: int
 
 
+class TableBlock(BaseModel):
+    """Structured table representation."""
+
+    bbox: BoundingBox
+    rows: List[List[str]]
+    caption: Optional[str] = None
+
+
+class FigureBlock(BaseModel):
+    """Detected figure with optional caption."""
+
+    bbox: BoundingBox
+    caption: Optional[str] = None
+
+
 class PageExtractionResult(BaseModel):
     page_number: int
     text_blocks: List[TextBlock]
@@ -37,6 +52,8 @@ class PageExtractionResult(BaseModel):
     image_area_ratio: float
     font_metadata_presence: bool
     extraction_time_ms: float
+    tables: List[TableBlock] = Field(default_factory=list)
+    figures: List[FigureBlock] = Field(default_factory=list)
 
 
 class ExtractedDocument(BaseModel):
