@@ -9,3 +9,4 @@ data/
 run_triage.py
 src/refinery_pipeline_project.egg-info/
 run_fasttext.py
+test_outputs/
