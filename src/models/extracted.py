@@ -54,6 +54,10 @@ class PageExtractionResult(BaseModel):
     extraction_time_ms: float
     tables: List[TableBlock] = Field(default_factory=list)
     figures: List[FigureBlock] = Field(default_factory=list)
+    strategy_used: str = ""
+    escalated: bool = False
+    flagged_for_review: bool = False
+    cost_estimate: float = 0.0
 
 
 class ExtractedDocument(BaseModel):
