@@ -1,0 +1,14 @@
+{
+  "doc_id": "TRP1 Week 3 Delivery Challenge Submission",
+  "origin_type": "native_digital",
+  "layout_complexity": "multi_column",
+  "language": "en",
+  "language_confidence": 0.9999953555907561,
+  "domain_hint": "general",
+  "estimated_extraction_cost": "needs_layout_model",
+  "character_count": 6282,
+  "character_density": 0.0018514981750275869,
+  "whitespace_ratio": 0.13514804202483285,
+  "image_area_ratio": 0.0,
+  "font_metadata_presence": true
+}

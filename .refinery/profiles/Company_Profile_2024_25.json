@@ -1,0 +1,14 @@
+{
+  "doc_id": "Company_Profile_2024_25",
+  "origin_type": "mixed",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.9999974988200142,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_vision_model",
+  "character_count": 27778,
+  "character_density": 0.003266276793742332,
+  "whitespace_ratio": 0.17229462164302686,
+  "image_area_ratio": 0.7933087853131046,
+  "font_metadata_presence": true
+}

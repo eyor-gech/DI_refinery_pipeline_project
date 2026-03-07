@@ -1,0 +1,14 @@
+{
+  "doc_id": "Annual_Report_JUNE-2023",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.9999963145015038,
+  "domain_hint": "legal",
+  "estimated_extraction_cost": "needs_layout_model",
+  "character_count": 421200,
+  "character_density": 0.009278078837543884,
+  "whitespace_ratio": 0.26284188034188033,
+  "image_area_ratio": 0.22990732828431565,
+  "font_metadata_presence": true
+}

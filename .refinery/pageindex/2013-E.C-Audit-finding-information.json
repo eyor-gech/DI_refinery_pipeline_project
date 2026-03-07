@@ -1,0 +1,57 @@
+{
+  "doc_id": "2013-E.C-Audit-finding-information",
+  "sections": [
+    {
+      "title": "Page 1",
+      "page_start": 1,
+      "page_end": 1,
+      "child_sections": [],
+      "key_entities": [
+        "Federal",
+        "Democratic",
+        "Republic",
+        "Ethiopia",
+        "Ethiopian",
+        "Investment",
+        "Commission"
+      ],
+      "summary": "**አባሪ 3. የኦዲት ግኝት መረጃ አመላካች** **መረጃ ሰጪው፡- የኢትዮጵያ ኢንቨስትመንት ኮሚሽን** --- **ኦዲት ተደራጊ፡- የኢትዮጵያ ኢንቨስትመንት ኮሚሽን** **ኦዲት የተደረገው የበጀት ዓመት፡- 2011** --- ↓ --- **የኦዲት ግኝት** **ወጪ 1** * **1.1 ሁኔታ፡-** ዝቅተኛ ዋጋ ካቀረበ ድርጅት መግዛት ሲገባ ከፍተኛ ዋጋ",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    },
+    {
+      "title": "Page 2",
+      "page_start": 2,
+      "page_end": 2,
+      "child_sections": [],
+      "key_entities": [],
+      "summary": "ወጪ 3 3.1 ሁኔታ፡- በጀት ዓመቱን ሳይጠብቅ ተከፍሎ የተገኘ ሂሳብ 3.2 መስፈርት፡- የጥሬ ገንዘብ አስተዳደር መመሪያ 3.3 መንስኤ፡- ደንብና መመሪያ ተከትሎ አለመስራት፤ 3.4 የሚያስከትለው ጉዳት፡- በበጀት ዓመቱ የተመደበው በጀት በዕቅዱ መሠረት እንዳይፈጸም ሊያደርግ ይችላል፡፡ --- ወጪ 4 4.1 ሁኔታ፡- ያለአግባብ",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    },
+    {
+      "title": "Page 3",
+      "page_start": 3,
+      "page_end": 3,
+      "child_sections": [],
+      "key_entities": [
+        "Federal",
+        "Democratic",
+        "Republic",
+        "Ethiopia",
+        "Ethiopian",
+        "Investment",
+        "Commission"
+      ],
+      "summary": "ከምስሉ የተገኘው ጽሑፍ እንደሚከተለው ቀርቧል፡- **[የላይኛው ሳጥን]** ከላይ ከተራ ቁጥር 1 እስከ 5 ከተገለጹት በስተቀር በእኛ አስተያ የሂሣብ ሪፖርቶቹ በአዋጅ በተፈቀደው በጀት እና በመንግሥት የሂሣብ አያያዝ ሥርዓት መሠረት በትክክል የተዘጋጁ እና በበጀት ዓመቱ እስከ ሰኔ 30/2011 ድረስ የተሰበሰበው ገቢ የተከፈለው",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    }
+  ]
+}

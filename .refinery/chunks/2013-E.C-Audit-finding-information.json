@@ -1,0 +1,1294 @@
+[
+  {
+    "content": "**አባሪ 3. የኦዲት ግኝት መረጃ አመላካች**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "0eb433ea33cfbdd89a5b8c60309e5f2d3c189a137d818f079da18f45fc562475",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**መረጃ ሰጪው፡- የኢትዮጵያ ኢንቨስትመንት ኮሚሽን**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "eebb1996b1bc008edc15bfab5e7040456575b62cbb5c3a1d29440aeff50b6e16",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**ኦዲት ተደራጊ፡- የኢትዮጵያ ኢንቨስትመንት ኮሚሽን**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "c5b96c3a9b3a9f7e644b7bb254c9cc7caef6b9e02b6ec77cad897fa791cfeed8",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**ኦዲት የተደረገው የበጀት ዓመት፡- 2011**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "3c715308354fc603540ee5f15a694fc231aaeb773decb6ef960a545ea0b4692b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "↓",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "07a2abcd3189716d1244a78a540ed819ae1f8704fabfcb8b0aacef2f9a115070",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**የኦዲት ግኝት**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "942412daed3858bc90f547ac476818e0199b8f02a20b7bb90ccca7aed5ebc727",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**ወጪ 1**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "7da709d9293df8889ec76c7c67e9b6ef629daef8a52f6a7e14bafd43b417cb1e",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **1.1 ሁኔታ፡-** ዝቅተኛ ዋጋ ካቀረበ ድርጅት መግዛት ሲገባ ከፍተኛ ዋጋ ካቀረበው ግዥ መፈጸሙ፤",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 14,
+    "content_hash": "25d335773adeb8270838104d89fb8e72dcf28f6584f028374f4b19fec65ed64c",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **1.2 መስፈርት፡-** የግዥ አፈጻጸም መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "253fa69fade8c7abbd275907d8de872183ffb7553b41c014ef2b9d00cb69ae15",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **1.3 መንስኤ፡-** ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 7,
+    "content_hash": "1e9c42e0467d907c6217c68ef526e5023ac319812154fbcf60b9ace3b660c511",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **1.4 የሚያስከትለው ጉዳት፡-** የመንግስት ገንዘብ ሊባክን ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 8,
+    "content_hash": "28a0ae94372e2d553ca9a71645f516442bd365af46b894a9e5de2effbd80c3c7",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**ወጪ 2**",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "6e5c30f64417d1f8912b55617773a7db79a3e3080d066c45c7cd5fa491b5f593",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **2.1 ሁኔታ፡-** ያለውድድር በቀጥታ ለኢንቨስትመንት ጋይድ ብሮሸር ግዥ ወጪ ሆኖ ተገኝቷል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 12,
+    "content_hash": "1bc9e4eba0f9e442353bbd3846b5307c97a64f93f25f7bfce97e1a26d68e996b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **2.2 መስፈርት፡-** የግዥ አፈጻጸም መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "af8fcc4c360a34b09d407f8a0c2e4b519b14c45bc08b2a4bc9507b92d9a9558a",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **2.3 መንስኤ፡-** ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 7,
+    "content_hash": "e899d6d015740007341c2cffc37449b44bf251a2cad2481c1961612f43f7d986",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*   **2.4 የሚያስከትለው ጉዳት፡-** የመንግስት ገንዘብ ሊባክን ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 8,
+    "content_hash": "f78f4ad053405ae8a24ee9a27c66e2b7a3ae4e3417b9a5f94bc290ee4a9312a0",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "*(ማህተም፡ የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ የኢትዮጵያ ኢንቨስትመንት ኮሚሽን / The Federal Democratic Republic of Ethiopia Ethiopian Investment Commission)*",
+    "chunk_type": "text",
+    "page_refs": [
+      1
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 18,
+    "content_hash": "ae83cffcde88bf275049b94105a5c4e758c83700f392bf5bbae215f653113dff",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ወጪ 3",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "c2337e0c134868ea84131c1ad363f40921e6b1b1e0a8be09566083b225d897c4",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "3.1 ሁኔታ፡- በጀት ዓመቱን ሳይጠብቅ ተከፍሎ የተገኘ ሂሳብ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 8,
+    "content_hash": "51130e027e178144661211c621798409309c0d0f01b9e2d4d3039bcc3f0e808b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "3.2 መስፈርት፡- የጥሬ ገንዘብ አስተዳደር መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "febe7d6561ebd122be54b184e11714f4e7bdaaf3c521276718fb65a9ff32dd05",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "3.3 መንስኤ፡- ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "891be463ed8557342aaabe65112605bdd07f08a2b3d28e19226ddf4c8720d8c3",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "3.4 የሚያስከትለው ጉዳት፡- በበጀት ዓመቱ የተመደበው በጀት በዕቅዱ መሠረት እንዳይፈጸም ሊያደርግ ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 12,
+    "content_hash": "1726b0ca99ed98ba83fcc6adc4265a891f4aa9f4eb772e035f41e5009609f185",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ወጪ 4",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "1d00afa26fcff7eaeaa163daf1a352343ad815ea0a5cfa2bdeed0cbb5ad88b10",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "4.1 ሁኔታ፡- ያለአግባብ የተፈጸመ የአበል ክፍያ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "c68190192e2db3e38e3280df1d6376137cda1140adddbc6385ffd44fc8fdfb8f",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "4.2 መስፈርት፡- የውሎ አበል መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "d59a1bf6b5aa1cfa3008a02b51e09bbad3be88edbc089ff9cea890d039df2d81",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "4.3 መንስኤ፡- ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "73578e3c98a3a3a6a610cd6706a51ddc9d7744fce516bf64bb5532a9adc9a7ad",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "4.4 የሚያስከትለው ጉዳት፡- የመንግስት ገንዘብ ያለአግባብ እንዲባክን ሊያደርግ ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 9,
+    "content_hash": "ecc5f7173d60044605f3fdcb109e1c3dad6be75dde0dbeffebe4380627951575",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ተሰብሰቢ 1",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "d8a12c8c7521f1e7ed1bd95e9bfce84928f567e6b6ec82c9c2c0c1b8729669d5",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "1.1 ሁኔታ፡- ተሰብሰቢው የሚፈለግበትን ድርጅት ወይም ግለሰብ ሥም እንዲሁም ለምን እንደተከፈለ የሚገልጽ ዝርዝር መረጃ ባለመቅረቡ የሂሳቡን ትክክለኛነት ማረጋገጥ ያልተቻለ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 19,
+    "content_hash": "d4dccc04962c3e06c0e1db704d2757fa4db442f850dfc12d75aa0db96ea162f0",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "1.2 መስፈርት፡- የሂሳብ አያያዝ መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "92fb2403069e03ea57dbb2c8c7f68e8a15a4b92592ca0e447e63c1f1b38f6c2a",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "1.3 መንስኤ፡- ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "d2281644c5414711242e4b6f9688356ab47d81c1fd8f525692039db872a8c6e4",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "1.4 የሚያስከትለው ጉዳት፡- የመንግስት ገንዘብ ሳይሰበሰብ እንዲቀር ሊያደርግ ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 9,
+    "content_hash": "87e61d368845f5c66c272047e34c7cfb059ebf19fb53337e0ba69db7fa167a94",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ተከፋይ 1",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "591c3619d44dfe23c78081b8848a99957884dc087bea0b92fbea5e459d3b12c0",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "1.1 ሁኔታ፡- ለሚመለከተው አካል በወቅቱ ያልተከፈለ ሂሳብ መገኘቱ፤",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 8,
+    "content_hash": "a79cc7f041531b09414ef123093c74068b5362cd22e356612b4f0d526d37b58a",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "2.1 መስፈርት፡- የሂሳብ አያያዝ መመሪያ",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "077739dd8f66c7a4660cd21a93f952c6c9daa01024579638f6049ca2636658f6",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "2.2 መንስኤ፡- ደንብና መመሪያ ተከትሎ አለመስራት፤",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "07898d57c9ca3af15ba0968769959ab33946477a669de7ddc5c628c14847543e",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "2.3 የሚያስከትለው ጉዳት፡- የመ/ቤቱ ዕዳ ክፍ እያለ ሊሄድ ይችላል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 9,
+    "content_hash": "d44b09554c5bb819eca4370e786eca64bb52cddbc950e2862bc1f5e84b0cb597",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ኦዲት አድራጊው፡- የፌደራል ዋና ኦዲተር መስሪያ ቤት",
+    "chunk_type": "text",
+    "page_refs": [
+      2
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 7,
+    "content_hash": "34fc23ad750c33c5e09e604518e1ec13a5ccbaa25b482ec76dc0c38df936d1a0",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ከምስሉ የተገኘው ጽሑፍ እንደሚከተለው ቀርቧል፡-",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "6d408c8b343e40d389c5198471ab5acbe0939be4b2f937500b6e467be69b6b20",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**[የላይኛው ሳጥን]**",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "0ed263d5e5312ecd327b5fd72787de245edba839be9a7a3f80e89f3abd144046",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ከላይ ከተራ ቁጥር 1 እስከ 5 ከተገለጹት በስተቀር በእኛ አስተያ የሂሣብ ሪፖርቶቹ በአዋጅ በተፈቀደው በጀት እና በመንግሥት የሂሣብ አያያዝ ሥርዓት መሠረት በትክክል የተዘጋጁ እና በበጀት ዓመቱ እስከ ሰኔ 30/2011 ድረስ የተሰበሰበው ገቢ የተከፈለው ወጪ እና የበጀት አጠቃቀሙ የፋይናንስ አስተዳደር አዋጅ፣ ደንብና መመሪያን የተከተሉ መሆኑን በአጥጋቢ ሁኔታ ያሳያል፡፡",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 47,
+    "content_hash": "d40e6e63a78e5bf664dd8f7df94daccc6b0b32de502990cf6c134902864eac3c",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**[የታችኛው ሳጥን]**",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 2,
+    "content_hash": "656407d89fe5c3171694cbd9eef18fde7efec3c69513b09428919d0e4ba166f9",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "| ያዘጋጀው፡- | ያፀደቀው፡- |",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "5f41f28f98490e9142c559e88d9d215670db8651f8f046366a722bdf9911c275",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "| :--- | :--- |",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "9655b38afdc9ae0aef07df156206aacbb7985c84be8bebf5dbfb12f9d27a3b7a",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "| ........................ | ........................ |",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "b548f58e9c30f2bbdca79aa45540ecac2f6f9cd0b0ce28edad28dd5cf79215b7",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "| **ፊርማ፡-** (በእጅ የተፈረመበት እና ማህተም ያረፈበት) | **ፊርማ፡-** ........................ |",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 11,
+    "content_hash": "e5167c24e2633406a91d3d74cfb8a790500a603529a6cb693f37a969acb99d80",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "| **ቀን፡-** 18/09/13 | **ቀን፡-** ........................ |",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 7,
+    "content_hash": "8e191ec3811749f1b65bcc864d70ee8769814e5779c17680c0085bfe37b4112e",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**[በፊርማው ላይ ያለው የማህተም ጽሑፍ]**",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 5,
+    "content_hash": "f4c742d030151c856cbb46eebcb9a33d0820187fe3dbd5844b8994142ae47a1f",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ንዋይ ተድላ ሸፈራው",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 3,
+    "content_hash": "62362b4384482328ea1df579f5448fa6c7eb2aa340a510240c5b9d0f43f74811",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "የፕሮግራም ዝግጅትና ግምገማ",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 3,
+    "content_hash": "8d163559e5d173e07073387d11de4ebcaf9e8b78d2496a29d0301d962b3a62e7",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "ዳይሬክተር",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "265cb89089932c78e72644809f721e6a557802d12c9db1688ab84bc30f121a68",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "---",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 1,
+    "content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "**[ከታች ያለው ክብ ማህተም]**",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 4,
+    "content_hash": "1d323d64e7cf6345a7b698b3ddedb7647eeb8a503141e2caef4e0e3ae79b35ea",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 4,
+    "content_hash": "137b114550123bab66bd9ca07631e4227b4cb2d9cfd455b55e3d8a52edbf5419",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "የኢትዮጵያ ኢንቨስትመንት ኮሚሽን",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 3,
+    "content_hash": "24235c84e4facf0fe435d0f2c22c887b156b045913cf7cb3afc8f67fd6f1513b",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "The Federal Democratic Republic of Ethiopia",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 6,
+    "content_hash": "1a6d6a614e10fca78521d2b0897e92bea90727bb418ee8b719a899f7b2e9ff2c",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  },
+  {
+    "content": "Ethiopian Investment Commission",
+    "chunk_type": "text",
+    "page_refs": [
+      3
+    ],
+    "bounding_box": {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 595.44,
+      "y1": 841.68
+    },
+    "parent_section": null,
+    "token_count": 3,
+    "content_hash": "6d111a034ebec320538e259ef37b9ef5a20f8bdcaa1ff85c42847f5cb4249e02",
+    "relationships": [],
+    "items": null,
+    "metadata": {}
+  }
+]

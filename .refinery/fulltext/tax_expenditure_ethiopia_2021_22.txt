@@ -1,0 +1,1565 @@
+[Logo: MINISTRY OF FINANCE]
+
+# Import tax expenditure report: FY 2018/19 – 2020/21
+
+Tax Policy Directorate, Ministry of Finance, Ethiopia
+
+September 2022
+
+2 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# Preface
+
+This report has been prepared by the IFS Centre for Tax Analysis in Developing Countries (TaxDev) team (Daniel Prinz, Edris Seid and Ben Waltmann) in collaboration with the Ethiopian Ministry of Finance Tax Policy Directorate team (led by Mulay Weldu).
+
+The authors would like to thank David Phillips (IFS) for useful comments and feedback. They also thank the staff of the Ministry of Finance Tax Policy Directorate and the staff of the Ethiopian Customs Commission for providing access to data and clarifying certain data issues.
+
+This report has been funded by UK aid from the UK government through a grant to TaxDev.
+
+---
+
+![UK aid logo: from the British people](https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/UK_Aid_logo.svg/1200px-UK_Aid_logo.svg.png)
+
+© Ministry of Finance, Ethiopia
+
+3 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# Contents
+
+Executive summary ................................................................................................................................. 4
+1. Introduction ................................................................................................................................. 6
+2. Policy rationale for and issues with tax expenditures ................................................................. 7
+3. Definitions and data ..................................................................................................................... 9
+    3.1 Defining the benchmark tax system ..................................................................................... 9
+    3.2 Estimating tax expenditures ............................................................................................... 13
+    3.3 Data ..................................................................................................................................... 15
+4. Tax expenditure estimates ......................................................................................................... 16
+    4.1 Overall tax expenditures..................................................................................................... 16
+    4.2 Customs duty ...................................................................................................................... 22
+    4.3 Excise duty ......................................................................................................................... 27
+    4.4 VAT..................................................................................................................................... 33
+    4.5 Surtax ................................................................................................................................. 36
+5. Conclusions and recommendations............................................................................................ 41
+Appendices .......................................................................................................................................... 43
+    A. Negative tax expenditures ................................................................................................. 43
+    B. Details on the calculation of indirect effects of tax expenditures....................................... 44
+    C. Alternative measures of tax expenditures .......................................................................... 45
+    D. Duplicate records in customs microdata ............................................................................ 46
+    E. Commodity categorisation based on two-digit HS code ..................................................... 48
+    F. Supplementary tables ......................................................................................................... 49
+References ........................................................................................................................................... 59
+
+© Ministry of Finance, Ethiopia
+
+4 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# Executive summary
+
+**Understanding, estimating and reporting on tax expenditures is an important exercise in public financial management.** Tax expenditures – cases in which the tax liability of an individual, a firm or other entity is reduced below the liability under a benchmark tax system – use limited public financial resources. Ethiopia, like other countries, incurs significant tax expenditures each year. To understand whether these tax expenditures serve the government’s development agenda, tax expenditures must first be measured.
+
+**This report uses shipment-level microdata from the Ethiopian Customs Commission to estimate import tax expenditures for fiscal years 2018/19, 2019/20 and 2020/21.** It covers the four taxes levied on imports: customs duty, excise duty, VAT and surtax. (It does not cover withholding tax, which is not designed as a final tax.)
+
+**Where appropriate, exemptions and rate reductions are considered separately, and estimates are presented for different categories of commodities.** In addition to estimating overall tax expenditures and tax expenditures for each tax type, it is useful to understand the source of tax expenditures. Estimates by categories of commodities can help the government assess whether expenditures are in line with development objectives.
+
+**The report uses the revenue forgone method and does not attempt to incorporate the behavioural or compliance effects of tax expenditures.** This implicitly assumes that if all tax expenditures were eliminated, the government would collect the full difference between what is currently collected and what would be collected under the benchmark system. This, however, need not be the case, as imports are potentially responsive to tax rates both on the real and the compliance margin. Furthermore, import tax expenditures likely lead to higher collection of domestic taxes, and especially domestic VAT. Thus, the cost of tax expenditures calculated in this report likely overstates their true fiscal cost.
+
+**Import tax expenditures were ETB 120.7 billion in FY 2020/21, which represented around 2.8% of GDP, between ETB 76.4 billion and ETB 78.3 billion (or 2.3% of GDP) in FY 2019/20, and between ETB 68.7 billion and ETB 99.3 billion (2.6% to 3.7% of GDP) in FY 2018/19.** Of total import tax expenditures in FY 2020/21, VAT expenditures constituted the largest share at 37% of the total (ETB 44.6 billion), followed by customs duty expenditures at 32% (ETB 38.9 billion), excise tax expenditures at around 16% (ETB 18.8 billion) and surtax expenditures at 15% (ETB 18.4 billion). On average, tax expenditures were worth 21.3% of the
+
+© Ministry of Finance, Ethiopia
+
+5 Import tax expenditure report: FY 2018/19 – 2020/21
+
+import value of affected goods in FY 2020/21, 16% in FY 2019/20 and around 20% in FY 2018/19.
+
+**In FY 2020/21, import tax expenditures were especially large on motor vehicles and on animal and vegetable fats.** Together, these two categories of imports made up nearly 40% of total tax expenditures. At around 50%, average tax expenditures in both of these categories are also especially large relative to the value of imports. For vehicles, these high expenditures primarily arise from much higher statutory surtax rates since FY 2020/21 that have not been consistently applied. For animal and vegetable fats (largely palm oil), high FY 2020/21 tax expenditures are the result of ad hoc exemptions for the importation of cooking oil to stabilise local prices, combined with a high value of imports in this category.
+
+**Tax exemptions for capital and investment goods and ‘second schedule’ preferential customs and surtax rates respectively only account for 2.3% and 1.0% of tax expenditures.** This is primarily because only a very small share of imports by value are eligible for them: 0.5% for capital goods exemptions and 1.0% for second schedule rates. The share of tax expenditures due to second schedule rates has fallen substantially in recent years as the share of eligible goods has been reduced. However, between the 2019/20 and 2020/21 fiscal years, the fall in second schedule expenditures was far outweighed by the growth in the value of other ad hoc expenditures.
+
+© Ministry of Finance, Ethiopia
+
+6 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 1. Introduction
+
+**This report provides estimates of federal import tax expenditures during fiscal years 2018/19, 2019/20 and 2020/21.** The report is based on shipment-level microdata on customs duty, excise duty, VAT and surtax collections on imports from the Ethiopian Customs Commission.<sup>1</sup> It starts by defining a benchmark tax system and then compares actual collections with estimated collections under the benchmark tax system for each of the tax types and each shipment. Shipment-level differences between estimated benchmark collections and actual collections are aggregated to provide annual estimates overall and by various categories of goods, services and expenditures.
+
+**The report focuses on import taxes and does not report expenditures for other types of taxes.** Exemptions and various other concessions that constitute tax expenditures exist for domestic direct taxes and domestic indirect taxes as well. However, the transaction-level microdata necessary for reliably estimating tax expenditures is currently readily available only for import taxes. Future iterations of this report should aim to incorporate all tax expenditures.
+
+**The current report on tax expenditures builds on previous estimates of tax expenditures in Ethiopia.** The most recent tax expenditure report on import taxes was produced in April 2020 and covered fiscal years 2016/17, 2017/18 and 2018/19 (Ministry of Finance, 2020). It found that the estimated revenue forgone on imports as a share of GDP was 2.74% in FY 2018/19. (At 3.7%, our main estimate for FY 2018/19 tax expenditures is somewhat larger; however, it is likely that this estimate is inflated by up to 1.1 percentage points as a result of double-counting of shipments arising from the transition between two customs IT systems in that fiscal year.<sup>2</sup>)
+
+The rest of this report proceeds as follows. Section 2 provides an overview of the policy rationales for and the drawbacks of tax expenditures. Section 3 describes how tax expenditures are defined and estimated. Section 4 provides estimates of tax expenditures by tax type. Section 5 concludes and offers recommendations.
+
+***
+
+<sup>1</sup> In addition to customs duty, excise, VAT and surtax, a 3% flat rate (on the CIF value of imports) of withholding tax is collected on imported items. This is not a final tax by itself but is creditable against the income tax liability of importers later. So, for the purposes of this report, we ignore withholding tax on imports entirely.
+<sup>2</sup> For details, see Appendix D.
+
+© Ministry of Finance, Ethiopia
+
+7	Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 2. Policy rationale for and issues with tax expenditures
+
+The government of Ethiopia has been using tax policies such as tax holidays, tax credits and preferential tax treatments for certain sectors and producers to encourage and expand investment, especially in the manufacturing sector; to strengthen domestic production capacity; and to motivate investors engaged in export trade. The goal of this is to accelerate the economic development of the country and improve its people’s living standards.
+
+Various incentive packages for investors and exporters are currently in place. Investors enjoy a wide range of incentives as per Council of Ministers Regulation No. 270/2012, including duty-free (exempted from customs duty and tax) imports of capital/investment goods, construction materials, motor vehicles, and spare parts whose value is not more than 15% of the value of the capital goods (Ethiopian Revenue and Customs Authority, 2017). Exporters also enjoy various duty and tax privileges through duty draw-back, voucher and bonded warehouse schemes (as per Proclamation No. 768/2012).
+
+On top of that, through its power and mandate, the Ministry of Finance grants ad hoc exemptions from the payment of import taxes. These exemptions are sometimes used to stabilise the domestic price of certain imported commodities such as cooking oil. Furthermore, ad hoc exemptions are granted to certain local producers. For example, the Ministry has granted automatic exemptions from customs duty and import taxes for the importation of spare parts by the textiles and leather industries.
+
+The intended effects of such tax policy measures and incentives are mainly:
+
+* to promote investment, especially in the manufacturing sector;
+* to speed up technology transfer;
+* to improve the international competitiveness of domestic businesses;
+* to increase foreign exchange earnings; and
+* to enhance and promote equitable distribution of investment among regional states.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+**8 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+Together, these effects are intended to help transform the Ethiopian economy into an industrial economy and improve living standards.³
+
+Tax expenditures lack transparency in terms of how much the government is forgoing in tax revenue. Even though the law stipulates that businesses benefiting from tax incentives are to file tax returns, businesses with no tax liability do not usually file their returns, making a comprehensive tax expenditure report difficult. This could create opportunities for rent-seeking and corruption.
+
+***
+
+³ For further details, see Proclamation No. 768/2012, Proclamation No. 886/2015 and Council of Ministers Regulation No. 270/2012.
+
+© Ministry of Finance, Ethiopia
+
+9 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 3. Definitions and data
+
+## 3.1 Defining the benchmark tax system
+
+**Tax expenditures are defined as deviations from a benchmark system.** The first step in estimating tax expenditures is therefore the definition of a benchmark tax system. Defining the appropriate benchmark involves a number of judgement calls which affect the resulting estimates. Below, we discuss in detail the definition used in the report and – where appropriate – examine the robustness of estimates with respect to the exact definition used.
+
+**In this report, we focus on *positive import tax expenditures* – cases in which an importer is charged at a lower (possibly zero) customs duty/tax rate than the rate in the benchmark tax system.** The benchmark tax system generally reflects the standard tax rates laid down in the relevant proclamations and regulations. When bilateral or multilateral agreements regulate tax rates for specific countries of origin, these tax rates enter the benchmark system and do not count as expenditures (International Monetary Fund, 2019). In addition, exemptions given to diplomats and international organisations in line with international law and the Vienna Conventions are considered part of the benchmark. In order to avoid *negative* tax expenditures, actual applied tax rates that are *higher* than the standard rates in the relevant proclamation or regulation are considered part of the benchmark tax system (the negative tax expenditures that arise when this adjustment is not made are discussed in Appendix A).
+
+**Other deviations from standard rates are taken to give rise to tax expenditures.** Lower rates and exemptions are examined in separate analyses for customs duty, where both are common. Second schedule customs duty and surtax rates are considered tax expenditures in our main analysis. Second schedule rates are preferential customs and surtax rates granted to local manufacturers importing raw materials. To be eligible for the scheme, manufacturers need to meet value-added requirements which vary by sector (Ministry of Finance, 2016).
+
+**To estimate tax expenditures, the revenue forgone method is used; it assumes that the removal of tax expenditures would result in no changes in behaviour or compliance.** This is a standard approach to tax expenditure analysis, but has important limitations (International Monetary Fund, 2019). In particular, this approach typically overestimates tax expenditures as it assumes individuals would continue to consume (or import in the case of import taxes) the same amount of goods and services (Kassim and Mansour, 2018) if full tax rates were charged.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+10 Import tax expenditure report: FY 2018/19 – 2020/21
+
+Furthermore, import tax expenditures likely lead to higher collection of domestic taxes. Import VAT exemptions likely lead to higher domestic VAT collection on final goods, as less input VAT can be reclaimed. All tax expenditures likely lead to higher income tax collection, as the lower cost of imported inputs leads to higher profits and earnings. **Thus, the cost of tax expenditures calculated in this report likely overstates their true overall fiscal cost.**
+
+In the Ethiopian import tax system, customs duty, excise tax, VAT and surtax are charged sequentially, so that revenue from taxes early in the sequence enters the tax base of taxes later in the sequence. This means that tax expenditures relating to a given tax will indirectly affect the collection of other taxes later in the sequence. **For the main estimates in this report, such indirect effects of tax expenditures are counted as expenditures on the origin tax even though they affect the collection of other taxes.** (Results when indirect effects are counted as part of expenditures on the tax whose collection is affected are reported in Appendix C.)
+
+### Customs duty
+
+**Customs law is governed by Proclamation No. 859/2014.** Customs duty is applied as the percentage of the duty-paying value. Duty-paying value is defined as the sum of the shipment value (cost of goods), transport charges paid to transport the goods from the port of the exporting country to their entry into Ethiopia, transport insurance paid and other charges such as loading and unloading charges, port charges, etc. The customs duty rate varies between 0% and 35% depending on the type and the level of processing of the imported goods. Final consumer goods are usually charged at higher rates, while raw materials and intermediate goods (including semi-knocked-down products) are charged at lower rates.
+
+**The benchmark tax system for customs duty is defined as follows:**
+
+*   The unit of taxation for excise on imports is the importer, the business or the individual.
+*   The customs duty tax base is the cost, insurance and freight (CIF) value of imports.
+*   The benchmark customs duty rate is, in general, the standard customs duty rate for the item in question as specified in the 2017 tariff book (0%, 5%, 10%, 20%, 30% or 35%).
+*   For items imported from countries with which Ethiopia has a multilateral, regional or bilateral trade deal, the benchmark rates are those specified under the relevant trade agreement.
+    *   Ethiopia is a member of the Common Market for Eastern and Southern Africa (COMESA) Preferential Trade Agreement where it grants 10% rate reductions for goods originating in a COMESA country and complying with the COMESA’s rule of origin. The benchmark customs duty rates for goods fulfilling COMESA rules of origin are 0%, 4.5%, 9%, 18%, 27% and 31.5%.
+
+© Ministry of Finance, Ethiopia
+
+11 Import tax expenditure report: FY 2018/19 – 2020/21
+
+* Ethiopia has a bilateral trade agreement with Sudan granting duty-free access for goods originating from Sudan. The benchmark customs duty rate for goods coming from Sudan is set to zero.
+* Duty-free privileges for international organisations and their foreign personnel, under the Vienna Conventions, are part of the benchmark system. Imports by diplomats, consular officers, and their immediate family members are exempt from all customs duty.
+* Duty-free privileges for international aid organisations outside of the UN system (e.g. USAID, SIDA) are considered tax expenditures.
+
+### Excise on imports
+
+**Excise rates are set by Proclamation No. 1186/2020.** Excise tax is applied to certain demand-inelastic and luxury items (e.g. human hair, luxury cars) as well as to goods that are assumed to have negative externalities (e.g. fats and oils, sugar and sugar confectionery, soft drink powder, alcohol and alcoholic drinks, beverages, tobacco and tobacco products, plastic bags, and motor vehicles).
+
+**The benchmark system for excise on imports is defined as follows:**
+
+* The unit of taxation for excise on imports is the importer, the business or the individual.
+* The benchmark tax base for excise tax on imports is the sum of the CIF value of imports and the customs duty payable.
+* The benchmark excise rates before August 2020 are specified in Proclamation No. 307/2002 and range between 10% and 100%.
+* The benchmark excise tax rates after August 2020 are specified in Proclamation No. 1186/2020 and vary between 5% and 500%.
+* Excise-free privileges for international organisations and their foreign personnel, under the Vienna Conventions, are part of the benchmark system. Imports by diplomats, consular officers, and their immediate family members are exempt from all excise tax.
+* Excise-free privileges for international aid organisations outside of the UN system (e.g. USAID, SIDA) are considered tax expenditures.
+
+### VAT on imports
+
+**VAT is governed by Proclamation No. 285/2002.** Ethiopia uses an invoice-credit system where VAT-registered taxpayers deduct VAT paid on their inputs from the total output VAT, and remit the net amount to the tax authority. All goods and services are subject to VAT except those exempted as per Proclamation No. 285/2002. These include:
+
+* sale or import of a national or foreign currency or security;
+* goods and services for humanitarian aid;
+
+© Ministry of Finance, Ethiopia
+
+12 Import tax expenditure report: FY 2018/19 – 2020/21
+
+* basic food items (e.g. milk, bread, injera, unprocessed grains, wheat flour, oilseeds; but excluding most vegetables);
+* agricultural inputs, including fertilisers, pesticides, poultry feed, and improved seeds and saplings.
+
+**The benchmark system for VAT on imports is defined as follows:**
+
+* The unit of taxation for VAT on imports is the importer, the business or the individual.
+* The VAT tax base on imports is the sum of the CIF value of imports, customs duty payable and excise duty payable.
+* The benchmark VAT rate on all imports is 15%, except for those which are exempt from the VAT payment as per Proclamation No. 285/2002.
+* VAT-free privileges for international organisations and their foreign personnel, under the Vienna Conventions, are part of the benchmark system. Imports by diplomats, consular officers, and their immediate family members are exempt from all VAT.
+* VAT-free privileges for international aid organisations outside of the UN system (e.g. USAID, SIDA) are considered tax expenditures.
+
+**Estimates of VAT expenditures do not account for deductibility and should be interpreted cautiously.** VAT on imports levied at the customs stage does not necessarily constitute revenue for the government because it may be deducted at a later stage. Deductibility of VAT would also impact the indirect effects of customs duty and excise tax through VAT; on the other hand, the indirect effect of VAT expenditures on surtax would be unaffected by deductibility.
+
+### Surtax on imports
+
+**Surtax is governed by Council of Ministers Regulation No. 133/2007.** The tax is levied on imported goods at a flat rate of 10% (of the sum of the CIF value of imports, duty payable, excise payable and VAT payable). However, certain imports are exempt from surtax payments. These include:
+
+* fertilisers;
+* petroleum and lubricants;
+* motor vehicles for freight and passengers (including buses), and special-purpose motor vehicles;
+* aircraft, spacecraft, and parts thereof;
+* capital and investment goods.
+
+The Ministry of Finance has also excluded additional basic goods such as groundnuts, potatoes, sugar, meat and certain types of machinery from surtax payment in subsequent amendments.
+
+---
+© Ministry of Finance, Ethiopia
+
+13 Import tax expenditure report: FY 2018/19 – 2020/21
+
+The benchmark tax system for surtax on imports is defined as follows:
+
+*   The unit of taxation for surtax on imports is the importer, the business or the individual.
+*   The surtax base is the sum of the CIF value of imports, customs duty payable, excise tax payable and VAT payable.
+*   The benchmark surtax rate for imports as stipulated in Council of Ministers Regulation No. 133/2007 is 10%.
+*   The regulation exempts certain imports such as fertilisers, petroleum and lubricants, motor vehicles for freight and passengers and special-purpose motor vehicles, aircraft and spacecraft, and all capital and investment goods from the payment of surtax. Goods exempted as per Regulation No. 133/2007 and in subsequent reforms are not considered tax expenditures, except for the exemption for capital and investment goods.
+*   Surtax-free privileges for international organisations and their foreign personnel, under the Vienna Conventions, are part of the benchmark system. Imports by diplomats, consular officers, and their immediate family members are exempt from all surtax.
+*   Surtax-free privileges for international aid organisations outside of the UN system (e.g. USAID, SIDA) are considered tax expenditures.
+
+# 3.2 Estimating tax expenditures
+
+The overall tax expenditure for a shipment is the difference between the tax that should have been paid had the benchmark tax system been applied and the actual tax collected. One complication in the Ethiopian import tax system is that customs duty, excise tax, VAT and surtax are charged sequentially, so tax expenditures earlier in the sequence affect the tax base for taxes later in the sequence. This means that simply comparing actual tax collected under the benchmark tax system with actual collection for each tax can be misleading; even if tax rates are the same as under the benchmark system for a given tax, the actual amount collected can be smaller than under the benchmark system because reduced rates or exemptions earlier in the sequence of taxes have led to a lower tax base.
+
+For the main estimates in this report, such indirect effects of tax expenditures are counted as expenditures on the origin tax even though they affect the collection of other taxes. (Results when indirect effects are counted as part of expenditures on the tax whose collection is affected are reported in Appendix C.)
+
+Customs duty tax expenditures are given by
+
+$$TE_{it}^c = (\tau_{it}^{bc} - \tau_{it}^{ac})CIF_{it} + IE_{it}^c$$
+
+© Ministry of Finance, Ethiopia
+
+**14 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+where $\tau_{it}^{bc}$ and $\tau_{it}^{ac}$ are, respectively, the customs duty rate in the benchmark system for shipment $i$ in fiscal year $t$ and the rate actually charged on shipment $i$ in fiscal year $t$. $CIF_{it}$ is, as above, the cost, insurance and freight of imports of shipment $i$ in fiscal year $t$ (the tax base for customs duty). $IE_{it}^c$ is the indirect effect of customs duty exemptions or reduced rates on the collection of other import taxes for shipment $i$ in fiscal year $t$. For details on the calculation of $IE_{it}^c$, see Appendix B.
+
+Customs duty tax expenditures due to exemptions arise where the benchmark duty rate $\tau_{it}^{bc}$ is positive, but the actual rate charged $\tau_{it}^{ac}$ is zero. Customs duty tax expenditures due to reduced rates arise when the actual rate charged $\tau_{it}^{ac}$ is non-zero but smaller than the benchmark duty rate $\tau_{it}^{bc}$.
+
+Similarly, excise tax expenditures are computed as
+
+$$TE_{it}^e = (\tau_{it}^{be} - \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it} + IE_{it}^e$$
+
+where variables with $e$ superscripts for excise are defined analogously to those with $c$ superscripts for customs. Note that the tax base for excise tax is $(1 + \tau_{it}^{ac})CIF_{it}$, i.e. the import value including customs duty. Again, details on the calculation of $IE_{it}^e$ are given in Appendix B.
+
+For VAT, the tax expenditure is computed analogously as
+
+$$TE_{it}^v = (\tau_{it}^{bv} - \tau_{it}^{av})(1 + \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it} + IE_{it}^v$$
+
+where variables with $v$ superscripts for VAT are again defined analogously, $(1 + \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it}$ is the tax base for VAT (import value including customs duty and excise tax), and details on the calculation of $IE_{it}^v$ are given in Appendix B.
+
+Finally, for surtax, the tax expenditure is
+
+$$TE_{it}^s = (\tau_{it}^{bs} - \tau_{it}^{as})(1 + \tau_{it}^{av})(1 + \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it}$$
+
+where variables with $s$ superscripts for surtax are again defined analogously and $(1 + \tau_{it}^{av})(1 + \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it}$ is the tax base for surtax (import value including customs duty, excise and VAT). There are no indirect effects of surtax on other taxes because it is the last tax in the import tax sequence.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+15 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 3.3 Data
+
+**This report uses shipment-level microdata from the Ethiopian Customs Commission at the eight-digit HS level from FY 2018/19 to FY 2020/21.** During this period, the Ethiopian Customs Commission transitioned from the Automated System for Customs Data (ASYCUDA++) to the electronic Customs Management System (eCMS). The data were accessed from these two systems and merged together.
+
+The data contain shipment-level information on:
+
+*   importer details;
+*   Harmonised System (HS) code with description;
+*   Customs Procedure (CP) code with description;
+*   CIF value of imports (in ETB);
+*   customs duty rate;
+*   customs duty paid;
+*   excise duties paid;
+*   VAT paid;
+*   surtax paid.
+
+Due to the transition between the two customs IT systems, some shipments may be recorded twice in our merged data set (once in the data from each system). As a result, the tax expenditures estimated in this report could be overestimated by up to ETB 30.6 billion in FY 2018/19 and up to ETB 1.9 billion in FY 2019/20 (FY 2020/21 estimates are unaffected). This is important for the interpretation of our FY 2018/19 results, as well as for the interpretations of trends in the main estimates, especially changes between FY 2018/19 and FY 2019/20. This issue is discussed in detail in Appendix D.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+16 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 4. Tax expenditure estimates
+
+## 4.1 Overall tax expenditures
+
+**Overall tax expenditures were ETB 120.7 billion in FY 2020/21.** The overall tax expenditure estimate includes ETB 38.9 billion in forgone customs duty, ETB 18.8 billion in forgone excise duty, ETB 44.6 billion in forgone VAT on imports and ETB 18.4 billion in forgone surtax.
+
+**Figure 4.1. Tax expenditures by type of duty or tax, FY 2018/19 to FY 2020/21**
+
+[Bar chart showing tax expenditures in ETB billion for fiscal years 2018/19, 2019/20, and 2020/21, broken down by type:]
+*   **Y-axis:** ETB billion (0 to 140)
+*   **X-axis:** 2018/19, 2019/20, 2020/21
+*   **Legend:**
+    *   Customs duty tax expenditure (Blue)
+    *   Import excise duty tax expenditure (Orange)
+    *   Import VAT tax expenditure (Maroon)
+    *   Surtax expenditure (Dark Blue)
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Tax expenditures have increased by 54% in nominal terms in FY 2020/21 relative to FY 2019/20.** This compares with an increase in the CIF value of total imports of just 18%. Tax expenditures amounted to around ETB 78 billion in FY 2019/20, including ETB 23 billion for customs duty, ETB 9 billion for excise, ETB 35 billion for VAT and ETB 11 billion for surtax. Tax expenditures increased in nominal terms by 67% for customs duty, 117% for excise, 26% for VAT and 68% for surtax.
+
+**Tax expenditures amounted to 21.3% of the CIF value of total imports and 2.8% of GDP in FY 2020/21.** Both relative to GDP and relative to total import value, tax expenditures were lower in FY 2019/20, at 16% of import value and 2.3% of GDP. For FY 2018/19, there is substantial uncertainty about the value of tax expenditures as a result of potential double-
+
+© Ministry of Finance, Ethiopia
+
+17 Import tax expenditure report: FY 2018/19 – 2020/21
+
+counting arising from the transition between two customs IT systems in that fiscal year. Tax expenditures in FY 2018/19 were worth between ETB 68.7 billion and ETB 99.3 billion, amounting to between 2.6% and 3.7% of GDP (and around 20% of import value). The numbers shown in Figures 4.1 and 4.2 and in the rest of this report represent the upper ends of those ranges, assuming no double-counting. However, as detailed in Appendix D, there is some evidence that duplicate recording of imports was in fact substantial.
+
+**Figure 4.2. Tax expenditures as a share of GDP and imports, FY 2018/19 to FY 2020/21**
+
+[Bar chart showing % of GDP and % of Imports for three fiscal years]
+*   **2018/19:** % of GDP (approx. 3.7%), % of Imports (approx. 20%)
+*   **2019/20:** % of GDP (approx. 2.5%), % of Imports (approx. 16%)
+*   **2020/21:** % of GDP (approx. 3.5%), % of Imports (approx. 22%)
+
+**Legend:** ■ % of GDP ■ % of Imports
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Planning and Development.
+
+**In FY 2020/21, shipments eligible for second schedule rates made up slightly less than 1% of pre-tax import value.** Furthermore, at 21.4% of import value, tax expenditures on these goods were only slightly larger relative to the value of imports than tax expenditures on goods eligible neither for second schedule rates nor for the capital goods exemption. As a result, second schedule imports accounted for only around 1% of tax expenditures. This is substantially less than in FY 2018/19, when second schedule tax expenditures still accounted for more than 4% of tax expenditures. This fall is attributable to the gradual removal of second schedule privileges.
+
+**At around 0.5% of total import value, shipments eligible for the capital goods exemption make up an even smaller share of total pre-tax import value.** However, relative to eligible import value, expenditures for capital imports are high (102.9% of CIF value). As a result, they account for a much higher percentage of total tax expenditures, at around 2.3%. Tax expenditures on shipments eligible for the capital goods exemption were much higher in FY
+
+© Ministry of Finance, Ethiopia
+
+18 Import tax expenditure report: FY 2018/19 – 2020/21
+
+2020/21 than in previous tax years, mainly because higher statutory excise tax rates on vehicles increased the value of capital goods exemptions for vehicles.
+
+**Table 4.1. Tax expenditures by type (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | | Imports (CIF value) | Total expenditure |
+| :--- | :--- | :---: | :---: |
+| **2018/19** | Capital/investment | 2,065.91 | 711.02 |
+| | Second schedule | 23,929.54 | 4,006.69 |
+| | Non-capital/second sch. | 462,085.37 | 94,609.29 |
+| **2019/20** | Capital/investment | 2,248.04 | 730.25 |
+| | Second schedule | 11,537.10 | 2,107.99 |
+| | Non-capital/second sch. | 458,625.81 | 75,470.76 |
+| **2020/21** | Capital/investment | 2,739.64 | 2,820.31 |
+| | Second schedule | 5,419.60 | 1,159.05 |
+| | Non-capital/second sch. | 553,547.63 | 116,724.33 |
+
+Note: The categories are based on the Customs Procedure Code (CPC). ‘Capita/investment’ is all imports with label ‘capital and or investment’ in the CPC. ‘Second schedule’ is all imports with label ‘second schedule’ in the CPC. ‘Non-capital/second sch.’ is all other imports (excluding capital/investment and second schedule imports). Transits, temporary imports and re-imports, as well as goods imported duty-free under the Vienna Convention, are excluded from all categories. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Vehicle imports accounted for 19.1% of tax expenditures in FY 2020/21, followed by animal or vegetable fats (18.1%) and non-electrical machinery (13.5%).** In the previous fiscal year, tax expenditures on vehicle imports amounted to only 9% and expenditures on animal and vegetable fats made up only 4% of total tax expenditures. Instead, non-electrical machinery made up 20% of total tax expenditures, and mineral oil and fuel made up 18%, in FY 2019/20.⁴
+
+**This large year-on-year variation of the contributions of the various categories to overall tax expenditures is likely linked to government policy.** In 2020/21, the government granted exemptions for the importation of cooking oil to stabilise local prices. At the same time, a new excise tax proclamation took effect but was not fully implemented, which particularly affected excise tax on vehicles. However, changes in import values also played a role: the total nominal
+
+***
+
+⁴ Tax expenditures on all import taxes and overall tax expenditures by category as a percentage of overall tax expenditures across categories are given in Table F.5 in Appendix F.
+
+© Ministry of Finance, Ethiopia
+
+19 Import tax expenditure report: FY 2018/19 – 2020/21
+
+import value of animal and vegetable fats increased more than threefold between 2019/20 and 2020/21.
+
+**Table 4.2. Tax expenditures by broad commodity category (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | 2018/19 | 2019/20 | 2020/21 |
+| :--- | :---: | :---: | :---: |
+| Animal products | 134.01 | 139.41 | 298.65 |
+| Vegetable products | 749.10 | 704.77 | 1,592.27 |
+| Animal or vegetable fats | 8,237.56 | 3,520.99 | 21,800.60 |
+| Prepared food and beverages (incl. sugar) | 7,508.84 | 4,438.81 | 6,950.20 |
+| Mineral oil and fuel | 11,296.09 | 14,084.75 | 7,138.00 |
+| Other mineral products (incl. cement) | 1,155.92 | 1,147.61 | 687.23 |
+| Pharmaceuticals | 4,071.33 | 2,523.44 | 3,508.65 |
+| Fertiliser | 2,135.63 | 2,611.74 | 3,563.71 |
+| Plastics and rubbers | 1,935.99 | 1,835.54 | 2,210.52 |
+| Other chemical products | 2,847.85 | 2,629.10 | 3,642.37 |
+| Leather and shoes | 107.42 | 66.07 | 92.36 |
+| Paper and wood products | 596.37 | 606.08 | 377.94 |
+| Textiles | 1,314.25 | 1,817.46 | 4,353.77 |
+| Base metals and articles of base metal | 7,986.72 | 7,759.04 | 9,545.01 |
+| Electrical machinery | 11,096.05 | 7,456.96 | 10,935.63 |
+| Other machinery | 17,512.59 | 15,641.38 | 16,281.95 |
+| Vehicles | 9,002.46 | 7,202.33 | 22,996.62 |
+| Aircraft | 6,926.68 | 276.63 | 707.17 |
+| Other transport equipment | 270.35 | 45.43 | 122.62 |
+| Furniture | 1,731.56 | 1,587.78 | 1,473.45 |
+| Others | 2,710.20 | 2,213.67 | 2,424.99 |
+
+Note: The commodity category is based on the two-digit Harmonised System (HS) codes which are called chapters. The detailed categorisations of commodities into these broad categories can be found in Appendix E. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Tax expenditures relative to import value vary considerably across commodity groups.** In FY 2020/21, tax expenditures as a share of import value were largest for vehicles (52.3%) and
+
+© Ministry of Finance, Ethiopia
+
+20 Import tax expenditure report: FY 2018/19 – 2020/21
+
+animal or vegetable fats (48.1%). Both were considerably higher than in FY 2019/20, when the largest tax expenditure as a share of import value was on prepared food and beverages (incl. sugar).
+
+**Table 4.3. Tax expenditure by broad commodity category (as % of import value), FY 2018/19 to FY 2020/21**
+
+| | 2018/19 | 2019/20 | 2020/21 |
+| :--- | :---: | :---: | :---: |
+| Animal products | 15.6% | 16.5% | 16.8% |
+| Vegetable products | 3.2% | 2.0% | 2.7% |
+| Animal or vegetable fats | 50.1% | 23.6% | 48.1% |
+| Prepared food and beverages (incl. sugar) | 47.7% | 36.8% | 31.0% |
+| Mineral oil and fuel | 19.1% | 17.2% | 17.9% |
+| Other mineral products (incl. cement) | 20.9% | 17.6% | 9.7% |
+| Pharmaceuticals | 16.0% | 16.1% | 16.1% |
+| Fertiliser | 15.0% | 15.0% | 15.0% |
+| Plastics and rubbers | 7.4% | 6.2% | 7.1% |
+| Other chemical products | 13.8% | 11.7% | 13.2% |
+| Leather and shoes | 3.9% | 2.0% | 2.0% |
+| Paper and wood products | 7.3% | 6.7% | 5.4% |
+| Textiles | 9.1% | 10.3% | 16.8% |
+| Base metals and articles of base metal | 15.4% | 15.1% | 18.3% |
+| Electrical machinery | 28.8% | 24.0% | 23.9% |
+| Other machinery | 24.4% | 22.2% | 21.0% |
+| Vehicles | 33.1% | 20.3% | 52.3% |
+| Aircraft | 15.0% | 15.0% | 15.0% |
+| Other transport equipment | 14.9% | 13.4% | 14.1% |
+| Furniture | 32.2% | 29.3% | 24.5% |
+| Others | 21.2% | 20.6% | 18.8% |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+© Ministry of Finance, Ethiopia
+
+21 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Overall estimated tax expenditures are somewhat higher than, but in line with previous estimates.** Differences appear to arise primarily from differences in the definition of the benchmark tax system. Details are given in Box 4.1 below.
+
+---
+
+**Box 4.1. Tax expenditures estimated using other methods**
+
+Alternative methods of estimating tax expenditures differ primarily in the definition of the benchmark tax system. In the context of Ethiopian import tax expenditures, two alternatives to our approach are worth discussing. The first is to use standard rates as assessed by the Ethiopian Customs Commission (ECC) as the benchmark tax system, which can be calculated from theoretical collection amounts that are provided in the ECC customs microdata; this was done in a recent Ministry of Finance report (Ministry of Finance, 2022). The second is the definition adopted by the Ministry of Finance’s previous report on import tax expenditures in Ethiopia for 2018/19 (Ministry of Finance, 2020).
+
+**Table 4.4. Different estimates of total tax expenditures (in ETB billions)**
+
+| | 2018/19 | 2019/20 | 2020/21 |
+| :--- | :---: | :---: | :---: |
+| **This report** | 99.3 | 78.3 | 120.7 |
+| **This report, eCMS only** | 68.7 | 76.4 | 120.7 |
+| **ECC standard rates as benchmark** | 40.0 | 45.3 | 81.4 |
+| **Ministry of Finance (2022)** | | | 68.5 |
+| **Ministry of Finance (2020)** | 73.9 | | |
+
+---
+
+© Ministry of Finance, Ethiopia
+
+**22 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+Note: ‘This report’ refers to our headline figures assuming no double-counting of shipments across customs IT systems. ‘This report, eCMS only’ refers to estimates obtained using only the eCMS customs system as detailed in Appendix D. ‘ECC standard rates as benchmark’ reports the headline numbers we would have obtained had we used ECC standard rates as our benchmark (see text). Ministry of Finance (2022) and Ministry of Finance (2020) refer to other sources of tax expenditure estimates for Ethiopia (see text).
+
+ECC standard rates are the same as our benchmark rates for 86% of shipments for customs duty, 98% for excise, 84% for VAT and 83% for surtax. In nearly all remaining cases, our benchmark rates are higher. This results in much lower tax expenditure estimates using ECC standard rates. Using ECC standard rates, we obtain overall tax expenditures of ETB 40.0 billion (1.5% of GDP) in 2018/19, ETB 45.3 billion (1.3% of GDP) in 2019/20 and ETB 81.4 billion (1.9% of GDP) in 2020/21. In our view, these estimates likely understate the true extent of tax expenditures, as ECC standard rates do not seem to reflect statutory standard rates in all cases.
+
+ECC standard rates were used in a recent Ministry of Finance report that evaluated the centralization of the tax exemptions process that took place in 2021 (Ministry of Finance, 2022). This report included figures for estimated tax expenditures of ETB 68.5 billion in 2020/21 and ETB 87.9 billion in 2021/22. The primary reason that the Figure for 2020/21 is lower than the estimate reported in the previous paragraph appears to be that the report only considered tax exemptions for a select set of customs codes.
+
+A second alternative benchmark is the definition adopted in the previous Ministry of Finance report on tax expenditures (Ministry of Finance, 2020), which covers the 2016/17, 2017/18 and 2018/19 tax years. That report found overall tax expenditures of ETB 73.9 billion in 2018/19. This is substantially lower than our main estimate of ETB 99.3 billion, but above our estimate adjusting for potential double counting of ETB 68.7 billion.
+
+A few methodological changes may account for the differences in these estimates. Most importantly, our estimates for 2018/19 use the 2017 tariff book to derive benchmark tariffs (except for goods whose tariff rates were unspecified in the 2017 tariff book), whereas the previous report used the 2012 tariff book. In reality, Ethiopian Customs appear to have gradually transitioned from the 2012 to the 2017 tariff book over the course of the 2018/19 tax year. An additional source of discrepancies is likely to be the use of different vintages of ECC data, as these data are subject to retrospective revisions.
+
+---
+
+# 4.2 Customs duty
+
+**Tax expenditures in the form of forgone customs duties were ETB 38.9 billion in FY 2020/21.** This represents a 67% increase in nominal terms relative to FY 2019/20 when customs
+
+© Ministry of Finance, Ethiopia
+
+23 Import tax expenditure report: FY 2018/19 – 2020/21
+
+duty expenditures were around ETB 23 billion. FY 2018/19 customs duty expenditures were up to ETB 30 billion.
+
+**Figure 4.3. Customs duty tax expenditures, FY 2018/19 to FY 2020/21**
+
+[Chart showing ETB billion on the Y-axis from 0 to 40, and fiscal years 2018/19, 2019/20, and 2020/21 on the X-axis. The chart uses stacked bars to represent different components of tax expenditures.]
+
+**Legend:**
+*   Higher order indirect effects
+*   Indirect effect through surtax
+*   Indirect effect through VAT
+*   Indirect effect through excise
+*   Direct effect of rate reductions
+*   Direct effect of exemptions
+
+Note: Customs duty expenditures due to exemptions refer to cases when the standard rate for a particular good is positive but the applied rate is zero. Customs duty expenditures due to rate reductions refer to cases when the applied customs duty rate is greater than zero but less than the standard rate. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**In FY 2020/21, 71% of customs duty tax expenditures arose from the direct effect of exemptions (ETB 27.5 billion), 2% arose from the direct effect of rate reductions (ETB 0.9 billion) and 27% arose from the indirect effects of customs duty tax expenditures on the collection of other import taxes (ETB 10.5 billion).** Exemptions are cases where the standard rate would have been positive but the applied rate was zero. Rate reductions are cases where a positive rate was applied below the standard rate. Indirect effects of customs expenditure on the collection of other import taxes arises because customs duty payable is part of the tax base for all other import taxes.
+
+**The importance of exemptions in customs tax expenditures has increased relative to previous fiscal years.** They accounted for around 64% of customs tax expenditures in FY 2018/19, 67% in FY 2019/20 and 71% in FY 2020/21. The indirect effect of customs expenditure through other taxes decreased from around 25% of customs duty expenditure in FY 2018/19 to 23% in FY 2019/20, before increasing to 27% in FY 2020/21.
+
+**Customs duty tax expenditures represented 0.9% of GDP, 6.9% of imports and 32.2% of all import tax expenditures in FY 2020/21.** Relative to GDP, customs duty tax expenditures were lower in FY 2019/20 (0.7%) but potentially higher in FY 2018/19 (up to 1.1%). They
+
+© Ministry of Finance, Ethiopia
+
+24 Import tax expenditure report: FY 2018/19 – 2020/21
+
+represented a lower share of imports in both FY 2019/20 (5%) and FY 2018/19 (around 6%). As a share of all tax expenditures, customs duty tax expenditures were lower in both FY 2019/20 and FY 2018/19 (around 30%).
+
+**Figure 4.4. Customs duty tax expenditures as a share of imports, GDP and all import tax expenditures, FY 2018/19 to FY 2020/21**
+
+[Chart showing percentages for 2018/19, 2019/20, and 2020/21]
+*   **% of Imports:** ~6% (2018/19), ~5% (2019/20), ~7.5% (2020/21)
+*   **% of GDP:** <1% for all years
+*   **% of total trade tax expenditure:** ~30% (2018/19), ~30% (2019/20), ~31% (2020/21)
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Planning and Development.
+
+**Expenditures for capital and investment imports and second schedule imports represented a small share of customs duty expenditures (1.2% and 1.6% of the total customs duty tax expenditure respectively) in FY 2020/21.** 97% of customs duty tax expenditures were accounted for by shipments that were neither capital goods imports nor imports under the second schedule. This share was higher than in FY 2018/19 (around 92%) and FY 2019/20 (94%). This was entirely due to a decline in expenditure on second schedule imports from around 7% in FY 2018/19 to 5% in FY 2019/20 and 1.6% in FY 2020/21. Among customs duty expenditures on second schedule imports, the role of rate reductions has declined. They represented around 40% of second schedule customs duty expenditures in FY 2018/19, but only 32% in FY 2020/21.
+
+© Ministry of Finance, Ethiopia
+
+25 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.5. Customs duty tax expenditures by type (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | | Exemp-tions | Rate reduc-tions | Indirect effects through excise | Indirect effects through VAT | Indirect effects through surtax | Higher-order effects | Total customs expen-diture |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **2018/19** | Capital/ investment | 177.42 | - | 10.62 | 26.61 | 9.00 | 4.17 | 227.82 |
+| | Second schedule | 744.73 | 872.38 | 122.86 | 241.03 | 138.14 | 53.13 | 2,172.26 |
+| | Non-capital/ second sch. | 18,265.29 | 2,329.11 | 1,298.04 | 3,024.06 | 1,905.53 | 628.93 | 27,450.95 |
+| **2019/20** | Capital/ investment | 188.18 | - | 2.81 | 28.23 | 10.78 | 2.36 | 232.36 |
+| | Second schedule | 368.89 | 502.35 | 47.57 | 129.72 | 75.93 | 23.90 | 1,148.36 |
+| | Non-capital/ second sch. | 15,032.00 | 1,849.86 | 657.34 | 2,450.73 | 1,540.14 | 403.98 | 21,934.05 |
+| **2020/21** | Capital/ investment | 204.05 | - | 184.22 | 30.61 | 12.84 | 34.85 | 466.56 |
+| | Second schedule | 305.91 | 204.60 | 0.37 | 76.58 | 38.31 | 5.84 | 631.61 |
+| | Non-capital/ second sch. | 26,949.59 | 677.62 | 2,652.92 | 3,962.17 | 2,469.26 | 1,052.14 | 37,763.70 |
+
+Note: The categories are based on the Customs Procedure Code (CPC). ‘Capita/investment’ is all imports with label ‘capital and or investment’ in the CPC. ‘Second schedule’ is all imports with label ‘second schedule’ in the CPC. ‘Non-capital/second sch.’ is all other imports (excluding capital/investment and second schedule imports). Customs duty expenditures due to exemptions refer to cases when the standard rate for a particular good is positive but the applied rate is zero. Customs duty expenditures due to rate reductions refer to cases when the applied customs duty rate is greater than zero but less than the standard rate. A dash (-) indicates a value of precisely zero. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**The most important commodity categories in customs duty tax expenditures in FY 2020/21 were animal or vegetable fats at ETB 10.7 billion (27.5% of the total customs duty tax expenditure), vehicles at ETB 6.7 billion (17.2% of the total customs expenditure), followed by base metals and articles of base metal at ETB 4.6 billion (11.8%) and electrical**
+
+© Ministry of Finance, Ethiopia
+
+26 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**machinery at ETB 3.5 billion (or 9.1%).** Relative to FY 2018/19 (around 15%) and FY 2019/20 (8%), the importance of animal or vegetable fats for customs duty tax expenditures has increased very substantially in FY 2020/21. The importance of tax expenditures on vehicle imports has also increased relative to FY 2018/19 (around 14%) and FY 2019/20 (16%).
+
+| Commodity category | Exemp- tions | Rate reduc- tions | Indirect effect through excise | Indirect effect through VAT | Indirect effect through surtax | Higher- order effects | Total customs expen- diture |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Animal products | 63.90 | 0.41 | - | 4.53 | 6.43 | 0.45 | 75.72 |
+| Vegetable products | 1,253.29 | 0.17 | - | 12.73 | 23.73 | 1.08 | 1,291.00 |
+| Animal or vegetable fats | 8,415.39 | 0.30 | 50.11 | 1,262.35 | 816.25 | 135.72 | 10,680.12 |
+| Prepared food and beverages (incl. sugar) | 911.77 | 14.57 | 170.35 | 137.85 | 92.62 | 58.93 | 1,386.09 |
+| Mineral oil and fuel | 165.85 | 34.13 | - | 30.00 | 15.20 | 2.28 | 247.46 |
+| Other mineral products (incl. cement) | 238.33 | 117.05 | 0.96 | 53.31 | 33.59 | 5.29 | 448.53 |
+| Pharmaceuticals | 130.56 | - | - | 19.55 | - | - | 150.11 |
+| Fertiliser | - | - | - | - | - | - | - |
+| Plastics and rubbers | 740.11 | 259.14 | 3.32 | 149.89 | 96.48 | 15.35 | 1,264.29 |
+| Other chemical products | 953.63 | 14.06 | 51.96 | 145.15 | 63.33 | 23.27 | 1,251.40 |
+| Leather and shoes | 44.50 | - | - | 6.67 | 4.45 | 0.67 | 56.29 |
+| Paper and wood products | 85.45 | 77.63 | - | 24.09 | 14.78 | 2.18 | 204.13 |
+| Textiles | 1,797.32 | 43.02 | 72.22 | 276.05 | 183.82 | 46.71 | 2,419.14 |
+| Base metals and articles of base metal | 3,518.48 | 92.60 | - | 541.66 | 360.98 | 54.15 | 4,567.87 |
+| Electrical machinery | 2,755.51 | 35.65 | 4.20 | 418.67 | 275.25 | 42.40 | 3,531.68 |
+| Other machinery | 2,332.81 | 3.37 | - | 350.43 | 233.44 | 35.02 | 2,955.07 |
+| Vehicles | 2,823.45 | 105.63 | 2,472.88 | 439.36 | 177.98 | 647.99 | 6,667.29 |
+| Aircraft | - | - | - | - | - | - | - |
+| Other transport equip. | 3.73 | - | - | 0.56 | 0.37 | 0.06 | 4.72 |
+| Furniture | 651.69 | 30.42 | - | 102.32 | 67.59 | 10.14 | 862.16 |
+
+© Ministry of Finance, Ethiopia
+
+27 Import tax expenditure report: FY 2018/19 – 2020/21
+
+| Others | 573.81 | 54.07 | 11.49 | 94.18 | 54.11 | 11.16 | 798.82 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+**Table 4.6. Customs duty tax expenditures by broad commodity category (in ETB million), FY 2020/21**
+
+Note: The detailed disaggregation of the customs duty tax expenditure for FY 2018/19 and FY 2019/20 can be found in Table F.1 in Appendix F. A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+# 4.3 Excise duty
+
+Total tax expenditures in the form of forgone excise duties were **ETB 18.8 billion in FY 2020/21, of which the direct effects constituted ETB 15.8 billion (84.1% of the total excise tax expenditure), while indirect effects made up the remaining 15.9%.** Overall excise duty expenditures exhibited a very large increase in FY 2020/21 (by 117%) compared with FY 2019/20 when excise duty expenditures were around ETB 9 billion. This mostly reflected a large rise in statutory excise tax liability on vehicle imports from around ETB 6 billion in FY 2019/20 to ETB 18.3 billion in FY 2020/21, which was not matched by a corresponding increase in actual excise tax paid. FY 2018/19 excise duty expenditures were up to ETB 12 billion.
+
+**The indirect effects of excise tax expenditure through VAT and surtax were substantially larger in FY 2020/21 than in the previous fiscal years (FY 2018/19 and 2019/20).** In FY 2020/21 the overall indirect effect of excise tax through VAT and surtax was nearly ETB 3 billion, compared with around ETB 1 billion in FY 2019/20 and FY 2018/19.
+
+---
+© Ministry of Finance, Ethiopia
+
+28 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Figure 4.5. Excise duty tax expenditures, FY 2018/19 to FY 2020/21**
+
+[A bar chart showing ETB billion on the Y-axis (0 to 20) and fiscal years on the X-axis (2018/19, 2019/20, 2020/21). The bars are stacked with the following categories:]
+
+*   **Direct effect** (Blue)
+*   **Indirect effect through VAT** (Orange)
+*   **Indirect effect through Surtax** (Purple)
+*   **Higher order indirect effect** (Dark Blue)
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Excise duty tax expenditures represented 0.4% of GDP, 3.3% of the total CIF value of imports and 15.6% of all import tax expenditures in FY 2020/21.** Relative to GDP, excise duty tax expenditures were 0.3% in FY 2019/20 and up to 0.5% in FY 2019/20. They represented around 2% of import value in FY 2018/19 and FY 2019/20, compared with more than 3% in FY 2020/21. As a share of all tax expenditures, excise duty tax expenditures represented around 12% in FY 2018/19, 11% in FY 2019/20 and 15.6% in FY 2020/21.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+29 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Figure 4.6. Excise duty tax expenditures as a share of imports, GDP and all import tax expenditures, FY 2018/19 to FY 2020/21**
+
+[Chart showing excise duty tax expenditures for three fiscal years: 2018/19, 2019/20, and 2020/21. The chart compares three metrics: % of Imports, % of GDP, and % of total trade tax expenditure.]
+
+*   **Y-axis:** 0% to 16%
+*   **X-axis:** 2018/19, 2019/20, 2020/21
+*   **Legend:**
+    *   ■ % of Imports
+    *   ■ % of GDP
+    *   ■ % of total trade tax expenditure
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Planning and Development.
+
+**Expenditures for capital and investment goods imports represented 9.2% of excise duty expenditures in FY 2020/21.** 91% of excise duty tax expenditures were accounted for by shipments that were neither capital goods imports nor shipments under the second schedule. This share was higher in FY 2018/19 and FY 2019/20 (around 99%); the change was entirely driven by higher statutory excise tax rates on vehicles. Expenditures for second schedule imports were negligible over the last three years.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+30 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.7. Excise duty tax expenditures by type (in ETB million) – FY 2018/19 to FY 2020/21**
+
+| | | Direct effect of excise tax expenditure | Indirect effect through VAT | Indirect effect through surtax | Higher-order effect | Total excise tax expenditure |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **2018/19** | Capital/investment | 30.37 | 4.56 | 3.04 | 0.46 | 38.43 |
+| | Second schedule | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| | Non-capital/second sch. | 10,752.13 | 806.91 | 537.55 | 80.63 | 12,177.22 |
+| **2019/20** | Capital/investment | 8.19 | 1.23 | 0.82 | 0.12 | 10.36 |
+| | Second schedule | 0.09 | 0.01 | 0.01 | 0.00 | 0.11 |
+| | Non-capital/second sch. | 7,830.28 | 464.23 | 308.97 | 46.35 | 8,649.83 |
+| **2020/21** | Capital/investment | 1,488.34 | 223.25 | 13.38 | 2.01 | 1,726.98 |
+| | Second schedule | 0.01 | 0.00 | 0.00 | 0.00 | 0.01 |
+| | Non-capital/second sch. | 14,343.08 | 1,679.43 | 932.56 | 139.88 | 17,094.95 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Vehicle imports accounted for ETB 12.9 billion (equivalent to 68.7% of excise duty expenditures) in FY 2020/21, followed by mineral oil and fuel at ETB 3.1 billion (16.7%) and prepared food and beverages (including sugar) at ETB 1.9 billion (10.3%).** Other commodity categories contribute little with less than 4.5% of total excise tax expenditure. Expenditures by commodity category have changed significantly over the last three fiscal years. Vehicle imports represented only around 25% of expenditures in FY 2018/19 and 12% of expenditures in FY 2019/20. Mineral oil and fuel represented around 44% in FY 2018/19 and 55% in FY 2019/20, then fell to below 17% in FY 2020/21. Prepared foods and beverages also showed year-on-year fluctuations, constituting around 24% in FY 2018/19 and 23% in FY 2019/20, then declining to 10.3% in FY 2020/21. Large changes between FY 2019/20 and FY 2020/21 largely reflect much higher excise tax expenditures on vehicle imports (for details on excise tax expenditures on motor vehicles, see Box 4.2).
+
+© Ministry of Finance, Ethiopia
+
+31 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.8. Excise duty tax expenditures by broad commodity category (in ETB million), FY 2020/21**
+
+| Commodity category | Direct effect of excise tax expenditure | Indirect effect through VAT | Indirect effect through surtax | Higher-order effect | Total excise tax expenditure |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Animal products | - | - | - | - | - |
+| Vegetable products | - | - | - | - | - |
+| Animal or vegetable fats | 167.03 | 25.05 | 16.70 | 2.51 | 211.29 |
+| Prepared food and beverages (incl. sugar) | 1,535.03 | 230.25 | 153.50 | 23.03 | 1,941.81 |
+| Mineral oil and fuel | 3,146.90 | - | - | - | 3,146.90 |
+| Other mineral products (incl. cement) | 2.78 | 0.42 | 0.27 | 0.04 | 3.51 |
+| Pharmaceuticals | - | - | - | - | - |
+| Fertiliser | - | - | - | - | - |
+| Plastics and rubbers | 5.68 | 0.85 | 0.25 | 0.04 | 6.82 |
+| Other chemical products | 159.90 | 23.99 | 15.99 | 2.40 | 202.28 |
+| Leather and shoes | - | - | - | - | - |
+| Paper and wood products | - | - | - | - | - |
+| Textiles | 245.38 | 36.81 | 24.53 | 3.68 | 310.40 |
+| Base metals and articles of base metal | - | - | - | - | - |
+| Electrical machinery | 20.80 | 3.12 | 2.08 | 0.31 | 26.31 |
+| Other machinery | 1.05 | 0.16 | 0.10 | 0.02 | 1.33 |
+| Vehicles | 10,514.53 | 1,577.18 | 729.28 | 109.39 | 12,930.38 |
+| Aircraft | - | - | - | - | - |
+| Other transport equipment | - | - | - | - | - |
+| Furniture | - | - | - | - | - |
+| Others | 32.35 | 4.85 | 3.23 | 0.49 | 40.92 |
+
+Note: The detailed disaggregation of the excise duty tax expenditure for FY 2018/19 and FY 2019/20 can be found in Table F.2 in Appendix F. A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+© Ministry of Finance, Ethiopia
+
+32 Import tax expenditure report: FY 2018/19 – 2020/21
+
+---
+
+**Box 4.2. Tax expenditures on imports of motor vehicles**
+
+Tax expenditures on motor vehicles constituted a large fraction of total tax expenditures at ETB 23.0 billion (0.5% of GDP) in 2020/21. This is a threefold increase over 2019/20, when total tax expenditures on motor vehicles were around ETB 7 billion. Almost all of this increase is due to higher excise duty expenditures (including indirect effects) and larger indirect customs duty expenditures through excise.
+
+These increases, in turn, are mostly explained by changes to statutory excise tax rates on used vehicles that came into effect in 2020/21, which are reflected in our benchmark tax system. The increase in tax expenditures arises because higher statutory tax rates on used vehicles have not translated into substantially more tax being collected on used cars. In 2020/21, the benchmark tax system implied excise tax collections of ETB 18.3 billion on motor vehicles, up from ETB 6.3 billion before the reform in 2019/20. In contrast, actual collections barely moved over the same period, increasing only very slightly from ETB 5.2 billion in 2019/20 to ETB 5.3 billion in 2020/21.
+
+It could be argued that these large estimated tax expenditures paint a misleading picture of the true cost of import tax exemptions for motor vehicles. This is because the reform has raised the statutory tax rates on some used vehicles to a ‘prohibitive’ level, which we define as higher than 100%. Arguably, most importers would not have imported such vehicles had they actually had to pay tax at the statutory rate. One suggestive piece of evidence in favour of this argument is that tax was paid at the statutory rate on only 4% of motor vehicle imports (by value) in 2020/21 where tax would have been payable at a rate exceeding 100%. This compares to tax paid at the statutory rate on 86% of vehicle imports (by value) overall. It is a limitation of the revenue foregone method of estimating tax expenditures that it does not account for these kinds of behavioural effects of tax changes.
+
+Tax expenditures on vehicles with ‘prohibitive’ statutory excise tax rates accounted for only 5% of motor vehicle imports by value in 2020/21, but for ETB 10.4 billion or around 45% of total tax expenditures on motor vehicles. If we modify the benchmark tax system to cap the benchmark excise tax rate at 100%, this figure falls by almost two thirds to ETB 3.6 billion, and total tax expenditure on imports of motor vehicles falls to ETB 16.2 billion. This estimate may well be closer to how much revenue could in fact be gained by removing tax expenditures on motor vehicles.
+
+However, it should be noted that even if the benchmark excise tax rate was capped at 100%, total tax expenditure on motor vehicle imports is still more than double in 2020/21 what it was in 2019/20 and a substantial proportion of total tax expenditure. It would be wrong to conclude that high tax expenditures on motor vehicles in 2020/21 were entirely driven by ‘prohibitive’ rates.
+
+---
+
+© Ministry of Finance, Ethiopia
+
+33 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 4.4 VAT
+
+Tax expenditures in the form of forgone VAT were large at **ETB 44.6 billion in FY 2020/21; of this, the direct effects represented ETB 42.2 billion (94.7%) and the indirect effect through surtax represented ETB 2.4 billion (5.3%).** Relative to the preceding fiscal year, this represents a 26% increase in nominal terms. FY 2018/19 VAT expenditures were up to ETB 44 billion, and FY 2019/20 expenditures were around ETB 35 billion. However, it should be noted that the true fiscal cost of these expenditures may be substantially lower, as higher import VAT expenditures translate into lower deductions from domestic VAT, likely raising domestic VAT collection.
+
+**Figure 4.7. VAT expenditures, FY 2018/19 to FY 2020/21**
+
+[Chart showing VAT expenditures in ETB billion for three fiscal years]
+*   **2018/19:** ~44 billion total (Direct effect ~42, Indirect effect through surtax ~2)
+*   **2019/20:** ~35 billion total (Direct effect ~33, Indirect effect through surtax ~2)
+*   **2020/21:** ~44.6 billion total (Direct effect 42.2, Indirect effect through surtax 2.4)
+
+Legend:
+■ Direct effect
+■ Indirect effect through surtax
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**VAT expenditures represented 1.0% of GDP, 7.9% of imports and 36.9% of all import tax expenditures in FY 2020/21.** Relative to GDP, VAT expenditures were the same in FY 2019/20 (1.0%) and potentially lower than in FY 2018/19 (up to 1.6%). Relative to imports, VAT expenditure represented around 9% in FY 2018/19 and 7% in FY 2019/20. As a share of all tax expenditures, VAT tax expenditures represented around 44% in FY 2018/19 and 45% in FY 2019/20.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+34 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Figure 4.8. VAT expenditures as a share of imports, GDP and all import tax expenditures, FY 2018/19 to FY 2020/21**
+
+[Bar chart showing three categories for three fiscal years: 2018/19, 2019/20, and 2020/21. The categories are:
+*   **% of Imports** (Blue bars, ranging approximately from 7% to 8%)
+*   **% of GDP** (Orange bars, approximately 1%)
+*   **% of total trade tax expenditure** (Purple bars, ranging approximately from 38% to 45%)]
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Planning and Development.
+
+**Expenditures for capital and investment imports (1.0%) and second schedule imports (0.4%) represented a small share of VAT expenditures in FY 2020/21.** 98.6% of VAT expenditures were accounted for by shipments that were neither capital imports nor shipments under the second schedule. This share was approximately the same in FY 2018/19 and FY 2019/20.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+35 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.9. VAT expenditures by type (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | | Direct effect of VAT expenditure | Indirect effect through surtax | Total VAT expenditure |
+| :--- | :--- | :---: | :---: | :---: |
+| **2018/19** | Capital/investment | 309.79 | 17.61 | 327.40 |
+| | Second schedule | 398.97 | 18.31 | 417.28 |
+| | Non-capital/second schedule | 41,164.83 | 1,819.05 | 42,983.88 |
+| **2019/20** | Capital/investment | 333.90 | 20.04 | 353.93 |
+| | Second schedule | 233.68 | 12.63 | 246.31 |
+| | Non-capital/second schedule | 33,300.68 | 1,470.26 | 34,770.94 |
+| **2020/21** | Capital/investment | 410.95 | 28.15 | 439.10 |
+| | Second schedule | 164.38 | 3.73 | 168.11 |
+| | Non-capital/second schedule | 41,633.18 | 2,335.69 | 43,968.87 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+The most important commodity groups for VAT expenditures in FY 2020/21 were **machinery other than electrical ones at ETB 9.6 billion (21.5%), animal or vegetable fats at ETB 6.8 billion (15.2%) and electrical machinery at ETB 4.1 billion (9.2%).** The relative importance of different commodity categories has fluctuated over time. Mineral oil and fuel accounted for around 12% of VAT expenditures in FY 2018/19, increased to 25% in FY 2019/20 and then fell to less than 8% in FY 2020/21. VAT expenditures on animal and vegetable fats accounted for around 5% in FY 2018/19, decreased to 3% in FY 2019/20 and then increased to more than 15% in FY 2020/21. These fluctuations largely (but not entirely) reflect fluctuations in the value of imports in these categories.
+
+© Ministry of Finance, Ethiopia
+
+36 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.10. VAT expenditures by broad commodity category (in ETB million), FY 2020/21**
+
+| Commodity category | Direct effect of VAT expenditure | Indirect effect through surtax | Total VAT expenditure |
+| :--- | :---: | :---: | :---: |
+| Animal products | 66.58 | 5.39 | 71.97 |
+| Vegetable products | 134.60 | 8.11 | 142.71 |
+| Animal or vegetable fats | 6,174.95 | 580.55 | 6,755.50 |
+| Prepared food and beverages (incl. sugar) | 1,896.11 | 183.82 | 2,079.93 |
+| Mineral oil and fuel | 3,394.37 | 45.14 | 3,439.51 |
+| Other mineral products (incl. cement) | 141.14 | 11.88 | 153.02 |
+| Pharmaceuticals | 3,358.54 | 0.00 | 3,358.54 |
+| Fertiliser | 3,563.71 | - | 3,563.71 |
+| Plastics and rubbers | 561.42 | 37.51 | 598.93 |
+| Other chemical products | 1,672.57 | 67.26 | 1,739.83 |
+| Leather and shoes | 20.45 | 2.04 | 22.49 |
+| Paper and wood products | 53.25 | 4.71 | 57.96 |
+| Textiles | 837.87 | 83.75 | 921.62 |
+| Base metals and articles of base metal | 2,769.17 | 271.40 | 3,040.57 |
+| Electrical machinery | 3,767.12 | 355.33 | 4,122.45 |
+| Other machinery | 9,050.45 | 554.65 | 9,605.10 |
+| Vehicles | 2,306.68 | 82.29 | 2,388.97 |
+| Aircraft | 707.17 | - | 707.17 |
+| Other transport equipment | 114.67 | 0.42 | 115.09 |
+| Furniture | 351.18 | 33.35 | 384.53 |
+| Others | 1,266.49 | 39.97 | 1,306.46 |
+
+Note: The detailed disaggregation of the VAT tax expenditure for FY 2018/19 and FY 2019/20 can be found in Table F.3 in Appendix F. A dash (-) indicates a value of precisely zero.
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+# 4.5 Surtax
+
+Tax expenditures on forgone surtax were **ETB 18.4 billion in FY 2020/21**. This represents a 68% increase in nominal terms relative to FY 2019/20 when surtax expenditures were around
+
+© Ministry of Finance, Ethiopia
+
+37 Import tax expenditure report: FY 2018/19 – 2020/21
+
+ETB 11 billion. FY 2018/19 surtax expenditures were up to ETB 13.5 billion. Surtax expenditures have no indirect effect on the collection of other taxes, as it is applied last in the calculation of border taxes.
+
+**Figure 4.9. Surtax expenditures, FY 2018/19 to FY 2020/21**
+
+| ETB billion | |
+| :--- | :--- |
+| 20 | |
+| 16 | |
+| 12 | |
+| 8 | |
+| 4 | |
+| 0 | |
+| | **2018/19** | **2019/20** | **2020/21** |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Surtax expenditures represented 0.4% of GDP, 3.3% of imports and 15.3% of all import tax expenditures in FY 2020/21.** Surtax expenditures were up to 0.5% of GDP in FY 2018/19 and 0.3% in FY 2019/20. They represented around 3% of imports in FY 2018/19 and 2% in FY 2019/20. As a share of all import tax expenditures, surtax expenditures have become more important, increasing from around 14% in FY 2018/19 and FY 2019/20 to 15.3% in FY 2020/21.
+
+---
+© Ministry of Finance, Ethiopia
+
+38 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Figure 4.10. Surtax expenditures as a share of imports, GDP and all import tax expenditures, FY 2018/19 to FY 2020/21**
+
+[Bar chart showing three groups of bars for fiscal years 2018/19, 2019/20, and 2020/21. Each group contains three bars representing:
+*   **% of Imports** (Blue)
+*   **% of GDP** (Orange)
+*   **% of total trade tax expenditure** (Purple)
+
+The Y-axis ranges from 0% to 16% in increments of 4%.]
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Planning and Development.
+
+**Expenditures for capital and investment imports (1.0%) and second schedule imports (1.9%) represented a small share of surtax expenditures in FY 2020/21.** 97% of surtax expenditures were accounted for by shipments that were neither capital imports nor shipments under the second schedule. This share has increased relative to the previous fiscal years, from 89% in FY 2018/19 and 92% in FY 2019/20. The importance of second schedule imports has declined from around 10% in FY 2018/19 to 1.9% in FY 2020/21, reflecting the government’s policy of gradually phasing out second schedule privileges.
+
+---
+© Ministry of Finance, Ethiopia
+
+39 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.11. Surtax expenditures by type (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | | Direct effect of surtax expenditure |
+| :--- | :--- | :--- |
+| **2018/19** | Capital/investment | 117.38 |
+| | Second schedule | 1,417.15 |
+| | Non-capital/second schedule | 11,997.24 |
+| **2019/20** | Capital/investment | 133.59 |
+| | Second schedule | 713.21 |
+| | Non-capital/second schedule | 10,115.95 |
+| **2020/21** | Capital/investment | 187.68 |
+| | Second schedule | 359.33 |
+| | Non-capital/second schedule | 17,896.81 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**The most important commodity groups for surtax expenditures were animal or vegetable fats at ETB 4.2 billion (22.5%) and machinery other than electrical at ETB 3.7 billion (20.2%) in FY 2020/21.** Among other categories, electrical machinery accounted for 17.6% and base metals and articles of base metal accounted for 10.5%. The share of machinery other than electrical decreased from around 33% in FY 2018/19 and 35% in FY 2019/20 to 20.2% in FY 2020/21. The share of animal or vegetable fats increased significantly from around 10% in FY 2018/19 and 5% in FY 2019/20 to 22.5% in FY 2020/21. The much higher share of expenditures on animal and vegetable fats largely reflects the increased value of imports in this category; this was not accompanied by a corresponding rise in surtax collection, likely due to ad hoc exemptions for the importation of cooking oil in FY 2020/21.
+
+---
+© Ministry of Finance, Ethiopia
+
+40 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Table 4.12. Surtax expenditures by broad commodity category (in ETB million), FY 2020/21**
+
+| Commodity category | Direct effect of surtax expenditure |
+| :--- | :---: |
+| Animal products | 150.97 |
+| Vegetable products | 158.55 |
+| Animal or vegetable fats | 4,153.68 |
+| Prepared food and beverages (incl. sugar) | 1,542.37 |
+| Mineral oil and fuel | 304.14 |
+| Other mineral products (incl. cement) | 82.18 |
+| Pharmaceuticals | 0.00 |
+| Fertiliser | - |
+| Plastics and rubbers | 340.48 |
+| Other chemical products | 448.86 |
+| Leather and shoes | 13.58 |
+| Paper and wood products | 115.84 |
+| Textiles | 702.63 |
+| Base metals and articles of base metal | 1,936.57 |
+| Electrical machinery | 3,255.18 |
+| Other machinery | 3,720.46 |
+| Vehicles | 1,009.97 |
+| Aircraft | - |
+| Other transport equipment | 2.80 |
+| Furniture | 226.75 |
+| Others | 278.78 |
+
+Note: The detailed disaggregation of the surtax expenditure for FY 2018/19 and FY 2019/20 can be found in Table F.4 in Appendix F. A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+---
+© Ministry of Finance, Ethiopia
+
+41 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# 5. Conclusions and recommendations
+
+This report estimated import tax expenditures incurred by the government of Ethiopia in **FY 2018/19, 2019/20 and 2020/21**. To do so, shipment-level microdata from the Ethiopian Customs Commission were used. Tax expenditures were defined as deviations from a benchmark tax system. The revenue forgone method was used, which means that the report did not account for potential behavioural responses.
+
+**Import tax expenditures were ETB 120.7 billion in FY 2020/21, increasing from ETB 68.7–99.3 billion in FY 2018/19 and ETB 76.4–78.3 billion in FY 2019/20.** They constituted 21.3% of import value in FY 2020/21, around 16% in FY 2019/20 and around 20% in FY 2018/19. This represented 2.8% of GDP in FY 2020/21, 2.3% in FY 2019/20 and 2.6–3.7% of GDP in FY 2018/19.
+
+**Tax expenditures are costly and the Ministry of Finance in collaboration with the relevant stakeholders should continue to scrutinise them regularly.** Given the longstanding objective of improving domestic resource mobilisation and the declining tax-to-GDP ratio over recent years, we should continue to monitor and evaluate tax expenditures. Whether costly tax expenditures help accomplish their objectives remains an open question.
+
+**Two product groups that deserve particular attention are motor vehicles and animal and vegetable fats (more than half of which by value is palm oil).** Together, these two categories of imports make up nearly 40% of total tax expenditures. At around 50%, average tax expenditures in both of these categories are also especially large relative to the value of imports.
+
+**Tax expenditure reporting should be expanded to include domestic direct and indirect taxes.** While import taxes are the most important source of revenue for the government, they represented only 39% of federal tax revenues in FY 2020/21. Furthermore, looking at import taxes in isolation means that important interaction effects between import and domestic taxes – e.g. through VAT deduction – will be missed. Tax expenditures on domestic taxes, including costly policies such as VAT exemptions, also need to be examined in order to get a full picture of tax expenditures.
+
+**The quality, availability and timeliness of microdata should be improved.** The current report, published in mid 2022, is only able to cover import tax expenditures up to FY 2020/21,
+
+© Ministry of Finance, Ethiopia
+
+42 Import tax expenditure report: FY 2018/19 – 2020/21
+
+which ended over a year ago. The shipment-level microdata are often lacking details crucial for understanding the reason for underpayment on shipments. Reporting could be improved if the data were more detailed, of higher quality and available earlier. In addition, higher-quality microdata on domestic indirect tax payments and data on domestic direct taxes would be useful for incorporating these tax types in tax expenditure reporting.
+
+---
+© Ministry of Finance, Ethiopia
+
+43 Import tax expenditure report: FY 2018/19 – 2020/21
+
+# Appendices
+
+## A. Negative tax expenditures
+
+In the main text of this report, we study *positive tax expenditures* – cases in which an importer is charged at a lower (possibly zero) customs duty/tax rate than the rate in the benchmark tax system. However, for a small minority of shipments in our data, we observe the opposite: a higher customs duty or tax rate being charged than under the benchmark tax system. This can arise for a variety of reasons, including ad hoc increases in import tax rates, the application of the wrong tax rate by the Ethiopian Customs Commission, or recording errors in the data.
+
+For the main estimates in this report, we rule out negative tax expenditures by assumption: actual applied tax rates that are *higher* than the standard rates in the relevant proclamation are considered part of the benchmark tax system. In other words, we impose the actually observed tax rate as a lower bound for the benchmark rate. In this appendix, we briefly consider the negative tax expenditures that would arise in the absence of this assumption.
+
+As shown in Figure A.1, negative tax expenditures are generally very small, except for customs duty expenditures in FY 2018/19 and FY 2019/20, when they were ETB –1.2 billion and ETB –2.6 billion, respectively. These negative customs duty expenditures are likely a by-product of the introduction of the HS 2017 tariff book in 2018, which changed customs duty rates for certain HS codes. The Ethiopia Customs Commission appears to have continued to apply the previous customs duty rates (i.e. the HS 2012 tariff book) in some cases even after the introduction of HS 2017, giving rise to negative tax expenditures when the new HS 2017 duty rate was lower than the HS 2012 rate. Nevertheless, these issues are minor relative to the overall level of tax expenditures.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+44 **Import tax expenditure report: FY 2018/19 – 2020/21**
+
+---
+
+**Figure A.1. Negative tax expenditures when the actual rate is not imposed as a lower bound, FY 2018/19 to FY 2020/21**
+
+[Chart showing ETB billion on the y-axis from 0.0 to -3.0. Categories on the x-axis are Customs, Excise, VAT, and Surtax. Data is presented for three fiscal years: 2018/19 (blue), 2019/20 (orange), and 2020/21 (purple).]
+
+**Note:** Each bar represents the sum of all ‘negative tax expenditures’ in that tax year, where the actual tax rate charged exceeds the tax rate under the benchmark system if the actual rate is not imposed as a lower bound for the benchmark rate. Includes indirect effects of tax expenditures as in the main text. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+**Source:** Authors’ calculations using data from the Ministry of Revenues.
+
+---
+
+# B. Details on the calculation of indirect effects of tax expenditures
+
+The indirect effect of customs duty expenditures is given by
+
+$$IE_{it}^c = \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{be}CIF_{it}}_{\text{indirect effect of customs exp. through excise}} + \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{bv}CIF_{it}}_{\text{indirect effect of customs exp. through VAT}}$$
+
+$$+ \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{bs}CIF_{it}}_{\text{indirect effect of customs exp. through surtax}} + \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{be}\tau_{it}^{bv}CIF_{it}}_{\text{indirect effect of customs exp. through excise and VAT}}$$
+
+$$+ \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{bv}\tau_{it}^{bs}CIF_{it}}_{\text{indirect eff. of customs exp. through VAT and surtax}} + \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{be}\tau_{it}^{bs}CIF_{it}}_{\text{indirect eff. of customs exp. through excise and surtax}}$$
+
+$$+ \underbrace{(\tau_{it}^{bc} - \tau_{it}^{ac})\tau_{it}^{be}\tau_{it}^{bv}\tau_{it}^{bs}CIF_{it}}_{\text{indirect effect of customs exp. through excise, VAT and surtax}}$$
+
+All variables are defined as in Section 3.2 in the main text. We group the last four terms in this sum together as ‘higher-order effects’, as they are generally quite small.
+
+---
+© Ministry of Finance, Ethiopia
+
+**45 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+The indirect effect of excise tax expenditures is
+
+$$IE_{it}^e = \underbrace{(\tau_{it}^{be} - \tau_{it}^{ae})\tau_{it}^{bv}(1 + \tau_{it}^{ac})CIF_{it}}_{\text{indirect effect of excise exp. through VAT}} + \underbrace{(\tau_{it}^{be} - \tau_{it}^{ae})\tau_{it}^{bs}(1 + \tau_{it}^{ac})CIF_{it}}_{\text{indirect effect of excise exp. through surtax}}$$
+$$+ \underbrace{(\tau_{it}^{be} - \tau_{it}^{ae})\tau_{it}^{bv}\tau_{it}^{bs}(1 + \tau_{it}^{ac})CIF_{it}}_{\text{indirect effect of excise exp. through VAT and surtax}}$$
+
+The indirect effect of VAT expenditures is
+
+$$IE_{it}^v = \underbrace{(\tau_{it}^{bv} - \tau_{it}^{av})\tau_{it}^{bs}(1 + \tau_{it}^{ae})(1 + \tau_{it}^{ac})CIF_{it}}_{\text{indirect effect of excise exp. through surtax}}$$
+
+This way of calculating indirect effects ensures that the sum of tax expenditures on each tax adds up to the difference between import tax paid under the benchmark system and actual import tax paid on a shipment.
+
+# C. Alternative measures of tax expenditures
+
+In the main text, we present tax expenditure estimates as the sum of the direct and indirect effects, where the indirect effects of import taxes through the reduction in tax base on the subsequent taxes are counted as tax expenditure for the original tax. For example, the indirect effect of customs duty expenditure through excise, VAT and/or surtax are considered customs duty expenditures. In this appendix, we present an alternative measure of expenditures on each import tax, which is simply the difference between tax collected under the benchmark tax system and actual tax collected.
+
+As shown in Figure C.1, customs duty expenditures are lower under this alternative measure, as knock-on effects of customs duty exemptions and reduced rates on subsequent border taxes are not counted as part of customs duty tax expenditure. In contrast, VAT expenditures and surtax expenditures are higher under this alternative measure, as they include the knock-on effects from tax expenditures earlier in the import tax sequence. By definition, *overall* import tax expenditures are the same under both measures.
+
+© Ministry of Finance, Ethiopia
+
+46 **Import tax expenditure report: FY 2018/19 – 2020/21**
+
+---
+
+**Figure C.1. Comparing the two tax expenditure measures by tax type, FY 2018/19 to FY 2020/21**
+
+![Chart showing comparison of tax expenditure measures](image_placeholder)
+
+| | 2018/19 | 2019/20 | 2020/21 | 2018/19 | 2019/20 | 2020/21 | 2018/19 | 2019/20 | 2020/21 | 2018/19 | 2019/20 | 2020/21 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | **Customs duty expenditure** | **Excise tax expenditure** | **VAT expenditure** | **Surtax expenditure** |
+
+■ Alternative estimates ■ Main estimates
+
+**Note:** ‘Main estimates’ are the expenditure estimates used in the main text. Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D).
+
+**Source:** Authors’ calculations using data from the Ministry of Revenues.
+
+---
+
+# D. Duplicate records in customs microdata
+
+Between FY 2017/18 and FY 2019/20, the Ethiopian Customs Commission changed its IT system; it transitioned from the Automated System for Customs Data (ASYCUDA++) to the electronic Customs Management System (eCMS). For the main estimates in this report, we treat customs records in ASYCUDA++ and eCMS as referring to separate shipments. However, both anecdotal evidence and a comparison with tax revenue data from the Ministry of Revenues suggest that some shipments may have been recorded in both IT systems during the transition period, leading to double-counting in our tax expenditure estimates.
+
+In Figure D.1, we show the implied total import tax collection recorded in the two customs IT systems, as well as actual total import tax collection from the Ministry of Revenues. In FY 2019/20 and FY 2020/21, when the transition to eCMS was (mostly) complete, total import tax recorded in the customs microdata was, respectively, 96% and 97% of actual import tax collected by the Ministry of Revenues.⁵ This small shortfall is expected, as customs records for some shipments were incomplete and could therefore not be used. In 2018/19, however, while
+
+---
+⁵ This pattern of a small shortfall relative to aggregate Ministry of Revenues data is consistent across the different import taxes.
+
+© Ministry of Finance, Ethiopia
+
+**47 | Import tax expenditure report: FY 2018/19 – 2020/21**
+
+import tax on shipments recorded in eCMS alone amounted to 95% of actual collection, the total across both IT systems added up to 107% of actual collection. One plausible explanation of this discrepancy is that a substantial fraction of shipments were recorded in both datasets during the transition period.
+
+***
+
+**Figure D.1. Total import tax on shipments reported through the two IT systems compared with actual collection, FY 2018/19 to FY 2020/21**
+
+[Chart Data]
+*   **Y-axis:** ETB billion (0, 20, 40, 60, 80, 100, 120)
+*   **X-axis:** 2018/19, 2019/20, 2020/21
+*   **Legend:**
+    *   ■ Total: eCMS
+    *   ■ Total: ASYCUDA
+    *   ● Actual collection
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission and the Ministry of Revenues.
+
+***
+
+Figure D.2 splits our headline tax expenditure estimates into tax expenditures on shipments recorded in eCMS and on shipments recorded in ASYCUDA++. Tax expenditures on shipments recorded in eCMS alone were ETB 68.7 billion or 2.6% of GDP in FY 2018/19 and ETB 76.4 billion or 2.3% of GDP in FY 2019/20 (no shipments were recorded in ASYCUDA++ in FY 2020/21). These numbers provide a useful lower bound for the estimates we would have obtained in the absence of double-counting. Notably, these numbers imply that while total tax expenditures may in fact have risen in nominal terms between FY 2018/19 and FY 2019/20, they definitely fell as a proportion of GDP.
+
+***
+
+© Ministry of Finance, Ethiopia
+
+48 Import tax expenditure report: FY 2018/19 – 2020/21
+
+**Figure D.2. Tax expenditures on shipments reported through the two IT systems, FY 2018/19 to FY 2020/21**
+
+| ETB billion | 2018/19 | 2019/20 | 2020/21 |
+| :--- | :---: | :---: | :---: |
+| 140 | | | |
+| 120 | | | |
+| 100 | | | |
+| 80 | | | |
+| 60 | | | |
+| 40 | | | |
+| 20 | | | |
+| 0 | | | |
+
+■ Total tax expenditure: eCMS
+■ Total tax expenditure: ASYCUDA
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+---
+
+# E. Commodity categorisation based on two-digit HS code
+
+To look at tax expenditure broken down by commodity category, we classify imports into 21 subcategories based on the two-digit HS codes. These commodity categories with the respective HS codes are shown in Table E.1.
+
+---
+© Ministry of Finance, Ethiopia
+
+49 Import tax expenditure report: FY 2018/19 – 2020/21
+
+### Table E.1. Commodity categorisation by HS codes (or chapters)
+
+| | Commodity categorisation | HS codes (chapters) |
+| :--- | :--- | :--- |
+| **1** | Animal products | 1 to 5 |
+| **2** | Vegetable products | 6 to 14 |
+| **3** | Animal or vegetable fats | 15 |
+| **4** | Prepared food and beverages (incl. sugar) | 16 to 23 |
+| **5** | Mineral oil and fuel | 27 |
+| **6** | Other mineral products (incl. cement) | 25 to 26 and 68 to 70 |
+| **7** | Pharmaceuticals | 30 |
+| **8** | Fertiliser | 31 |
+| **9** | Plastics and rubbers | 39 to 40 |
+| **10** | Other chemical products | 28 to 29 and 32 to 38 |
+| **11** | Leather and shoes | 41 to 43 and 64 |
+| **12** | Paper and wood products | 44 to 49 |
+| **13** | Textiles | 50 to 63 |
+| **14** | Base metals and articles of base metal | 72 to 83 |
+| **15** | Electrical machinery | 85 |
+| **16** | Other machinery | 84 |
+| **17** | Vehicles | 87 |
+| **18** | Aircraft | 88 |
+| **19** | Other transport equipment | 86 and 89 |
+| **20** | Furniture | 94 |
+| **21** | Others | All remaining HS codes |
+
+---
+
+# F. Supplementary tables
+
+The following tables present detailed tax expenditure estimates by commodity category for FY 2018/19 to FY 2020/21 in ETB millions. Each table presents tax expenditure estimates for one of the import taxes broken down into a direct effect (which is the tax expenditure owing to exemptions or rate reductions for that particular tax) and indirect effects (tax expenditures due to the effect on the tax base for other taxes).
+
+### Table F.1. Customs duty tax expenditure by commodity category (in ETB million), FY 2018/19 to FY 2020/21
+
+| | Commodity category | Exemption | Rate reductions | Indirect effect through excise | Indirect effect through VAT | Indirect effect through surtax | Higher-order effects | Total |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **2018/19** | Animal products | 21.86 | 0.76 | - | 2.95 | 2.26 | 0.30 | 28.13 |
+| | Vegetable products | 417.80 | 181.68 | - | 29.74 | 21.76 | 2.93 | 653.91 |
+| | Animal or vegetable fats | 3,639.24 | 0.60 | - | 545.98 | 358.41 | 53.76 | 4,597.99 |
+| | Prepared food and beverages (incl. sugar) | 1,132.65 | 42.62 | 219.56 | 171.97 | 117.50 | 75.38 | 1,759.68 |
+| | Mineral oil and fuel | 160.37 | 40.10 | - | 30.07 | 12.95 | 1.94 | 245.43 |
+| | Other mineral products (incl. cement) | 403.31 | 189.26 | 0.88 | 88.89 | 58.44 | 8.95 | 749.73 |
+
+---
+© Ministry of Finance, Ethiopia
+
+**50 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| Year | Category | | | | | | | Total |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | Pharmaceuticals | 133.48 | 0.00 | - | 20.02 | 0.00 | 0.00 | 153.50 |
+| | Fertiliser | - | - | - | - | - | - | - |
+| | Plastics and rubbers | 568.53 | 352.71 | - | 138.19 | 90.42 | 13.56 | 1,163.41 |
+| | Other chemical products | 634.03 | 255.73 | 90.50 | 133.46 | 35.64 | 29.33 | 1,178.69 |
+| | Leather and shoes | 52.69 | 0.00 | - | 7.90 | 5.27 | 0.79 | 66.65 |
+| | Paper and wood products | 131.19 | 162.57 | - | 42.38 | 29.07 | 4.19 | 369.40 |
+| | Textiles | 482.99 | 29.06 | 53.31 | 76.81 | 51.16 | 21.80 | 715.13 |
+| | Base metals and articles of base metal | 2,687.49 | 519.01 | - | 480.97 | 320.63 | 48.09 | 4,056.19 |
+| | Electrical machinery | 3,038.85 | 493.38 | 44.29 | 529.83 | 352.58 | 64.62 | 4,523.55 |
+| | Other machinery | 2,832.72 | 20.81 | 4.60 | 428.03 | 285.25 | 44.01 | 3,615.42 |
+| | Vehicles | 1,503.63 | 814.94 | 935.10 | 347.79 | 171.02 | 273.45 | 4,045.93 |
+| | Aircraft | - | - | - | - | - | - | - |
+| | Other transport equipment | 5.16 | 0.00 | - | 0.77 | 0.52 | 0.08 | 6.53 |
+| | Furniture | 777.91 | 42.46 | - | 123.06 | 81.87 | 12.28 | 1,037.58 |
+| | Others | 563.55 | 55.78 | 83.27 | 92.90 | 57.93 | 30.76 | 884.19 |
+| **2019/20** | Animal products | 28.96 | 0.67 | - | 4.07 | 2.96 | 0.41 | 37.07 |
+| | Vegetable products | 560.16 | 10.36 | - | 4.05 | 10.00 | 0.40 | 584.97 |
+| | Animal or vegetable fats | 1,497.32 | 22.58 | 0.00 | 227.99 | 149.06 | 22.36 | 1,919.31 |
+| | Prepared food and beverages (incl. sugar) | 525.16 | 31.62 | 147.30 | 83.39 | 55.67 | 47.37 | 890.51 |
+| | Mineral oil and fuel | 132.99 | 79.61 | 0.00 | 31.89 | 11.48 | 1.72 | 257.69 |
+| | Other mineral products (incl. cement) | 348.50 | 267.37 | 8.26 | 92.38 | 60.79 | 11.16 | 788.46 |
+| | Pharmaceuticals | 87.25 | 0.00 | - | 13.09 | 0.00 | 0.00 | 100.34 |
+| | Fertiliser | - | - | - | - | - | - | - |
+| | Plastics and rubbers | 491.56 | 399.03 | 1.20 | 133.59 | 87.81 | 13.49 | 1,126.68 |
+| | Other chemical products | 648.83 | 97.67 | 59.88 | 111.98 | 39.24 | 21.76 | 979.36 |
+| | Leather and shoes | 31.02 | 0.00 | - | 4.65 | 3.10 | 0.47 | 39.24 |
+| | Paper and wood products | 109.77 | 206.65 | - | 46.98 | 30.84 | 4.58 | 398.82 |
+| | Textiles | 639.00 | 51.86 | 60.06 | 103.63 | 69.02 | 26.27 | 949.84 |
+| | Base metals and articles of base metal | 2,657.61 | 242.91 | - | 435.08 | 290.03 | 43.50 | 3,669.13 |
+| | Electrical machinery | 2,075.47 | 334.73 | 27.65 | 361.53 | 240.69 | 43.43 | 3,083.50 |
+| | Other machinery | 2,386.06 | 8.25 | 1.30 | 359.15 | 239.36 | 36.25 | 3,030.37 |
+| | Vehicles | 2,197.50 | 486.68 | 322.38 | 402.63 | 214.53 | 117.61 | 3,741.33 |
+| | Aircraft | - | - | - | - | - | - | - |
+| | Other transport equipment | 8.22 | 0.00 | - | 1.23 | 0.82 | 0.12 | 10.39 |
+| | Furniture | 693.95 | 49.51 | - | 111.52 | 72.79 | 10.92 | 938.69 |
+| | Others | 469.74 | 62.71 | 79.69 | 79.87 | 48.66 | 28.42 | 769.09 |
+| **2020/21** | Animal products | 63.90 | 0.41 | - | 4.53 | 6.43 | 0.45 | 75.72 |
+| | Vegetable products | 1,253.29 | 0.17 | - | 12.73 | 23.73 | 1.08 | 1,291.00 |
+| | Animal or vegetable fats | 8,415.39 | 0.30 | 50.11 | 1,262.35 | 816.25 | 135.72 | 10,680.12 |
+| | Prepared food and beverages (incl. sugar) | 911.77 | 14.57 | 170.35 | 137.85 | 92.62 | 58.93 | 1,386.09 |
+
+© Ministry of Finance, Ethiopia
+
+**51 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| Commodity category | | | | | | | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Mineral oil and fuel | 165.85 | 34.13 | - | 30.00 | 15.20 | 2.28 | 247.46 |
+| Other mineral products (incl. cement) | 238.33 | 117.05 | 0.96 | 53.31 | 33.59 | 5.29 | 448.53 |
+| Pharmaceuticals | 130.56 | - | - | 19.55 | - | - | 150.11 |
+| Fertiliser | - | - | - | - | - | - | - |
+| Plastics and rubbers | 740.11 | 259.14 | 3.32 | 149.89 | 96.48 | 15.35 | 1,264.29 |
+| Other chemical products | 953.63 | 14.06 | 51.96 | 145.15 | 63.33 | 23.27 | 1,251.40 |
+| Leather and shoes | 44.50 | - | - | 6.67 | 4.45 | 0.67 | 56.29 |
+| Paper and wood products | 85.45 | 77.63 | - | 24.09 | 14.78 | 2.18 | 204.13 |
+| Textiles | 1,797.32 | 43.02 | 72.22 | 276.05 | 183.82 | 46.71 | 2,419.14 |
+| Base metals and articles of base metal | 3,518.48 | 92.60 | - | 541.66 | 360.98 | 54.15 | 4,567.87 |
+| Electrical machinery | 2,755.51 | 35.65 | 4.20 | 418.67 | 275.25 | 42.40 | 3,531.68 |
+| Other machinery | 2,332.81 | 3.37 | - | 350.43 | 233.44 | 35.02 | 2,955.07 |
+| Vehicles | 2,823.45 | 105.63 | 2,472.88 | 439.36 | 177.98 | 647.99 | 6,667.29 |
+| Aircraft | - | - | - | - | - | - | - |
+| Other transport equipment | 3.73 | - | - | 0.56 | 0.37 | 0.06 | 4.72 |
+| Furniture | 651.69 | 30.42 | - | 102.32 | 67.59 | 10.14 | 862.16 |
+| Others | 573.81 | 54.07 | 11.49 | 94.18 | 54.11 | 11.16 | 798.82 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D). A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Table F.2. Excise tax expenditure by commodity type (in ETB million), FY 2018/19 to 2020/21**
+
+| | Commodity category | Direct effect of excise tax expenditure | Indirect effect through VAT | Indirect effect through surtax | Higher-order effects | Total |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **2018/19** | Animal products | - | - | - | - | - |
+| | Vegetable products | - | - | - | - | - |
+| | Animal or vegetable fats | - | - | - | - | - |
+| | Prepared food and beverages (incl. sugar) | 2,314.14 | 347.12 | 231.41 | 34.71 | 2,927.38 |
+| | Mineral oil and fuel | 5,374.98 | 0.34 | - | - | 5,375.32 |
+| | Other mineral products (incl. cement) | 2.26 | 0.34 | 0.12 | 0.02 | 2.74 |
+| | Pharmaceuticals | - | - | - | - | - |
+| | Fertiliser | - | - | - | - | - |
+| | Plastics and rubbers | - | - | - | - | - |
+| | Other chemical products | 258.58 | 38.79 | 25.86 | 3.88 | 327.11 |
+| | Leather and shoes | - | - | - | - | - |
+| | Paper and wood products | - | - | - | - | - |
+| | Textiles | 148.60 | 22.29 | 14.80 | 2.22 | 187.91 |
+| | Base metals and articles of base metal | - | - | - | - | - |
+| | Electrical machinery | 55.04 | 8.26 | 5.50 | 0.83 | 69.63 |
+
+© Ministry of Finance, Ethiopia
+
+52 **Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| Year | Category | | | | | |
+| :--- | :--- | ---: | ---: | ---: | ---: | ---: |
+| | Other machinery | 19.21 | 2.88 | 1.92 | 0.29 | 24.30 |
+| | Vehicles | 2,396.29 | 359.44 | 239.63 | 35.94 | 3,031.30 |
+| | Aircraft | - | - | - | - | - |
+| | Other transport equipment | - | - | - | - | - |
+| | Furniture | - | - | - | - | - |
+| | Others | 213.40 | 32.01 | 21.34 | 3.20 | 269.95 |
+| **2019/20** | Animal products | - | - | - | - | - |
+| | Vegetable products | - | - | - | - | - |
+| | Animal or vegetable fats | - | - | - | - | - |
+| | Prepared food and beverages (incl. sugar) | 1,555.88 | 233.38 | 155.59 | 23.34 | 1,968.19 |
+| | Mineral oil and fuel | 4,735.50 | 0.01 | - | - | 4,735.51 |
+| | Other mineral products (incl. cement) | 23.90 | 3.59 | 1.99 | 0.30 | 29.78 |
+| | Pharmaceuticals | - | - | - | - | - |
+| | Fertiliser | - | - | - | - | - |
+| | Plastics and rubbers | - | - | - | - | - |
+| | Other chemical products | 171.10 | 25.66 | 17.11 | 2.57 | 216.44 |
+| | Leather and shoes | - | - | - | - | - |
+| | Paper and wood products | - | - | - | - | - |
+| | Textiles | 226.98 | 34.05 | 22.58 | 3.39 | 287.00 |
+| | Base metals and articles of base metal | - | - | - | - | - |
+| | Electrical machinery | 87.83 | 13.17 | 8.78 | 1.32 | 111.10 |
+| | Other machinery | 8.12 | 1.22 | 0.81 | 0.12 | 10.27 |
+| | Vehicles | 817.64 | 122.65 | 81.76 | 12.26 | 1,034.31 |
+| | Aircraft | - | - | - | - | - |
+| | Other transport equipment | - | - | - | - | - |
+| | Furniture | - | - | - | - | - |
+| | Others | 211.62 | 31.74 | 21.16 | 3.17 | 267.69 |
+| **2020/21** | Animal products | - | - | - | - | - |
+| | Vegetable products | - | - | - | - | - |
+| | Animal or vegetable fats | 167.03 | 25.05 | 16.70 | 2.51 | 211.29 |
+| | Prepared food and beverages (incl. sugar) | 1,535.03 | 230.25 | 153.50 | 23.03 | 1,941.81 |
+| | Mineral oil and fuel | 3,146.90 | - | - | - | 3,146.90 |
+| | Other mineral products (incl. cement) | 2.78 | 0.42 | 0.27 | 0.04 | 3.51 |
+| | Pharmaceuticals | - | - | - | - | - |
+| | Fertiliser | - | - | - | - | - |
+| | Plastics and rubbers | 5.68 | 0.85 | 0.25 | 0.04 | 6.82 |
+| | Other chemical products | 159.90 | 23.99 | 15.99 | 2.40 | 202.28 |
+| | Leather and shoes | - | - | - | - | - |
+| | Paper and wood products | - | - | - | - | - |
+| | Textiles | 245.38 | 36.81 | 24.53 | 3.68 | 310.40 |
+| | Base metals and articles of base metal | - | - | - | - | - |
+| | Electrical machinery | 20.80 | 3.12 | 2.08 | 0.31 | 26.31 |
+| | Other machinery | 1.05 | 0.16 | 0.10 | 0.02 | 1.33 |
+
+***
+
+© Ministry of Finance, Ethiopia
+
+53 Import tax expenditure report: FY 2018/19 – 2020/21
+
+| | | | | | |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| | Vehicles | 10,514.53 | 1,577.18 | 729.28 | 109.39 | 12,930.38 |
+| | Aircraft | - | - | - | - | - |
+| | Other transport equipment | - | - | - | - | - |
+| | Furniture | - | - | - | - | - |
+| | Others | 32.35 | 4.85 | 3.23 | 0.49 | 40.92 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D). A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Table F.3. VAT expenditure by commodity category in (ETB million), FY 2018/19 to FY 2020/21**
+
+| | Commodity category | Direct effect of VAT | Indirect effect through surtax | Total |
+| :--- | :--- | :---: | :---: | :---: |
+| **2018/19** | Animal products | 65.16 | 5.52 | 70.68 |
+| | Vegetable products | 49.28 | 2.50 | 51.78 |
+| | Animal or vegetable fats | 2,080.41 | 208.16 | 2,288.57 |
+| | Prepared food and beverages (incl. sugar) | 1,716.72 | 172.45 | 1,889.17 |
+| | Mineral oil and fuel | 5,377.82 | 38.05 | 5,415.87 |
+| | Other mineral products (incl. cement) | 228.85 | 22.26 | 251.11 |
+| | Pharmaceuticals | 3,917.83 | 0.00 | 3,917.83 |
+| | Fertiliser | 2,135.63 | - | 2,135.63 |
+| | Plastics and rubbers | 484.78 | 32.87 | 517.65 |
+| | Other chemical products | 1,091.58 | 32.79 | 1,124.37 |
+| | Leather and shoes | 23.25 | 2.29 | 25.54 |
+| | Paper and wood products | 82.79 | 7.65 | 90.44 |
+| | Textiles | 227.08 | 22.69 | 249.77 |
+| | Base metals and articles of base metal | 2,155.50 | 211.17 | 2,366.67 |
+| | Electrical machinery | 3,323.60 | 317.12 | 3,640.72 |
+| | Other machinery | 8,794.55 | 658.21 | 9,452.76 |
+| | Vehicles | 1,270.44 | 41.69 | 1,312.13 |
+| | Aircraft | 6,926.68 | - | 6,926.68 |
+| | Other transport equipment | 255.91 | 1.03 | 256.94 |
+| | Furniture | 395.70 | 38.91 | 434.61 |
+| | Others | 1,270.03 | 39.61 | 1,309.64 |
+| **2019/20** | Animal products | 62.83 | 5.63 | 68.46 |
+| | Vegetable products | 41.06 | 3.33 | 44.39 |
+| | Animal or vegetable fats | 951.24 | 93.84 | 1,045.08 |
+| | Prepared food and beverages (incl. sugar) | 992.88 | 94.18 | 1,087.06 |
+| | Mineral oil and fuel | 8,830.15 | 32.92 | 8,863.07 |
+| | Other mineral products (incl. cement) | 188.90 | 18.12 | 207.02 |
+| | Pharmaceuticals | 2,423.10 | 0.00 | 2,423.10 |
+| | Fertiliser | 2,611.74 | - | 2,611.74 |
+
+© Ministry of Finance, Ethiopia
+
+54 **Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| | Commodity category | | | |
+|---|---|---|---|---|
+| | Plastics and rubbers | 428.32 | 27.28 | 455.60 |
+| | Other chemical products | 1,119.13 | 40.88 | 1,160.01 |
+| | Leather and shoes | 15.85 | 1.44 | 17.29 |
+| | Paper and wood products | 77.75 | 6.58 | 84.33 |
+| | Textiles | 320.75 | 32.03 | 352.78 |
+| | Base metals and articles of base metal | 2,272.33 | 222.79 | 2,495.12 |
+| | Electrical machinery | 2,123.85 | 206.52 | 2,330.37 |
+| | Other machinery | 8,253.36 | 565.18 | 8,818.54 |
+| | Vehicles | 1,528.68 | 80.65 | 1,609.33 |
+| | Aircraft | 276.63 | - | 276.63 |
+| | Other transport equipment | 25.28 | 1.27 | 26.55 |
+| | Furniture | 385.54 | 36.97 | 422.51 |
+| | Others | 938.88 | 33.31 | 972.19 |
+| **2020/21** | Animal products | 66.58 | 5.39 | 71.97 |
+| | Vegetable products | 134.60 | 8.11 | 142.71 |
+| | Animal or vegetable fats | 6,174.95 | 580.55 | 6,755.50 |
+| | Prepared food and beverages (incl. sugar) | 1,896.11 | 183.82 | 2,079.93 |
+| | Mineral oil and fuel | 3,394.37 | 45.14 | 3,439.51 |
+| | Other mineral products (incl. cement) | 141.14 | 11.88 | 153.02 |
+| | Pharmaceuticals | 3,358.54 | 0.00 | 3,358.54 |
+| | Fertiliser | 3,563.71 | - | 3,563.71 |
+| | Plastics and rubbers | 561.42 | 37.51 | 598.93 |
+| | Other chemical products | 1,672.57 | 67.26 | 1,739.83 |
+| | Leather and shoes | 20.45 | 2.04 | 22.49 |
+| | Paper and wood products | 53.25 | 4.71 | 57.96 |
+| | Textiles | 837.87 | 83.75 | 921.62 |
+| | Base metals and articles of base metal | 2,769.17 | 271.40 | 3,040.57 |
+| | Electrical machinery | 3,767.12 | 355.33 | 4,122.45 |
+| | Other machinery | 9,050.45 | 554.65 | 9,605.10 |
+| | Vehicles | 2,306.68 | 82.29 | 2,388.97 |
+| | Aircraft | 707.17 | - | 707.17 |
+| | Other transport equipment | 114.67 | 0.42 | 115.09 |
+| | Furniture | 351.18 | 33.35 | 384.53 |
+| | Others | 1,266.49 | 39.97 | 1,306.46 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D). A dash (-) indicates a value of precisely zero.
+
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Table F.4. Surtax expenditure by commodity category (in ETB million), FY 2018/19 to FY 2020/21**
+
+| | Commodity category | Direct effect of surtax |
+|---|---|---|
+| **2018/19** | Animal products | 35.20 |
+| | Vegetable products | 43.41 |
+
+© Ministry of Finance, Ethiopia
+
+**55 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| Year | Category | Value |
+| :--- | :--- | ---: |
+| | Animal or vegetable fats | 1,351.00 |
+| | Prepared food and beverages (incl. sugar) | 932.60 |
+| | Mineral oil and fuel | 259.47 |
+| | Other mineral products (incl. cement) | 152.34 |
+| | Pharmaceuticals | 0.00 |
+| | Fertiliser | - |
+| | Plastics and rubbers | 254.94 |
+| | Other chemical products | 217.68 |
+| | Leather and shoes | 15.23 |
+| | Paper and wood products | 136.53 |
+| | Textiles | 161.45 |
+| | Base metals and articles of base metal | 1,563.87 |
+| | Electrical machinery | 2,862.16 |
+| | Other machinery | 4,420.12 |
+| | Vehicles | 613.10 |
+| | Aircraft | - |
+| | Other transport equipment | 6.88 |
+| | Furniture | 259.37 |
+| | Others | 246.42 |
+| **2019/20** | Animal products | 33.88 |
+| | Vegetable products | 75.42 |
+| | Animal or vegetable fats | 556.60 |
+| | Prepared food and beverages (incl. sugar) | 493.05 |
+| | Mineral oil and fuel | 228.49 |
+| | Other mineral products (incl. cement) | 122.35 |
+| | Pharmaceuticals | 0.00 |
+| | Fertiliser | - |
+| | Plastics and rubbers | 253.28 |
+| | Other chemical products | 273.30 |
+| | Leather and shoes | 9.54 |
+| | Paper and wood products | 122.93 |
+| | Textiles | 227.86 |
+| | Base metals and articles of base metal | 1,594.77 |
+| | Electrical machinery | 1,931.98 |
+| | Other machinery | 3,782.19 |
+| | Vehicles | 817.36 |
+| | Aircraft | - |
+| | Other transport equipment | 8.48 |
+| | Furniture | 226.59 |
+| | Others | 204.69 |
+| **2020/21** | Animal products | 150.97 |
+| | Vegetable products | 158.55 |
+| | Animal or vegetable fats | 4,153.68 |
+| | Prepared food and beverages (incl. sugar) | 1,542.37 |
+| | Mineral oil and fuel | 304.14 |
+
+***
+
+© Ministry of Finance, Ethiopia
+
+56 **Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| | |
+| :--- | ---: |
+| Other mineral products (incl. cement) | 82.18 |
+| Pharmaceuticals | 0.00 |
+| Fertiliser | - |
+| Plastics and rubbers | 340.48 |
+| Other chemical products | 448.86 |
+| Leather and shoes | 13.58 |
+| Paper and wood products | 115.84 |
+| Textiles | 702.63 |
+| Base metals and articles of base metal | 1,936.57 |
+| Electrical machinery | 3,255.18 |
+| Other machinery | 3,720.46 |
+| Vehicles | 1,009.97 |
+| Aircraft | - |
+| Other transport equipment | 2.80 |
+| Furniture | 226.75 |
+| Others | 278.78 |
+
+Note: Assumes no duplicate reporting of transactions across customs IT systems (see Appendix D). A dash (-) indicates a value of precisely zero.
+Source: Authors’ calculations using data from the Ethiopian Customs Commission.
+
+**Table F.5. Tax expenditure by commodity category (% of expenditure), FY 2018/19 to FY 2020/21**
+
+| | Commodity category | % of total customs duty expenditure | % of total excise tax expenditure | % of total VAT expenditure | % of total surtax expenditure | Total by commodity (% of total import tax expenditure) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **2018/19** | Animal products | 0.1% | 0.0% | 0.2% | 0.3% | 0.1% |
+| | Vegetable products | 2.2% | 0.0% | 0.1% | 0.3% | 0.8% |
+| | Animal or vegetable fats | 15.4% | 0.0% | 5.2% | 10.0% | 8.3% |
+| | Prepared food and beverages (incl. sugar) | 5.9% | 24.0% | 4.3% | 6.9% | 7.6% |
+| | Mineral oil and fuel | 0.8% | 44.0% | 12.4% | 1.9% | 11.4% |
+| | Other mineral products (incl. cement) | 2.5% | 0.0% | 0.6% | 1.1% | 1.2% |
+| | Pharmaceuticals | 0.5% | 0.0% | 9.0% | 0.0% | 4.1% |
+| | Fertiliser | 0.0% | 0.0% | 4.9% | 0.0% | 2.2% |
+| | Plastics and rubbers | 3.9% | 0.0% | 1.2% | 1.9% | 1.9% |
+| | Other chemical products | 3.9% | 2.7% | 2.6% | 1.6% | 2.9% |
+| | Leather and shoes | 0.2% | 0.0% | 0.1% | 0.1% | 0.1% |
+| | Paper and wood products | 1.2% | 0.0% | 0.2% | 1.0% | 0.6% |
+| | Textiles | 2.4% | 1.5% | 0.6% | 1.2% | 1.3% |
+
+© Ministry of Finance, Ethiopia
+
+**57 Import tax expenditure report: FY 2018/19 – 2020/21**
+
+| Year | Category | | | | | |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| | Base metals and articles of base metal | 13.6% | 0.0% | 5.4% | 11.6% | 8.0% |
+| | Electrical machinery | 15.2% | 0.6% | 8.3% | 21.2% | 11.2% |
+| | Other machinery | 12.1% | 0.2% | 21.6% | 32.7% | 17.6% |
+| | Vehicles | 13.6% | 24.8% | 3.0% | 4.5% | 9.1% |
+| | Aircraft | 0.0% | 0.0% | 15.8% | 0.0% | 7.0% |
+| | Other transport equipment | 0.0% | 0.0% | 0.6% | 0.1% | 0.3% |
+| | Furniture | 3.5% | 0.0% | 1.0% | 1.9% | 1.7% |
+| | Others | 3.0% | 2.2% | 3.0% | 1.8% | 2.7% |
+| **2019/20** | Animal products | 0.2% | 0.0% | 0.2% | 0.3% | 0.2% |
+| | Vegetable products | 2.5% | 0.0% | 0.1% | 0.7% | 0.9% |
+| | Animal or vegetable fats | 8.2% | 0.0% | 3.0% | 5.1% | 4.5% |
+| | Prepared food and beverages (incl. sugar) | 3.8% | 22.7% | 3.1% | 4.5% | 5.7% |
+| | Mineral oil and fuel | 1.1% | 54.7% | 25.1% | 2.1% | 18.0% |
+| | Other mineral products (incl. cement) | 3.4% | 0.3% | 0.6% | 1.1% | 1.5% |
+| | Pharmaceuticals | 0.4% | 0.0% | 6.9% | 0.0% | 3.2% |
+| | Fertiliser | 0.0% | 0.0% | 7.4% | 0.0% | 3.3% |
+| | Plastics and rubbers | 4.8% | 0.0% | 1.3% | 2.3% | 2.3% |
+| | Other chemical products | 4.2% | 2.5% | 3.3% | 2.5% | 3.4% |
+| | Leather and shoes | 0.2% | 0.0% | 0.0% | 0.1% | 0.1% |
+| | Paper and wood products | 1.7% | 0.0% | 0.2% | 1.1% | 0.8% |
+| | Textiles | 4.1% | 3.3% | 1.0% | 2.1% | 2.3% |
+| | Base metals and articles of base metal | 15.7% | 0.0% | 7.1% | 14.5% | 9.9% |
+| | Electrical machinery | 13.2% | 1.3% | 6.6% | 17.6% | 9.5% |
+| | Other machinery | 13.0% | 0.1% | 24.9% | 34.5% | 20.0% |
+| | Vehicles | 16.0% | 11.9% | 4.5% | 7.5% | 9.2% |
+| | Aircraft | 0.0% | 0.0% | 0.8% | 0.0% | 0.4% |
+| | Other transport equipment | 0.0% | 0.0% | 0.1% | 0.1% | 0.1% |
+| | Furniture | 4.0% | 0.0% | 1.2% | 2.1% | 2.0% |
+| | Others | 3.3% | 3.1% | 2.7% | 1.9% | 2.8% |
+| **2020/21** | Animal products | 0.2% | 0.0% | 0.2% | 0.8% | 0.2% |
+| | Vegetable products | 3.3% | 0.0% | 0.3% | 0.9% | 1.3% |
+| | Animal or vegetable fats | 27.5% | 1.1% | 15.2% | 22.5% | 18.1% |
+| | Prepared food and beverages (incl. sugar) | 3.6% | 10.3% | 4.7% | 8.4% | 5.8% |
+| | Mineral oil and fuel | 0.6% | 16.7% | 7.7% | 1.6% | 5.9% |
+
+© Ministry of Finance, Ethiopia
+
+
+
+
+
