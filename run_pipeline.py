@@ -15,6 +15,7 @@ import json
 import os
 from pathlib import Path
 from typing import List
+from pypdf import PdfReader, PdfWriter
 
 from src.agents.triage import TriageAgent
 from src.agents.extractor import ExtractionRouter
@@ -53,11 +54,61 @@ def ingest_vector_store(ldus, out_dir: Path, doc_id: str) -> None:
                 "page_refs": ldu.page_refs,
                 "bounding_box": ldu.bounding_box,
                 "content_hash": ldu.content_hash,
+                "parent_section": ldu.parent_section,
                 "metadata": ldu.metadata,
             }
         )
     json.dump(payloads, path.open("w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
+def split_large_pdf(pdf_path: Path) -> List[Path]:
+    """
+    Split large PDFs automatically based on page count.
+    Returns a list of PDFs to process.
+    """
+
+    reader = PdfReader(str(pdf_path))
+    total_pages = len(reader.pages)
+
+    # Small documents: no split
+    if total_pages < 15:
+        return [pdf_path]
+
+    # Decide number of parts
+    if total_pages < 200:
+        parts = 3
+    else:
+        parts = 4
+
+    pages_per_part = total_pages // parts + 1
+
+    split_dir = pdf_path.parent / "split_parts"
+    split_dir.mkdir(exist_ok=True)
+
+    output_files = []
+
+    for part in range(parts):
+
+        start = part * pages_per_part
+        end = min(start + pages_per_part, total_pages)
+
+        if start >= total_pages:
+            break
+
+        writer = PdfWriter()
+
+        for i in range(start, end):
+            writer.add_page(reader.pages[i])
+
+        part_path = split_dir / f"{pdf_path.stem}_part{part+1}.pdf"
+
+        with open(part_path, "wb") as f:
+            writer.write(f)
+
+        output_files.append(part_path)
+
+    print(f"Split {pdf_path.name} into {len(output_files)} parts")
+
+    return output_files
 
 def process_pdf(pdf_path: Path, args) -> None:
     triage = TriageAgent()
@@ -94,6 +145,51 @@ def process_pdf(pdf_path: Path, args) -> None:
     print(f"  FactTable -> {fact_db_path}")
     print(f"  Vector payload -> {base_dir/'vector_store'/(profile.doc_id + '.json')}")
 
+def merge_pipeline_outputs(original_doc: str, part_ids: List[str]):
+
+    base_dir = Path(".refinery")
+
+    merged_chunks = []
+    merged_vectors = []
+    merged_text = []
+
+    for pid in part_ids:
+
+        chunk_file = base_dir / "chunks" / f"{pid}.json"
+        if chunk_file.exists():
+            merged_chunks.extend(json.load(chunk_file.open()))
+
+        vector_file = base_dir / "vector_store" / f"{pid}.json"
+        if vector_file.exists():
+            merged_vectors.extend(json.load(vector_file.open()))
+
+        text_file = base_dir / "fulltext" / f"{pid}.txt"
+        if text_file.exists():
+            merged_text.append(text_file.read_text())
+
+    # write merged chunks
+    json.dump(
+        merged_chunks,
+        (base_dir / "chunks" / f"{original_doc}.json").open("w"),
+        indent=2,
+        ensure_ascii=False,
+    )
+
+    # write merged vectors
+    json.dump(
+        merged_vectors,
+        (base_dir / "vector_store" / f"{original_doc}.json").open("w"),
+        indent=2,
+        ensure_ascii=False,
+    )
+
+    # write merged text
+    (base_dir / "fulltext" / f"{original_doc}.txt").write_text(
+        "\n\n".join(merged_text),
+        encoding="utf-8"
+    )
+
+    print(f"Merged pipeline outputs for {original_doc}")
 
 def find_pdfs(input_path: Path) -> List[Path]:
     if input_path.is_file() and input_path.suffix.lower() == ".pdf":
@@ -112,7 +208,16 @@ def main():
         raise SystemExit(f"No PDFs found at {input_path}")
 
     for pdf in pdfs:
-        process_pdf(pdf, args)
+        pdf_parts = split_large_pdf(pdf)
+
+        part_ids = []
+
+        for part in pdf_parts:
+            process_pdf(part, args)
+            part_ids.append(part.stem)
+
+        if len(part_ids) > 1:
+            merge_pipeline_outputs(pdf.stem, part_ids)
 
 
 if __name__ == "__main__":
