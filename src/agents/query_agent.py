@@ -17,6 +17,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Protocol
 
+
 from pydantic import BaseModel, Field
 
 from src.models.extracted import ExtractedDocument
@@ -45,12 +46,8 @@ class VectorStore(Protocol):
 class FactTable:
     db_path: str = ":memory:"
 
-    def __post_init__(self):
-        self.conn = sqlite3.connect(self.db_path)
-        self._init()
-
-    def _init(self):
-        cur = self.conn.cursor()
+    def _init(self, conn):
+        cur = conn.cursor()
         cur.execute(
             """
             CREATE TABLE IF NOT EXISTS facts (
@@ -63,20 +60,28 @@ class FactTable:
             )
             """
         )
-        self.conn.commit()
+        conn.commit()
 
     def add_fact(self, doc_id: str, page: int, key: str, value: float, unit: str = ""):
-        cur = self.conn.cursor()
-        cur.execute(
-            "INSERT INTO facts (doc_id, page_number, fact_key, fact_value, unit) VALUES (?, ?, ?, ?, ?)",
-            (doc_id, page, key, value, unit),
-        )
-        self.conn.commit()
+        with sqlite3.connect(self.db_path) as conn:
+            self._init(conn)
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO facts (doc_id, page_number, fact_key, fact_value, unit) VALUES (?, ?, ?, ?, ?)",
+                (doc_id, page, key, value, unit),
+            )
+            conn.commit()
 
     def query(self, key: str) -> List[Dict[str, Any]]:
-        cur = self.conn.cursor()
-        cur.execute("SELECT doc_id, page_number, fact_key, fact_value, unit FROM facts WHERE fact_key = ?", (key,))
-        rows = cur.fetchall()
+        with sqlite3.connect(self.db_path) as conn:
+            self._init(conn)
+            cur = conn.cursor()
+            cur.execute(
+                "SELECT doc_id, page_number, fact_key, fact_value, unit FROM facts WHERE fact_key = ?",
+                (key,),
+            )
+            rows = cur.fetchall()
+
         return [
             {
                 "doc_id": r[0],
@@ -94,7 +99,7 @@ class QueryAgent:
         self,
         vector_store: Optional[VectorStore] = None,
         pageindex_dir: Path | str = ".refinery/pageindex",
-        fact_db_path: str = ":memory:",
+        fact_db_path=".refinery/facts/facts.db"
     ):
         self.vector_store = vector_store
         self.pageindex_dir = Path(pageindex_dir)
@@ -152,10 +157,23 @@ class QueryAgent:
 
     def ingest_facts(self, doc: ExtractedDocument) -> None:
         num_pattern = re.compile(r"([A-Za-z][A-Za-z0-9_]+)\s*[:=]?\s*([\d,]+(?:\.\d+)?)")
+
         for page in doc.pages:
-            for match in num_pattern.finditer(page.full_text or ""):
+            text = page.full_text or ""
+
+            for match in num_pattern.finditer(text):
                 key = match.group(1)
-                val = float(match.group(2).replace(",", ""))
+                value_str = match.group(2)
+
+                # Skip empty or invalid values
+                if not value_str:
+                    continue
+
+                try:
+                    val = float(value_str.replace(",", ""))
+                except ValueError:
+                    continue
+
                 self.fact_table.add_fact(doc.doc_id, page.page_number, key, val)
 
     def _format_fact_answer(self, facts: List[Dict[str, Any]]) -> str:
