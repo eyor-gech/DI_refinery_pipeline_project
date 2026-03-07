@@ -13,3 +13,4 @@ test_outputs/
 run_layout_extractor.py
 .env
 run_extraction_pipeline.py
+gradio_rag_app.py
