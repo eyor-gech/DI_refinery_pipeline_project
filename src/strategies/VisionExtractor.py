@@ -204,7 +204,7 @@ class VisionExtractor(BaseModel):
 
     # Helpers ------------------------------------------------------------------
     def _page_image_b64(self, page) -> str:
-        img = page.to_image(resolution=200).original
+        img = page.to_image(resolution=300).original
         from io import BytesIO
 
         buf = BytesIO()
