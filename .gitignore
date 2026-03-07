@@ -14,3 +14,4 @@ run_layout_extractor.py
 .env
 run_extraction_pipeline.py
 gradio_rag_app.py
+run_pipeline2.py
