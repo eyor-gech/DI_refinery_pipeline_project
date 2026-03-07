@@ -1,25 +1,38 @@
-# streamlit_rag_demo.py
+"""
+Refinery Pipeline – Streamlit Demonstration Dashboard
+Tabs: Documents | Pipeline | Query | Audit | Debug
+This UI visualizes the end-to-end capabilities of the backend pipeline without
+modifying backend logic.
+"""
+
+from __future__ import annotations
+
 import json
-import shutil
+import time
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 from PyPDF2 import PdfReader
-import pandas as pd
 
-from src.agents.triage import TriageAgent
-from src.agents.extractor import ExtractionRouter
 from src.agents.chunker import ChunkingEngine
+from src.agents.extractor import ExtractionRouter
 from src.agents.indexer import PageIndexBuilder
 from src.agents.query_agent import QueryAgent
+from src.agents.triage import TriageAgent
 from src.utils.vector_store import SimpleVectorStore
 
-# ---------------- Directories ----------------
+# -----------------------------------------------------------------------------#
+# Global configuration and session state
+# -----------------------------------------------------------------------------#
+st.set_page_config(page_title="Refinery Document Intelligence", layout="wide")
+
 REFINERY_DIR = Path(".refinery")
 UPLOADS_DIR = REFINERY_DIR / "uploads"
 UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+FACTS_DIR = REFINERY_DIR / "facts"
+FACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# ---------------- Session State ----------------
 if "vector_store" not in st.session_state:
     st.session_state.vector_store = SimpleVectorStore()
 
@@ -27,139 +40,273 @@ if "query_agent" not in st.session_state:
     st.session_state.query_agent = QueryAgent(
         vector_store=st.session_state.vector_store,
         pageindex_dir=REFINERY_DIR / "pageindex",
-        fact_db_path=str(REFINERY_DIR / "facts" / "facts.db"),
+        fact_db_path=str(FACTS_DIR / "facts.db"),
     )
-if "session_history" not in st.session_state:
-    st.session_state.session_history = []
 
-# ---------------- Helper Functions ----------------
-def process_uploaded_pdf(pdf_file):
-    if pdf_file is None:
-        return "No file uploaded.", None, None, None
+if "pipeline_outputs" not in st.session_state:
+    st.session_state.pipeline_outputs = {}
 
-    # Save PDF
-    pdf_path = UPLOADS_DIR / pdf_file.name
+if "last_query" not in st.session_state:
+    st.session_state.last_query = {"question": "", "result": None, "retrieved": []}
+
+# -----------------------------------------------------------------------------#
+# Helper functions
+# -----------------------------------------------------------------------------#
+def upload_document():
+    """Upload PDF and display basic file info."""
+    st.subheader("Upload Document")
+    uploaded = st.file_uploader("Upload a PDF", type=["pdf"])
+    info = {}
+    if uploaded:
+        uploaded.seek(0)
+        info["name"] = uploaded.name
+        info["size_mb"] = round(len(uploaded.getbuffer()) / (1024 * 1024), 2)
+        try:
+            reader = PdfReader(uploaded)
+            info["pages"] = len(reader.pages)
+        except Exception:
+            info["pages"] = "Unknown"
+        st.info(f"Selected: **{info['name']}** · {info['size_mb']} MB · {info['pages']} pages")
+    return uploaded, info
+
+
+def run_full_pipeline(uploaded_file):
+    """Run triage → extraction → chunking → indexing → storage."""
+    start = time.perf_counter()
+    pdf_path = UPLOADS_DIR / uploaded_file.name
+    uploaded_file.seek(0)
     with open(pdf_path, "wb") as f:
-        f.write(pdf_file.read())
+        f.write(uploaded_file.read())
 
-    # Step 1: Triage
-    triage = TriageAgent()
-    profile = triage.profile(pdf_path)
-
-    # Step 2: Extraction
-    router = ExtractionRouter()
-    extracted = router.route(pdf_path, profile)
-
+    triage_agent = TriageAgent()
+    extractor = ExtractionRouter()
     chunker = ChunkingEngine()
-    ldus = chunker.chunk(extracted)
-    for ldu in ldus:
-        st.session_state.vector_store.add(
-            ldu.content,
+    indexer = PageIndexBuilder()
+
+    outputs = {"doc_path": pdf_path}
+
+    with st.status("Running pipeline...", expanded=True) as status:
+        st.write("Triage classification")
+        profile = triage_agent.profile(pdf_path)
+        outputs["profile"] = profile
+
+        st.write("Extraction (strategy routed)")
+        extracted = extractor.route(pdf_path, profile)
+        outputs["extracted"] = extracted
+
+        st.write("Chunking")
+        ldus = chunker.chunk(extracted)
+        outputs["ldus"] = ldus
+
+        st.write("Indexing & storage")
+        page_index = indexer.build_index(extracted)
+        outputs["page_index"] = page_index
+
+        # Vector store ingestion with provenance metadata
+        for ldu in ldus:
+            st.session_state.vector_store.add(
+                ldu.content,
+                {
+                    "doc_id": extracted.doc_id,
+                    "page_number": ldu.page_refs[0] if ldu.page_refs else 0,
+                    "bounding_box": ldu.bounding_box,
+                    "content_hash": ldu.content_hash,
+                    "parent_section": ldu.parent_section,
+                    "content": ldu.content,
+                },
+            )
+
+        vector_store_dir = REFINERY_DIR / "vector_store"
+        vector_store_dir.mkdir(exist_ok=True)
+        vector_path = vector_store_dir / f"{extracted.doc_id}.json"
+        payloads = [
             {
                 "doc_id": extracted.doc_id,
-                "page_number": ldu.page_refs[0] if ldu.page_refs else 0,
                 "content": ldu.content,
-            },
+                "page_refs": ldu.page_refs,
+                "bounding_box": ldu.bounding_box,
+                "content_hash": ldu.content_hash,
+                "parent_section": ldu.parent_section,
+            }
+            for ldu in ldus
+        ]
+        vector_path.write_text(json.dumps(payloads, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        # Fact ingestion
+        FACTS_DIR.mkdir(parents=True, exist_ok=True)
+        st.session_state.query_agent.ingest_facts(extracted)
+
+        outputs["processing_time_s"] = round(time.perf_counter() - start, 2)
+        outputs["vector_path"] = vector_path
+        outputs["chunks_count"] = len(ldus)
+        outputs["pages_count"] = len(extracted.pages)
+        status.update(label="Pipeline complete", state="complete")
+
+    st.session_state.pipeline_outputs = outputs
+    return outputs
+
+
+def pipeline_panel():
+    """Pipeline status visualization."""
+    outputs = st.session_state.pipeline_outputs
+    if not outputs:
+        st.info("Run the pipeline in the Documents tab first.")
+        return
+
+    stages = ["Triage", "Extraction", "Chunking", "Indexing", "Storage"]
+    cols = st.columns(len(stages))
+    for col, stage in zip(cols, stages):
+        col.metric(stage, "Complete", delta="✓")
+
+    st.progress(100, text="Pipeline finished")
+    st.caption(
+        f"Pages processed: {outputs.get('pages_count', 0)} · "
+        f"Chunks generated: {outputs.get('chunks_count', 0)} · "
+        f"Vector index: {outputs.get('vector_path', 'n/a')}"
     )
-        
-    indexer = PageIndexBuilder()
-    page_index = indexer.build_index(extracted)
 
-    # Persist vector store (JSON placeholder)
-    vector_store_dir = REFINERY_DIR / "vector_store"
-    vector_store_dir.mkdir(exist_ok=True)
-    vector_path = vector_store_dir / f"{extracted.doc_id}.json"
-    payloads = [{"doc_id": extracted.doc_id, "content": ldu.content, "page_refs": ldu.page_refs, "bounding_box": ldu.bounding_box, "content_hash": ldu.content_hash} for ldu in ldus]
-    with vector_path.open("w", encoding="utf-8") as f:
-        json.dump(payloads, f, ensure_ascii=False, indent=2)
 
-    # Persist facts
-    facts_dir = REFINERY_DIR / "facts"
-    facts_dir.mkdir(exist_ok=True)
-    fact_db_path = facts_dir / f"{extracted.doc_id}.db"
-    st.session_state.query_agent.ingest_facts(extracted)
+def query_interface():
+    """Question answering interface."""
+    st.subheader("Semantic Query")
+    question = st.text_input("Ask a question about the uploaded document...", key="query_input")
+    if st.button("Submit Query"):
+        if not st.session_state.pipeline_outputs:
+            st.warning("Please run the pipeline first.")
+            return
 
-    return f"PDF processed: {pdf_file.name}", profile, extracted, page_index
+        with st.spinner("Running QueryAgent..."):
+            result = st.session_state.query_agent.answer(question)
+            st.session_state.last_query = {"question": question, "result": result}
+            # Capture retrieved chunks for debug/provenance view
+            retrieved = st.session_state.vector_store.search(question, top_k=5)
+            st.session_state.last_query["retrieved"] = retrieved
 
-def ask_question(query):
-    if not query.strip():
-        return "", [], st.session_state.session_history
+        st.success("Answer generated")
+        st.markdown(f"### Answer\n{result.answer}")
+        display_provenance(result)
 
-    result = st.session_state.query_agent.answer(query)
-    st.session_state.session_history.append({"question": query, "answer": result.answer})
 
-    provenance_table = [
-        [p.document_name, p.page_number, p.bounding_box, p.content_hash]
-        for p in result.provenance
-    ]
-    return result.answer, provenance_table, st.session_state.session_history
+def display_provenance(result):
+    """Provenance display with expanders."""
+    st.subheader("Provenance")
+    if not result or not result.provenance:
+        st.info("No provenance available.")
+        return
 
-def display_pdf(pdf_path):
-    try:
-        reader = PdfReader(str(pdf_path))
-        text_preview = "\n\n".join(page.extract_text()[:500] for page in reader.pages)
-        st.text_area("PDF Text Preview (first 500 chars per page)", text_preview, height=300)
-    except Exception:
-        st.warning("Cannot preview PDF content")
+    for i, p in enumerate(result.provenance, 1):
+        with st.expander(f"Source {i}: {p.document_name} · Page {p.page_number}"):
+            st.markdown(
+                f"- **Document:** {p.document_name}\n"
+                f"- **Page:** {p.page_number}\n"
+                f"- **Bounding Box:** {p.bounding_box}\n"
+                f"- **Content Hash:** `{p.content_hash}`"
+            )
+            # Locate matching chunk for preview
+            preview = ""
+            for chunk in st.session_state.last_query.get("retrieved", []):
+                if p.content_hash and chunk.get("content_hash") == p.content_hash:
+                    preview = chunk.get("content", "")
+                    break
+                if chunk.get("page_number") == p.page_number:
+                    preview = chunk.get("content", "")
+                    break
+            if preview:
+                st.write("**View Retrieved Chunk**")
+                st.code(preview, language="markdown")
 
-# ---------------- Streamlit UI ----------------
-st.set_page_config(page_title="Refinery RAG Demo", layout="wide")
-st.title("Refinery RAG Demo - 4 Step Pipeline")
 
-tabs = st.tabs(["Step 1: Triage", "Step 2: Extraction", "Step 3: PageIndex", "Step 4: Query"])
+def audit_verification():
+    """Audit mode: verify claims with provenance."""
+    st.subheader("Audit Mode")
+    claim = st.text_input("Enter a claim to verify", placeholder="Company revenue increased in 2023")
+    if st.button("Verify Claim"):
+        if not st.session_state.pipeline_outputs:
+            st.warning("Run the pipeline first.")
+            return
+        with st.spinner("Auditing claim..."):
+            result = st.session_state.query_agent.audit_claim(claim)
+            verdict = "Verified with citation" if result.audited else "Unverifiable"
+        st.markdown(f"### Result: {verdict}")
+        display_provenance(result)
 
-# ---------------- Step 1: Triage ----------------
+
+def debug_panel():
+    """Expose debug information for grading or troubleshooting."""
+    st.subheader("Debug / Trace")
+    last = st.session_state.last_query
+    retrieved = last.get("retrieved", [])
+    st.write(f"Retrieved chunks: {len(retrieved)}")
+    with st.expander("Retrieved Chunks"):
+        if retrieved:
+            st.dataframe(pd.DataFrame(retrieved))
+        else:
+            st.info("No chunks retrieved yet.")
+
+    with st.expander("Tool / Agent Used"):
+        st.write("Semantic search via QueryAgent + SimpleVectorStore")
+
+    with st.expander("LLM Prompt Preview"):
+        st.code("Prompt constructed inside QueryAgent._synthesize_answer", language="text")
+
+    with st.expander("Response Metadata"):
+        result = last.get("result")
+        if result:
+            st.json({"audited": result.audited, "facts_used": result.facts_used})
+        else:
+            st.info("No responses yet.")
+
+
+def documents_tab():
+    """Documents tab: upload + run pipeline."""
+    uploaded, info = upload_document()
+    if uploaded:
+        st.divider()
+        cols = st.columns(3)
+        cols[0].metric("File Size (MB)", info.get("size_mb", 0))
+        cols[1].metric("Pages", info.get("pages", "Unknown"))
+        cols[2].metric("Status", "Ready for processing")
+
+        if st.button("Run Pipeline", type="primary"):
+            outputs = run_full_pipeline(uploaded)
+            st.success(
+                f"Processed {info.get('name')} in {outputs.get('processing_time_s', 0)}s "
+                f"using strategy {outputs['extracted'].extractor}"
+            )
+            with st.expander("Triage Classification"):
+                st.json(outputs["profile"].model_dump())
+
+
+def pipeline_tab():
+    st.subheader("Pipeline Visualization")
+    pipeline_panel()
+
+
+def query_tab():
+    query_interface()
+
+
+def audit_tab():
+    audit_verification()
+
+
+def debug_tab():
+    debug_panel()
+
+
+# -----------------------------------------------------------------------------#
+# Layout
+# -----------------------------------------------------------------------------#
+st.title("Refinery Pipeline Dashboard")
+tabs = st.tabs(["Documents", "Pipeline", "Query", "Audit", "Debug"])
+
 with tabs[0]:
-    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
-    use_vlm_first = st.checkbox(
-        "Skip OCR and use VLM directly (Qwen/Gemini)", value=False
-    )
-    if st.button("Process PDF for Triage"):
-        status_msg, profile, extracted, page_index = process_uploaded_pdf(uploaded_file)
-        st.success(status_msg)
-        if profile:
-            st.subheader("Document Profile (Triage)")
-            st.json(profile.model_dump())
-            st.subheader("Extraction Strategy Plan")
-            st.text(extracted.extractor)
-
-# ---------------- Step 2: Extraction ----------------
+    documents_tab()
 with tabs[1]:
-    if 'extracted' in locals() and extracted:
-        st.subheader("Original PDF")
-        display_pdf(UPLOADS_DIR / uploaded_file.name)
-        st.subheader("Extracted JSON Chunks")
-        chunks_preview = [{"content": ldu.content, "chunk_type": ldu.chunk_type, "page_refs": ldu.page_refs} for ldu in ChunkingEngine().chunk(extracted)]
-        st.json(chunks_preview)
-
-        st.subheader("Extraction Ledger (last 5 entries)")
-        ledger_path = REFINERY_DIR / "extraction_ledger.jsonl"
-        if ledger_path.exists():
-            with open(ledger_path) as f:
-                lines = f.readlines()[-5:]
-            st.json([json.loads(l) for l in lines])
-    else:
-        st.info("Upload and process a PDF in Step 1 first.")
-
-# ---------------- Step 3: PageIndex ----------------
+    pipeline_tab()
 with tabs[2]:
-    if 'page_index' in locals() and page_index:
-        st.subheader("PageIndex Tree")
-        st.code(json.dumps(page_index.model_dump(), indent=2))
-    else:
-        st.info("Process a PDF in Step 1 first.")
-
-# ---------------- Step 4: Query ----------------
+    query_tab()
 with tabs[3]:
-    query_input = st.text_input("Enter your question:")
-    if st.button("Ask Question"):
-        answer, provenance, chat_history = ask_question(query_input)
-        st.subheader("Answer")
-        st.write(answer)
-
-        st.subheader("Provenance")
-        st.dataframe(pd.DataFrame(provenance, columns=["Document", "Page", "Bounding Box", "Content Hash"]))
-
-        st.subheader("Chat History")
-        for turn in chat_history:
-            st.markdown(f"**Q:** {turn['question']}\n**A:** {turn['answer']}")
+    audit_tab()
+with tabs[4]:
+    debug_tab()
