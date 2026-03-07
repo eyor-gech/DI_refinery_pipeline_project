@@ -11,6 +11,7 @@ import json
 import re
 from pathlib import Path
 from typing import List
+import subprocess
 
 from pydantic import BaseModel, Field, ConfigDict
 
@@ -50,12 +51,34 @@ class PageIndexBuilder:
         self._save(index)
         return index
 
+    # Navigation helpers ---------------------------------------------------
+    def topic_traversal(self, index: PageIndex) -> List[str]:
+        titles: List[str] = []
+        def walk(nodes: List[SectionNode]):
+            for n in nodes:
+                titles.append(n.title)
+                walk(n.child_sections)
+        walk(index.sections)
+        return titles
+
+    def top_sections(self, index: PageIndex, query: str, n: int = 3) -> List[SectionNode]:
+        scored = []
+        q = query.lower()
+        for sec in index.sections:
+            score = sec.title.lower().count(q) + sec.summary.lower().count(q)
+            scored.append((score, sec))
+            for child in sec.child_sections:
+                score_child = child.title.lower().count(q) + child.summary.lower().count(q)
+                scored.append((score_child, child))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return [s for _, s in scored[:n] if _ > 0] or [sec for _, sec in scored[:n]]
+
     # Internal helpers ------------------------------------------------------
     def _build_page_node(self, page: PageExtractionResult) -> SectionNode:
         child_sections = self._detect_child_sections(page)
         key_entities = self._extract_entities(page.full_text)
         data_types = self._detect_data_types(page)
-        summary = self._summarize(page.full_text)
+        summary = self._llm_summarize(page.full_text)
         title = f"Page {page.page_number}"
         return SectionNode(
             title=title,
@@ -82,7 +105,7 @@ class PageIndexBuilder:
                         page_end=page.page_number,
                         child_sections=[],
                         key_entities=self._extract_entities(stripped),
-                        summary=self._summarize(stripped),
+                        summary=self._llm_summarize(stripped),
                         data_types_present=self._detect_data_types(page),
                     )
                 )
@@ -108,6 +131,8 @@ class PageIndexBuilder:
             types.add("figure")
         if any(ch.isdigit() for ch in page.full_text or ""):
             types.add("numeric")
+        if "=" in (page.full_text or ""):
+            types.add("equation")
         if page.full_text:
             types.add("text")
         return sorted(types)
@@ -115,6 +140,28 @@ class PageIndexBuilder:
     def _summarize(self, text: str, max_words: int = 40) -> str:
         words = (text or "").split()
         return " ".join(words[:max_words])
+
+    def _llm_summarize(self, text: str) -> str:
+        """Attempt a fast LLM summary via Ollama gemini-flash, fall back to heuristic."""
+        if not text:
+            return ""
+        try:
+            import shutil
+            import os
+
+            if shutil.which("ollama") and os.getenv("ENABLE_OLLAMA", "0") == "1":
+                prompt = f"Summarize briefly: {text[:500]}"
+                result = subprocess.run(
+                    ["ollama", "run", "gemini-3-flash-preview", prompt],
+                    capture_output=True,
+                    text=True,
+                    timeout=5,
+                )
+                if result.returncode == 0 and result.stdout.strip():
+                    return result.stdout.strip().splitlines()[0][:400]
+        except Exception:
+            pass
+        return self._summarize(text)
 
     def _save(self, index: PageIndex) -> None:
         path = self.output_dir / f"{index.doc_id}.json"

@@ -1,25 +1,24 @@
 """
 VisionExtractor
 ---------------
-Strategy C: OCR + VLM hybrid extraction for scanned or low-quality pages.
-Uses pytesseract first, then escalates to a multimodal VLM (OpenRouter) when OCR is insufficient.
-Includes per-document budget guard (token/cost).
+Strategy C (vision-first): Gemini-3-Flash-Preview via Ollama is the primary extractor for
+all page images (Amharic + English, multi-column, tables, figures). Budget-aware
+fallbacks (qwen2-vl-72b-instruct, gemini-2.5-flash) remain available through the
+existing CostTracker.
 """
 from __future__ import annotations
 
 import base64
+import hashlib
 import logging
 import os
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, Iterable, List, Tuple
+from typing import Dict, List, Tuple
 
 import requests
-from dotenv import load_dotenv
-
 import pdfplumber
-import pytesseract
 from pydantic import BaseModel, ConfigDict, Field
 
 from src.models.extracted import BoundingBox, ExtractedDocument, PageExtractionResult, TextBlock
@@ -27,7 +26,7 @@ from src.models.extracted import BoundingBox, ExtractedDocument, PageExtractionR
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
-load_dotenv() 
+
 @dataclass
 class CostTracker:
     """Tracks token usage and cost per document."""
@@ -48,19 +47,18 @@ class CostTracker:
 
 class VisionExtractor(BaseModel):
     """
-    Vision-based extractor with OCR-first, VLM-fallback strategy.
+    Vision-first extractor with Gemini primary and VLM fallbacks.
     """
 
     cost_cap_usd: float = 1.0
+    primary_model: str = "gemini-3-flash-preview"
+    primary_cost_per_token: float = 0.0000025
     vlm_models: Dict[str, float] = Field(
         default_factory=lambda: {
-            "qwen2-vl-72b-instruct": 0.0000025,  # cost per token USD (example)
+            "qwen2-vl-72b-instruct": 0.0000025,
             "gemini-2.5-flash": 0.0000020,
         }
     )
-    languages: Tuple[str, ...] = ("eng", "amh", "osd")
-    ocr_min_chars: int = 50
-    ocr_density_threshold: float = 1e-5
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     def extract(self, pdf_path: Path | str) -> ExtractedDocument:
@@ -75,19 +73,26 @@ class VisionExtractor(BaseModel):
         with pdfplumber.open(pdf_path) as pdf:
             for page_number, page in enumerate(pdf.pages, start=1):
                 page_start = time.perf_counter()
-                text, confidence = self._run_ocr(page)
+                text = ""
+                confidence = "high_confidence"
 
-                # Heuristic: if OCR result is weak, escalate
-                if len(text.strip()) < self.ocr_min_chars or confidence == "low_confidence":
-                    fallback_text = self._try_vlm(page, cost_tracker)
+                try:
+                    text, tokens = self._run_gemini_primary(page, cost_tracker)
+                    cost_tracker.record(self.primary_model, tokens, tokens * self.primary_cost_per_token)
+                except Exception as exc:
+                    logger.warning("Primary Gemini extraction failed on page %s: %s", page_number, exc)
+                    confidence = "low_confidence"
+
+                if not text.strip():
+                    fallback_text = self._try_vlm_fallback(page, cost_tracker)
                     if fallback_text:
                         text = fallback_text
                         confidence = "high_confidence"
-                    else:
-                        confidence = "low_confidence"
 
                 page_time_ms = (time.perf_counter() - page_start) * 1000
                 page_result = self._page_result(page, page_number, text, confidence, page_time_ms)
+                # attach content hash for provenance consumers
+                page_result.__dict__["content_hash"] = hashlib.sha256(text.encode("utf-8")).hexdigest() if text else ""
                 pages.append(page_result)
 
         total_time_ms = (time.perf_counter() - start) * 1000
@@ -106,103 +111,82 @@ class VisionExtractor(BaseModel):
             total_time_ms=total_time_ms,
         )
 
-    # OCR path -----------------------------------------------------------------
-    def _run_ocr(self, page) -> Tuple[str, str]:
-        try:
-            image = page.to_image(resolution=200).original
-        except Exception as exc:  # pragma: no cover - pdf rendering fallback
-            logger.warning("Falling back to rasterize page: %s", exc)
-            image = None
-
-        text = ""
-        for lang in self.languages:
-            try:
-                text = pytesseract.image_to_string(image, lang=lang)
-                if text and len(text.strip()) >= self.ocr_min_chars:
-                    break
-            except Exception:  # pragma: no cover - tesseract issues
-                continue
-
-        confidence = "high_confidence" if len(text.strip()) >= self.ocr_min_chars else "low_confidence"
-        return text, confidence
-
-    # VLM path -----------------------------------------------------------------
-    def _try_vlm(self, page, cost_tracker: CostTracker) -> str:
-        """Attempt VLM transcription respecting budget."""
+    # Gemini primary --------------------------------------------------------
+    def _run_gemini_primary(self, page, cost_tracker: CostTracker) -> Tuple[str, int]:
+        """Use Ollama Gemini-3-Flash-Preview as primary extractor."""
         image_b64 = self._page_image_b64(page)
+        estimated_tokens = 1200
+        estimated_cost = estimated_tokens * self.primary_cost_per_token
+        if not cost_tracker.can_spend(estimated_cost):
+            raise RuntimeError("Budget cap reached before Gemini primary call")
 
-        # Prefer cheaper model first
+        # Ollama HTTP API (preferred for structured output)
+        endpoint = os.getenv("OLLAMA_ENDPOINT", "http://localhost:11434/api/generate")
+        prompt = (
+            "Extract all text from this page image. Preserve multi-column order, "
+            "keep table headers with rows, keep figure captions attached, and keep layout separators. "
+            "Return clean, readable structured text."
+        )
+        payload = {
+            "model": self.primary_model,
+            "prompt": prompt,
+            "images": [image_b64],
+            "stream": False,
+            "options": {"temperature": 0.0},
+        }
+        resp = requests.post(endpoint, json=payload, timeout=120)
+        resp.raise_for_status()
+        data = resp.json()
+        text = data.get("response", "") or data.get("data", "")
+        tokens_used = len(text.split()) or estimated_tokens
+        return text, tokens_used
+
+    # Fallback VLMs --------------------------------------------------------
+    def _try_vlm_fallback(self, page, cost_tracker: CostTracker) -> str:
+        image_b64 = self._page_image_b64(page)
         for model, cost_per_token in sorted(self.vlm_models.items(), key=lambda kv: kv[1]):
-            estimated_tokens = 800  # rough default prompt+output guess
+            estimated_tokens = 800
             estimated_cost = estimated_tokens * cost_per_token
-
             if not cost_tracker.can_spend(estimated_cost):
-                logger.info("Budget cap reached; skipping VLM model %s", model)
+                logger.info("Budget cap reached; skipping VLM fallback %s", model)
                 continue
-
             try:
                 text, tokens_used = self._call_vlm(image_b64, model)
-                cost = tokens_used * cost_per_token
-                cost_tracker.record(model, tokens_used, cost)
+                cost_tracker.record(model, tokens_used, tokens_used * cost_per_token)
                 return text
-            except Exception as exc:  # pragma: no cover - network / API errors
-                logger.warning("VLM call failed for %s: %s", model, exc)
+            except Exception as exc:
+                logger.warning("VLM fallback failed for %s: %s", model, exc)
                 continue
-
         return ""
 
     def _call_vlm(self, image_b64: str, model: str) -> Tuple[str, int]:
-        """
-        Call OpenRouter API with the given model and base64-encoded page image.
-        Returns: (extracted_text, tokens_used)
-        """
-        # Choose API key based on model
-        if "qwen" in model.lower():
-            api_key = os.getenv("VLM_qwen")
-        elif "gemini" in model.lower():
-            api_key = os.getenv("VLM_gemini")
-        else:
-            raise RuntimeError(f"No API key configured for model {model}")
-
+        api_key = os.getenv("OPENROUTER_API_KEY")
         if not api_key:
-            raise RuntimeError(f"API key not found for model {model}")
+            raise RuntimeError("OPENROUTER_API_KEY missing for fallback VLM")
 
         endpoint = "https://openrouter.ai/api/v1/chat/completions"
-
-        # Build a prompt for image-to-text extraction
         prompt = (
-            "Extract all readable text from this document page image. "
-            "Keep the structure, tables, and figures in text form. "
-            "Return only text output."
+            "You are a document transcription model. Return the page text with tables and captions preserved. "
+            "Keep logical reading order."
         )
-
         payload = {
             "model": model,
-            "messages": [
-                {"role": "user", "content": prompt, "image": image_b64}
-            ],
+            "messages": [{"role": "user", "content": prompt, "image": image_b64}],
             "max_tokens": 2000,
             "temperature": 0.0,
         }
-
         headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
         }
+        resp = requests.post(endpoint, json=payload, headers=headers, timeout=120)
+        resp.raise_for_status()
+        data = resp.json()
+        text = data["choices"][0]["message"]["content"]
+        tokens_used = len(text.split())
+        return text, tokens_used
 
-        try:
-            resp = requests.post(endpoint, json=payload, headers=headers, timeout=60)
-            resp.raise_for_status()
-            data = resp.json()
-            # Extract text from response structure
-            text = data["choices"][0]["message"]["content"]
-            # Estimate tokens (for tracking budget; simple placeholder)
-            tokens_used = len(text.split())
-            return text, tokens_used
-        except Exception as e:
-            raise RuntimeError(f"VLM API call failed for model {model}: {e}")
-
-    # Helpers ------------------------------------------------------------------
+    # Helpers --------------------------------------------------------------
     def _page_image_b64(self, page) -> str:
         img = page.to_image(resolution=300).original
         from io import BytesIO
@@ -216,11 +200,9 @@ class VisionExtractor(BaseModel):
         char_count = len(text)
         char_density = char_count / page_area if page_area else 0.0
 
-        # One block covering whole page; finer segmentation can be added later.
         bbox = BoundingBox(x0=0.0, y0=0.0, x1=float(page.width), y1=float(page.height))
         text_block = TextBlock(text=text, bbox=bbox, reading_order=0)
 
-        # Image ratio heuristic
         image_area = 0.0
         for img in getattr(page, "images", []) or []:
             try:
@@ -232,7 +214,7 @@ class VisionExtractor(BaseModel):
         chars_meta = getattr(page, "chars", []) or []
         font_meta = any(isinstance(ch, dict) and ("fontname" in ch or "font" in ch) for ch in chars_meta)
 
-        return PageExtractionResult(
+        result = PageExtractionResult(
             page_number=page_number,
             text_blocks=[text_block],
             full_text=text,
@@ -246,6 +228,7 @@ class VisionExtractor(BaseModel):
             tables=[],
             figures=[],
         )
+        return result
 
 
 __all__ = ["VisionExtractor", "CostTracker"]

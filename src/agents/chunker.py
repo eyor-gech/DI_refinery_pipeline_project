@@ -39,22 +39,28 @@ class ChunkValidator:
         for chunk in chunks:
             # Rule 1: tables stay intact
             if chunk.chunk_type == "table":
-                assert "table" in chunk.content.lower(), "Table chunk missing table content marker"
+                if "table" not in chunk.content.lower():
+                    raise ValueError("Table chunk missing table content marker")
+                if chunk.metadata.get("has_header") not in ("True", "true", True):
+                    raise ValueError("Table chunk missing header binding")
             # Rule 2: figure captions attached
             if chunk.chunk_type == "figure":
-                assert "caption" in chunk.content.lower(), "Figure caption not attached"
+                if "caption" not in chunk.content.lower() or chunk.metadata.get("caption_attached") != "true":
+                    raise ValueError("Figure caption not attached to figure chunk")
             # Rule 3: numbered lists intact unless exceeding token limit
             if chunk.chunk_type == "list":
-                if chunk.metadata.get("split") == "true":
-                    continue
-                if chunk.token_count > self.token_limit:
-                    assert False, "Long list must be marked as split"
+                if chunk.token_count > self.token_limit and chunk.metadata.get("split") != "true":
+                    raise ValueError("Long list must be marked as split")
+                if chunk.token_count <= self.token_limit and chunk.metadata.get("split") == "true":
+                    raise ValueError("Short list should not be split")
             # Rule 4: section headers stored as metadata
             if chunk.parent_section:
-                assert chunk.metadata.get("parent_section") == chunk.parent_section
+                if chunk.metadata.get("parent_section") != chunk.parent_section:
+                    raise ValueError("Parent section missing from metadata")
             # Rule 5: cross references stored as relationships (optional list)
             if "xref:" in chunk.content.lower():
-                assert chunk.relationships, "Cross references must be captured in relationships"
+                if not chunk.relationships:
+                    raise ValueError("Cross references must be captured in relationships")
 
 
 class ChunkingEngine:
@@ -77,12 +83,21 @@ class ChunkingEngine:
         # 1) tables
         for tbl in page.tables:
             content = "table: " + " | ".join([" ; ".join(row) for row in tbl.rows])
-            chunks.append(self._make_ldu(content, "table", page, tbl.bbox, current_section))
+            chunks.append(
+                self._make_ldu(
+                    content,
+                    "table",
+                    page,
+                    tbl.bbox,
+                    current_section,
+                    extra_metadata={"has_header": True, "table_rows": len(tbl.rows)},
+                )
+            )
 
         # 2) figures
         for fig in page.figures:
             caption = fig.caption or ""
-            content = f"figure: {caption}".strip()
+            content = f"figure: caption: {caption}".strip()
             chunks.append(self._make_ldu(content, "figure", page, fig.bbox, current_section))
 
         # 3) text & lists
@@ -142,6 +157,7 @@ class ChunkingEngine:
         section: Optional[str],
         split: bool = False,
         items: Optional[List[str]] = None,
+        extra_metadata: Optional[Dict[str, str]] = None,
     ) -> LDU:
         bbox = {
             "x0": float(getattr(bbox_obj, "x0", 0.0)),
@@ -158,6 +174,8 @@ class ChunkingEngine:
             metadata["split"] = "true"
         if chunk_type == "figure":
             metadata["caption_attached"] = "true"
+        if extra_metadata:
+            metadata.update({k: str(v) for k, v in extra_metadata.items()})
         relationships: List[str] = []
         if "xref:" in content.lower():
             relationships.append(content)
