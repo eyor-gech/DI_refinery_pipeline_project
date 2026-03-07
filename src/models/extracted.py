@@ -66,3 +66,4 @@ class ExtractedDocument(BaseModel):
     extracted_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     pages: List[PageExtractionResult]
     total_time_ms: float
+    #tool_used: str = ""
