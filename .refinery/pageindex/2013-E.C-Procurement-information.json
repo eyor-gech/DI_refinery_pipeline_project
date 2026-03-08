@@ -1,0 +1,70 @@
+{
+  "doc_id": "2013-E.C-Procurement-information",
+  "sections": [
+    {
+      "title": "Page 1",
+      "page_start": 1,
+      "page_end": 1,
+      "child_sections": [],
+      "key_entities": [],
+      "summary": "**አባሪ 5.1 በማስታወቂያ ሠሌዳ የሚለጠፍ ለህዝብ ይፋ የሚደረግ የጨረታ/ግዥ** **ውድድር ውጤት ማስታወቂያ ይዘት** **ከአንድ አቅራቢ** 1. የግዥ ፈጻሚው መ/ቤት ስም :የኢትዮጵያ ኢንቨስትመንት ኮሚሽን 2. የግዥው ዓይነት:ዕቃ(የኢንቨስትመንት ፍቃድ ምስጢራዊ ህትመት) 3. የግዥ ዘዴ:ከአንድ አቅራቢ 4. በውድድሩ አሸናፊ ሆኖ የተመረጠው:ብርሃንና ሰላም ማተሚያ",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    },
+    {
+      "title": "Page 2",
+      "page_start": 2,
+      "page_end": 2,
+      "child_sections": [],
+      "key_entities": [
+        "Signature",
+        "Stamp",
+        "Federal",
+        "Democratic",
+        "Republic",
+        "Ethiopia",
+        "Ethiopian",
+        "Investment",
+        "Commission"
+      ],
+      "summary": "6. ውሉ የተፈረመበት/የግዥ ትዕዛዝ የተሠጠበት ጊዜ፡ጥር 11/ 2011ዓ.ም 7. የውሉ ጠቅላላ ዋጋ፡175,000.00 1. የግዥ ፈጻሚው መ/ቤት ስም ፡የኢትዮጵያ ኢንቨስትመንት ኮሚሽን 2. የግዥው ዓይነት፡ዕቃ(ሄቪ ዲዩቲ ፕሪንተር) 3. የጨረታ መለያ ቁጥር፡የማዕቀፍ ግዥ 4. የግዥ ዘዴ፡ዓለም አቀፍ ግልጽ ጨረታ 5. በውድድሩ አሸናፊ ሆኖ",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    },
+    {
+      "title": "Page 3",
+      "page_start": 3,
+      "page_end": 3,
+      "child_sections": [
+        {
+          "title": "5. የውል አፈጻጸሙ ሁኔታ በአጭሩ: የጥበቃና የጽዳት አገልግሎት እየሰጠ ያለ ድርጅት ነዉ ውሉ በአጥጋቢ ሁኔታ ተጠናቋል",
+          "page_start": 3,
+          "page_end": 3,
+          "child_sections": [],
+          "key_entities": [],
+          "summary": "5. የውል አፈጻጸሙ ሁኔታ በአጭሩ: የጥበቃና የጽዳት አገልግሎት እየሰጠ ያለ ድርጅት ነዉ ውሉ በአጥጋቢ ሁኔታ ተጠናቋል::",
+          "data_types_present": [
+            "numeric",
+            "text"
+          ]
+        }
+      ],
+      "key_entities": [
+        "Federal",
+        "Democratic",
+        "Republic",
+        "Ethiopia",
+        "Commission"
+      ],
+      "summary": "**የውል አፈጻጸም** **አባሪ 5.2 በማስታወቂያ ሠሌዳ የሚለጠፍ ለህዝብ ይፋ የሚደረግ የውል አፈጻጸም መረጃ ማስታወቂያ ይዘት** 1. የውሉ ጠ/ዋጋ : 913560 2. ውሉ ሲጠናቀቅ የተከፈለ ጠቅላላ ገንዘብ: 913560 3. በውሉ መሠረት ግዥዉ የሚጠናቀቅበት ጊዜ: ከጥር 1/2013 ዓ.ም - ታህሳስ 30/2013 ዓ.ም",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    }
+  ]
+}
