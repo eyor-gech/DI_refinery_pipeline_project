@@ -43,7 +43,7 @@ flowchart LR
     extraction --> chunker[Chunking Engine]
     chunker --> indexer[PageIndex Builder]
     chunker --> vectors[Vector Store]
-    chunker --> facts[FactTable (SQLite)]
+    chunker --> facts["FactTable (SQLite)"]
     indexer --> query[Query Agent]
     vectors --> query
     facts --> query
