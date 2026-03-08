@@ -26,35 +26,23 @@ from src.models.extracted import (
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
-
 class DoclingDocumentAdapter:
     """
     Converts Docling-style output into the ExtractedDocument schema.
-    The adapter expects a lightweight dict structure so it can be easily mocked in tests:
-    {
-        "pages": [
-            {
-                "number": 1,
-                "size": (width, height),
-                "blocks": [{"text": "...", "bbox": [x0, y0, x1, y1], "reading_order": 0}],
-                "tables": [{"bbox": [...], "rows": [["a", "b"]], "caption": "..."}],
-                "figures": [{"bbox": [...], "caption": "..."}],
-                "elapsed_ms": 12.3
-            },
-            ...
-        ]
-    }
     """
 
     def adapt(self, docling_doc: Dict[str, Any], pdf_path: Path | str, total_time_ms: float) -> ExtractedDocument:
+
         pages: List[PageExtractionResult] = []
 
         for page_data in docling_doc.get("pages", []):
+
             width, height = self._page_size(page_data)
             page_area = max(width * height, 1.0)
 
             text_blocks = self._blocks(page_data.get("blocks", []))
             full_text = " ".join(tb.text for tb in text_blocks).strip()
+
             char_count = len(full_text)
             char_density = char_count / page_area
 
@@ -87,112 +75,164 @@ class DoclingDocumentAdapter:
             total_time_ms=total_time_ms,
         )
 
-    def _page_size(self, page_data: Dict[str, Any]) -> Tuple[float, float]:
+    def _page_size(self, page_data):
+
         size = page_data.get("size")
+
         if isinstance(size, (list, tuple)) and len(size) == 2:
             return float(size[0]), float(size[1])
+
         bbox = page_data.get("bbox")
+
         if isinstance(bbox, (list, tuple)) and len(bbox) == 4:
             return float(bbox[2] - bbox[0]), float(bbox[3] - bbox[1])
-        return 612.0, 792.0  # sensible default (US Letter points)
 
-    def _blocks(self, blocks: List[Dict[str, Any]]) -> List[TextBlock]:
-        converted: List[TextBlock] = []
+        return 612.0, 792.0
+
+    def _blocks(self, blocks):
+
+        converted = []
+
         for idx, b in enumerate(blocks):
-            bbox = self._bbox_from(b.get("bbox"))
-            text = b.get("text", "")
-            order = b.get("reading_order", idx)
-            converted.append(TextBlock(text=text, bbox=bbox, reading_order=int(order)))
+
+            x0, y0, x1, y1 = b.get("bbox", [0, 0, 0, 0])
+
+            converted.append(
+                TextBlock(
+                    text=b.get("text", ""),
+                    bbox=BoundingBox(x0=float(x0), y0=float(y0), x1=float(x1), y1=float(y1)),
+                    reading_order=int(b.get("reading_order", idx)),
+                )
+            )
+
         return converted
 
-    def _tables(self, tables: List[Dict[str, Any]]) -> List[TableBlock]:
-        converted: List[TableBlock] = []
+    def _tables(self, tables):
+
+        converted = []
+
         for t in tables:
-            bbox = self._bbox_from(t.get("bbox"))
-            rows = t.get("rows", [])
-            caption = t.get("caption")
-            converted.append(TableBlock(bbox=bbox, rows=rows, caption=caption))
+
+            x0, y0, x1, y1 = t.get("bbox", [0, 0, 0, 0])
+
+            converted.append(
+                TableBlock(
+                    bbox=BoundingBox(x0=float(x0), y0=float(y0), x1=float(x1), y1=float(y1)),
+                    rows=t.get("rows", []),
+                    caption=t.get("caption"),
+                )
+            )
+
         return converted
 
-    def _figures(self, figures: List[Dict[str, Any]]) -> List[FigureBlock]:
-        converted: List[FigureBlock] = []
+    def _figures(self, figures):
+
+        converted = []
+
         for f in figures:
-            bbox = self._bbox_from(f.get("bbox"))
-            converted.append(FigureBlock(bbox=bbox, caption=f.get("caption")))
+
+            x0, y0, x1, y1 = f.get("bbox", [0, 0, 0, 0])
+
+            converted.append(
+                FigureBlock(
+                    bbox=BoundingBox(x0=float(x0), y0=float(y0), x1=float(x1), y1=float(y1)),
+                    caption=f.get("caption"),
+                )
+            )
+
         return converted
-
-    def _bbox_from(self, bbox_like) -> BoundingBox:
-        try:
-            x0, y0, x1, y1 = bbox_like
-            return BoundingBox(x0=float(x0), y0=float(y0), x1=float(x1), y1=float(y1))
-        except Exception:  # pragma: no cover - defensive fallback
-            return BoundingBox(x0=0.0, y0=0.0, x1=0.0, y1=0.0)
-
-
 class LayoutExtractor(BaseModel):
     """
     Strategy B: layout-aware extraction with Docling-first, pdfplumber fallback.
     """
 
-    adapter: DoclingDocumentAdapter = Field(default_factory=DoclingDocumentAdapter)
+    adapter: Any = Field(default=None)
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
+    # ---------------------------------------------------------
+    # PUBLIC API
+    # ---------------------------------------------------------
+
     def extract(self, pdf_path: Path | str) -> ExtractedDocument:
+
         pdf_path = Path(pdf_path)
         if not pdf_path.exists():
-            raise FileNotFoundError(f"PDF not found: {pdf_path}")
+            raise FileNotFoundError(pdf_path)
 
         start = time.perf_counter()
+
         try:
             docling_doc = self._run_docling(pdf_path)
-            total_time_ms = (time.perf_counter() - start) * 1000
-            if docling_doc:
-                logger.info("Docling extraction succeeded for %s", pdf_path)
+
+            if docling_doc and self.adapter:
+                total_time_ms = (time.perf_counter() - start) * 1000
+                logger.info("Docling extraction succeeded")
                 return self.adapter.adapt(docling_doc, pdf_path, total_time_ms)
+
         except Exception as exc:
-            logger.warning("Docling extraction unavailable, falling back to pdfplumber: %s", exc)
+            logger.warning("Docling unavailable → fallback: %s", exc)
 
-        # Fallback
-        return self._fallback_pdfplumber(pdf_path, start_time=start)
+        return self._fallback_pdfplumber(pdf_path, start)
 
-    # Implementation details -------------------------------------------------
+    # ---------------------------------------------------------
+    # DOCLING HOOK
+    # ---------------------------------------------------------
+
     def _run_docling(self, pdf_path: Path) -> Dict[str, Any]:
-        """
-        Placeholder hook for a Docling/minerU/DocTR pipeline.
-        In production, connect the actual layout model here.
-        """
         raise ImportError("Docling pipeline not configured")
 
+    # ---------------------------------------------------------
+    # FALLBACK IMPLEMENTATION
+    # ---------------------------------------------------------
+
     def _fallback_pdfplumber(self, pdf_path: Path, start_time: float) -> ExtractedDocument:
+
         pages: List[PageExtractionResult] = []
 
         with pdfplumber.open(pdf_path) as pdf:
+
             for page_number, page in enumerate(pdf.pages, start=1):
+
                 page_start = time.perf_counter()
+
                 page_area = float(page.width * page.height)
 
-                text = page.extract_text() or ""
-                char_count = len(text)
+                # Better extraction parameters
+                words = page.extract_words(
+                    x_tolerance=2,
+                    y_tolerance=2,
+                    keep_blank_chars=False,
+                    use_text_flow=True,
+                ) or []
+
+                columns = self._split_columns(words, page.width)
+
+                text_blocks: List[TextBlock] = []
+                order = 0
+
+                for column in columns:
+
+                    lines = self._cluster_lines(column)
+
+                    for line in lines:
+
+                        block = self._line_to_block(line, order)
+                        text_blocks.append(block)
+
+                        order += 1
+
+                full_text = "\n".join(tb.text for tb in text_blocks)
+
+                char_count = len(full_text)
                 char_density = char_count / page_area if page_area else 0.0
 
-                image_area = 0.0
-                for img in getattr(page, "images", []) or []:
-                    try:
-                        image_area += float(img.get("width", 0)) * float(img.get("height", 0))
-                    except Exception:  # pragma: no cover
-                        continue
-                image_ratio = image_area / page_area if page_area else 0.0
-
-                chars = getattr(page, "chars", []) or []
-                font_metadata_present = any(
-                    isinstance(ch, dict) and ("fontname" in ch or "font" in ch) for ch in chars
-                )
-
-                words = page.extract_words() or []
-                text_blocks = self._build_text_blocks(words)
-                full_text = text or " ".join(tb.text for tb in text_blocks)
-
                 tables = self._extract_tables(page)
+
+                image_ratio = self._image_ratio(page, page_area)
+
+                font_metadata_present = any(
+                    "fontname" in c or "font" in c for c in (page.chars or [])
+                )
 
                 page_time_ms = (time.perf_counter() - page_start) * 1000
 
@@ -214,39 +254,141 @@ class LayoutExtractor(BaseModel):
                 )
 
         total_time_ms = (time.perf_counter() - start_time) * 1000
-        logger.info("Fallback layout extraction processed %s in %.2f ms", pdf_path, total_time_ms)
+
         return ExtractedDocument(
-            doc_id=pdf_path.stem, extractor="layout", pages=pages, total_time_ms=total_time_ms
+            doc_id=pdf_path.stem,
+            extractor="layout",
+            pages=pages,
+            total_time_ms=total_time_ms,
         )
 
-    def _build_text_blocks(self, words) -> List[TextBlock]:
-        blocks: List[TextBlock] = []
-        for idx, w in enumerate(words):
-            try:
-                bbox = BoundingBox(
-                    x0=float(w["x0"]),
-                    y0=float(w.get("top", w.get("y0", 0))),
-                    x1=float(w["x1"]),
-                    y1=float(w.get("bottom", w.get("y1", 0))),
-                )
-                blocks.append(TextBlock(text=w.get("text", ""), bbox=bbox, reading_order=idx))
-            except Exception:  # pragma: no cover
-                continue
-        return blocks
+    # ---------------------------------------------------------
+    # LAYOUT HELPERS
+    # ---------------------------------------------------------
+
+    def _split_columns(self, words: List[Dict], page_width: float):
+
+        if not words:
+            return []
+
+        mid = page_width / 2
+
+        left = []
+        right = []
+
+        for w in words:
+
+            center = (w["x0"] + w["x1"]) / 2
+
+            if center < mid:
+                left.append(w)
+            else:
+                right.append(w)
+
+        if left and right:
+            return [sorted(left, key=lambda w: (w["top"], w["x0"])),
+                    sorted(right, key=lambda w: (w["top"], w["x0"]))]
+
+        return [sorted(words, key=lambda w: (w["top"], w["x0"]))]
+
+    def _cluster_lines(self, words: List[Dict]):
+
+        if not words:
+            return []
+
+        lines: List[List[Dict]] = []
+        current = [words[0]]
+
+        y_threshold = 3
+
+        for w in words[1:]:
+
+            prev = current[-1]
+
+            if abs(w["top"] - prev["top"]) <= y_threshold:
+                current.append(w)
+
+            else:
+                lines.append(current)
+                current = [w]
+
+        lines.append(current)
+
+        return lines
+
+    def _line_to_block(self, line: List[Dict], order: int) -> TextBlock:
+
+        text = " ".join(w["text"] for w in line)
+
+        x0 = min(w["x0"] for w in line)
+        x1 = max(w["x1"] for w in line)
+        y0 = min(w["top"] for w in line)
+        y1 = max(w["bottom"] for w in line)
+
+        return TextBlock(
+            text=text,
+            bbox=BoundingBox(x0=x0, y0=y0, x1=x1, y1=y1),
+            reading_order=order,
+        )
+
+    # ---------------------------------------------------------
+    # TABLE EXTRACTION
+    # ---------------------------------------------------------
 
     def _extract_tables(self, page) -> List[TableBlock]:
+
         tables: List[TableBlock] = []
-        if not hasattr(page, "find_tables"):
-            return tables
-        for tbl in page.find_tables() or []:
-            try:
+
+        try:
+
+            found = page.find_tables(
+                table_settings={
+                    "vertical_strategy": "lines",
+                    "horizontal_strategy": "lines",
+                    "intersection_tolerance": 5,
+                }
+            )
+
+            for tbl in found:
+
                 rows = tbl.extract()
+
                 x0, y0, x1, y1 = tbl.bbox
-                bbox = BoundingBox(x0=float(x0), y0=float(y0), x1=float(x1), y1=float(y1))
-                tables.append(TableBlock(bbox=bbox, rows=rows, caption=None))
-            except Exception:  # pragma: no cover
-                continue
+
+                tables.append(
+                    TableBlock(
+                        bbox=BoundingBox(
+                            x0=float(x0),
+                            y0=float(y0),
+                            x1=float(x1),
+                            y1=float(y1),
+                        ),
+                        rows=rows,
+                        caption=None,
+                    )
+                )
+
+        except Exception:
+            pass
+
         return tables
+
+    # ---------------------------------------------------------
+    # IMAGE METRICS
+    # ---------------------------------------------------------
+
+    def _image_ratio(self, page, page_area):
+
+        image_area = 0.0
+
+        for img in getattr(page, "images", []) or []:
+
+            try:
+                image_area += float(img.get("width", 0)) * float(img.get("height", 0))
+            except Exception:
+                continue
+
+        return image_area / page_area if page_area else 0.0
 
 
 __all__ = ["LayoutExtractor", "DoclingDocumentAdapter"]
