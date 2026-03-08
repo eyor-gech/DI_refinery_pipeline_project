@@ -1,5 +1,6 @@
 """
 CLI entrypoint for Refinery Pipeline.
+
 Steps:
 1) Triage Agent -> DocumentProfile
 2) ExtractionRouter -> ExtractedDocument with ledger logging
@@ -8,13 +9,14 @@ Steps:
 5) Ingest chunks into a lightweight vector store placeholder
 6) Build FactTable from numeric facts
 """
+
 from __future__ import annotations
 
 import argparse
 import json
-import os
 from pathlib import Path
 from typing import List
+
 from pypdf import PdfReader, PdfWriter
 
 from src.agents.triage import TriageAgent
@@ -24,27 +26,43 @@ from src.agents.indexer import PageIndexBuilder
 from src.agents.query_agent import QueryAgent
 
 
+# ------------------------------------------------------------------
+# Utility writers
+# ------------------------------------------------------------------
+
 def write_full_text(doc, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
+
     text_path = out_dir / f"{doc.doc_id}.txt"
     full_text = "\n\n".join(page.full_text for page in doc.pages)
+
     text_path.write_text(full_text, encoding="utf-8")
 
 
 def persist_chunks(ldus, out_dir: Path, doc_id: str) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
+
     path = out_dir / f"{doc_id}.json"
-    json.dump([c.model_dump() for c in ldus], path.open("w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(
+            [c.model_dump() for c in ldus],
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
 
 
 def ingest_vector_store(ldus, out_dir: Path, doc_id: str) -> None:
     """
     Placeholder vector store ingestion.
-    Writes chunk payloads to JSON for later indexing by a real vector DB (FAISS/Chroma).
+    Writes chunk payloads to JSON for later indexing by FAISS/Chroma/etc.
     """
+
     out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / f"{doc_id}.json"
+
     payloads = []
+
     for ldu in ldus:
         payloads.append(
             {
@@ -58,22 +76,25 @@ def ingest_vector_store(ldus, out_dir: Path, doc_id: str) -> None:
                 "metadata": ldu.metadata,
             }
         )
-    json.dump(payloads, path.open("w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+    path = out_dir / f"{doc_id}.json"
+
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(payloads, f, ensure_ascii=False, indent=2)
+
+
+# ------------------------------------------------------------------
+# PDF splitting
+# ------------------------------------------------------------------
 
 def split_large_pdf(pdf_path: Path) -> List[Path]:
-    """
-    Split large PDFs automatically based on page count.
-    Returns a list of PDFs to process.
-    """
 
     reader = PdfReader(str(pdf_path))
     total_pages = len(reader.pages)
 
-    # Small documents: no split
     if total_pages < 15:
         return [pdf_path]
 
-    # Decide number of parts
     if total_pages < 200:
         parts = 3
     else:
@@ -110,7 +131,13 @@ def split_large_pdf(pdf_path: Path) -> List[Path]:
 
     return output_files
 
+
+# ------------------------------------------------------------------
+# Main processing logic
+# ------------------------------------------------------------------
+
 def process_pdf(pdf_path: Path, args) -> None:
+
     triage = TriageAgent()
     profile = triage.profile(pdf_path)
 
@@ -121,29 +148,39 @@ def process_pdf(pdf_path: Path, args) -> None:
     ldus = chunker.chunk(extracted)
 
     indexer = PageIndexBuilder()
-    index = indexer.build_index(extracted)
+    indexer.build_index(extracted)
 
-    # Persist outputs
     base_dir = Path(".refinery")
+
     write_full_text(extracted, base_dir / "fulltext")
     persist_chunks(ldus, base_dir / "chunks", extracted.doc_id)
     ingest_vector_store(ldus, base_dir / "vector_store", extracted.doc_id)
 
-    # Fact table ingest
     facts_dir = base_dir / "facts"
     facts_dir.mkdir(parents=True, exist_ok=True)
+
     fact_db_path = facts_dir / f"{extracted.doc_id}.db"
-    qa = QueryAgent(pageindex_dir=base_dir / "pageindex", fact_db_path=str(fact_db_path))
+
+    qa = QueryAgent(
+        pageindex_dir=base_dir / "pageindex",
+        fact_db_path=str(fact_db_path),
+    )
+
     qa.ingest_facts(extracted)
 
-    print(f"Processed {pdf_path.name}:")
-    print(f"  Profile saved -> .refinery/profiles/{profile.doc_id}.json")
-    print(f"  Extraction ledger -> .refinery/extraction_ledger.jsonl")
-    print(f"  Full text -> {base_dir/'fulltext'/ (profile.doc_id + '.txt')}")
-    print(f"  Chunks -> {base_dir/'chunks'/(profile.doc_id + '.json')}")
-    print(f"  PageIndex -> {base_dir/'pageindex'/(profile.doc_id + '.json')}")
+    print(f"Processed {pdf_path.name}")
+    print(f"  Profile -> .refinery/profiles/{profile.doc_id}.json")
+    print(f"  Ledger -> .refinery/extraction_ledger.jsonl")
+    print(f"  Full text -> {base_dir/'fulltext'/(profile.doc_id+'.txt')}")
+    print(f"  Chunks -> {base_dir/'chunks'/(profile.doc_id+'.json')}")
+    print(f"  PageIndex -> {base_dir/'pageindex'/(profile.doc_id+'.json')}")
     print(f"  FactTable -> {fact_db_path}")
-    print(f"  Vector payload -> {base_dir/'vector_store'/(profile.doc_id + '.json')}")
+    print(f"  Vector payload -> {base_dir/'vector_store'/(profile.doc_id+'.json')}")
+
+
+# ------------------------------------------------------------------
+# Merge outputs when PDFs were split
+# ------------------------------------------------------------------
 
 def merge_pipeline_outputs(original_doc: str, part_ids: List[str]):
 
@@ -157,57 +194,69 @@ def merge_pipeline_outputs(original_doc: str, part_ids: List[str]):
 
         chunk_file = base_dir / "chunks" / f"{pid}.json"
         if chunk_file.exists():
-            merged_chunks.extend(json.load(chunk_file.open()))
+            with chunk_file.open(encoding="utf-8") as f:
+                merged_chunks.extend(json.load(f))
 
         vector_file = base_dir / "vector_store" / f"{pid}.json"
         if vector_file.exists():
-            merged_vectors.extend(json.load(vector_file.open()))
+            with vector_file.open(encoding="utf-8") as f:
+                merged_vectors.extend(json.load(f))
 
         text_file = base_dir / "fulltext" / f"{pid}.txt"
         if text_file.exists():
-            merged_text.append(text_file.read_text())
+            merged_text.append(text_file.read_text(encoding="utf-8"))
 
-    # write merged chunks
-    json.dump(
-        merged_chunks,
-        (base_dir / "chunks" / f"{original_doc}.json").open("w"),
-        indent=2,
-        ensure_ascii=False,
-    )
+    with (base_dir / "chunks" / f"{original_doc}.json").open("w", encoding="utf-8") as f:
+        json.dump(merged_chunks, f, indent=2, ensure_ascii=False)
 
-    # write merged vectors
-    json.dump(
-        merged_vectors,
-        (base_dir / "vector_store" / f"{original_doc}.json").open("w"),
-        indent=2,
-        ensure_ascii=False,
-    )
+    with (base_dir / "vector_store" / f"{original_doc}.json").open("w", encoding="utf-8") as f:
+        json.dump(merged_vectors, f, indent=2, ensure_ascii=False)
 
-    # write merged text
     (base_dir / "fulltext" / f"{original_doc}.txt").write_text(
         "\n\n".join(merged_text),
-        encoding="utf-8"
+        encoding="utf-8",
     )
 
     print(f"Merged pipeline outputs for {original_doc}")
 
+
+# ------------------------------------------------------------------
+# PDF discovery
+# ------------------------------------------------------------------
+
 def find_pdfs(input_path: Path) -> List[Path]:
+
     if input_path.is_file() and input_path.suffix.lower() == ".pdf":
         return [input_path]
+
     return list(input_path.rglob("*.pdf"))
 
 
+# ------------------------------------------------------------------
+# CLI
+# ------------------------------------------------------------------
+
 def main():
+
     parser = argparse.ArgumentParser(description="Run Refinery Pipeline on PDFs.")
-    parser.add_argument("--input", required=True, help="Path to PDF file or directory containing PDFs")
+
+    parser.add_argument(
+        "--input",
+        required=True,
+        help="Path to PDF file or directory containing PDFs",
+    )
+
     args = parser.parse_args()
 
     input_path = Path(args.input)
+
     pdfs = find_pdfs(input_path)
+
     if not pdfs:
         raise SystemExit(f"No PDFs found at {input_path}")
 
     for pdf in pdfs:
+
         pdf_parts = split_large_pdf(pdf)
 
         part_ids = []
