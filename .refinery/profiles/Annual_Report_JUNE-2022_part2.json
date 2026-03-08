@@ -1,0 +1,14 @@
+{
+  "doc_id": "Annual_Report_JUNE-2022_part2",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.9999970705992558,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "character_count": 51489,
+  "character_density": 0.003276536359851146,
+  "whitespace_ratio": 0.15337256501388646,
+  "image_area_ratio": 0.23453615151951876,
+  "font_metadata_presence": true
+}

@@ -1,0 +1,1406 @@
+ETHIO RE
+Rising with Africa
+2021/22
+
+# NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+| Class of business | General Insurance | Long term Insurance | Total 2021/22 | Total 2020/21 |
+| :--- | :---: | :---: | :---: | :---: |
+| Accident | 29,556,680 | - | 29,556,680 | 26,830,648 |
+| Aviation | 23,275,510 | - | 23,275,510 | 120,098,995 |
+| Burglary | 5,169,306 | - | 5,169,306 | 3,906,346 |
+| Eng. | 132,411,600 | - | 132,411,600 | 86,817,649 |
+| Emp. Liability | 10,277,367 | - | 10,277,367 | 10,061,344 |
+| Fire | 186,981,384 | - | 186,981,384 | 155,255,685 |
+| Goods in Transit | 2,975,390 | - | 2,975,390 | 1,594,178 |
+| Liability | 34,741,505 | - | 34,741,505 | 27,706,792 |
+| Marine | 137,326,549 | - | 137,326,549 | 91,125,937 |
+| Medical | 319,552 | - | 319,552 | 617,397 |
+| Motor | 383,373,770 | - | 383,373,770 | 308,750,645 |
+| Pecuniary | 164,465,130 | - | 164,465,130 | 124,188,395 |
+| Others | 186,030,999 | - | 186,030,999 | 137,399,142 |
+| Group term life assurance | - | 39,500,894 | 39,500,894 | 30,874,757 |
+| Health insurance | - | 21,219,502 | 21,219,502 | 14,952,633 |
+| Funeral expense insurance | - | 80,142 | 80,142 | 71,698 |
+| **Total** | **1,296,904,743** | **60,800,538** | **1,357,705,282** | **1,140,252,241** |
+
+As can be observed from the above table the share of motor class of business as compared to all other general insurance is raised to 29.6% from its last year position of 28.2%. This upward movement was observed for the first time after the concentration in this class of business was continuously shows improvements for the past four fiscal years.
+
+### 4.2.2 MARKET RISK
+
+Market risk is the risk that changes in the market prices – e.g., foreign exchange rates and interest rate fluctuations; real-state and equity prices volatility will affect the fulfilment of cash flows of insurance and reinsurance contracts as well as the fair value of future cash flows of financial instruments. The objective of market risk management is to control market risk exposures within acceptable parameters while optimizing the return on risk.
+
+*   **Exchange rate risk** principally arises on the change of Company’s interest-bearing financial assets and financial liabilities denoted in foreign currencies.
+*   **Interest rate risk** will also arise if the interest rate applies on time deposit increases or decreases.
+*   The increase and decrease on the fair value of equity investment is an **equity price risk**, which have an impact on the profitability of the company.
+
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+39
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report
+2021/22
+
+The nature of the Company's reinsurance contracts and financial instruments means that it is exposed to market risk in the form of interest rate risk; currency rate risk and equity price risk.
+
+### 4.2.2.1 MANAGEMENT OF MARKET RISK
+
+Ethiopian Re manages market risk based on the diversification of investments within the frame work put in Proclamation Number 746/2012 article 25 and existing directives, prescribing investments of re/insurers, by National Bank of Ethiopia.
+
+The Company's investment plan is devised on a yearly basis based on the strategic investment direction put by the Board of directors and NBE's investment directives which specifies investment in treasury bills, fixed time deposits, shares etc.
+
+### (I) INTEREST RATE RISK
+
+The Company's exposure to interest rate changes is primarily concentrated in the actively managed fixed income portfolio, which is reported at fair value. Changes in interest rate will have an immediate impact on the Company's reported net income and consequently the shareholders' funds.
+
+| Banks | Fixed Time Deposit amount June 30, 2022 | | | 2021 Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **General Ins** | **Life Ins** | **Total** | |
+| Abyssinia Bank | 245,600,207 | 38,706,545 | 284,306,752 | 239,478,356 |
+| Addis International bank | 17,465,267 | - | 17,465,267 | 15,560,128 |
+| Awash International bank | 356,259,169 | 45,523,490 | 401,782,659 | 279,953,647 |
+| Enat Bank | 50,959,760 | 15,005,075 | 65,964,836 | 0 |
+| Coop. Bank of Oromia | 74,682,078 | 33,221,340 | 107,903,417 | 68,923,047 |
+| Dashen Bank | 215,415,852 | 29,952,468 | 245,368,320 | 187,646,086 |
+| Debub Global Bank | 53,490,144 | - | 53,490,144 | 25,812,055 |
+| Nib International bank | 160,270,432 | 34,116,784 | 194,387,215 | 177,950,342 |
+| Oromia International bank | 225,760,560 | 15,088,548 | 240,849,109 | 230,231,427 |
+| United Bank | 39,505,154 | - | 39,505,154 | 37,415,916 |
+| Wegagen Bank | 62,855,831 | 7,034,570 | 69,890,401 | 69,910,285 |
+| **Total** | **1,502,264,454** | **218,648,820** | **1,720,913,273** | **1,332,881,289** |
+
+---
+[Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation]
+
+40
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+# NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+| Bond Description | Bond amount June 30, 2022 | | | 2021 |
+| :--- | :--- | :--- | :--- | :--- |
+| | **General Ins** | **Life Ins** | **Total** | **Total** |
+| Government Bond | 170,716,656 | 30,126,469 | 200,843,125 | 149,643,125 |
+| Interest receivable on bond | 6,074,487 | 1,071,968 | 7,146,455 | 4,602,282 |
+| ECL Impairment allowance for Bond | (8,535) | (1,506) | (10,042) | (7,712) |
+| **Total** | **176,782,608** | **31,196,931** | **207,979,538** | **154,237,695** |
+
+An analysis of the Company's sensitivity to a 0.5% parallel increase or decrease in market interest rates at the reporting date, assuming all other variables remain constant is shown below:
+
+| Financial Instruments | Effect on Profit/Loss | | Effect on Equity | |
+| :--- | :--- | :--- | :--- | :--- |
+| | **0.5% increase** | **0.5% decrease** | **0.5% increase** | **0.5% decrease** |
+| Time deposits | 8,604,566 | -8,604,566 | 8,604,566 | -8,604,566 |
+| Government Bond | 1,039,898 | -1,039,898 | 1,039,898 | -1,039,898 |
+| **Total (ETB)** | **9,644,464** | **-9,644,464** | **9,644,464** | **-9,644,464** |
+
+## (II) EQUITY PRICE RISK
+
+Equity price risk refers to the potential gain or loss in fair value resulting from positive or adverse changes in the fair value of stocks/ shares/ that the Company has invested in.
+
+| Investment Entity | Principal investment as at 30/06/22 | | | | | 30/06/21 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | **G. Insu.** | **Life Assu.** | **Share premium** | **Fair Value Adjustment** | **Total** | **Total** |
+| United Bank S. Co. | 50,000,000 | 0 | 5,000,000 | 5,598,631 | 60,598,631 | 57,027,778 |
+| Addis-Africa international convention and exhibition centre (AAICEC) | 20,000,000 | 0 | 400,000 | 0 | 20,400,000 | 20,400,000 |
+| Awash Bank | 2,804,000 | 0 | 3,252,640 | 0 | 6,056,640 | 0 |
+| Wegagen Bank S. Co. | 0 | 5,000,000 | 1,000,000 | 0 | 6,000,000 | 6,000,000 |
+| **Total** | **72,804,000** | **5,000,000** | **9,652,640** | **5,598,631** | **93,055,271** | **83,427,778** |
+
+The Company considers the following justifications for the above Fair Value (FV) of Equity investment.
+
+---
+*The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+41
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report
+2021/22
+
+### UNITED BANK
+As per the Bank's draft report for the year 2021/22, Dividend per share is expected to be 21.21%. Based on the dividend growth model, during the period, the FV of the equity Investment at United Banks is expected to increase by Birr 3,570,853.49
+
+### AWASH BANK
+Since the shares are purchased during the year, the Acquisition cost is considered as Fair value of the equity investment.
+
+### WEGAGEN BANK
+As per the Bank's draft report for the year 2021/22, the bank performance is improved and achieved a gross profit of 1.4 billion. Due to huge provision during last year and as per National Bank of Ethiopia commendation there was no dividend. Thus, considering the improvement, we consider the Initial Investment as Fair value of the equity investment.
+
+### ADDIS-AFRICA INTERNATIONAL CONVENTION & EXHIBITION CENTRE (AAICEC)
+This project is under progress and not operational, but as per the activity report, the project is in good progress. Thus, we consider the Acquisition cost as Fair value of the equity investment.
+
+As at June 30, 2022 the exposure to equity price at fair value was Birr 93.1 million, which shows an increase of 12% from last year equity investment. An increase/decrease of 15% in the value of these equities would result in an increase/ decrease in Other Comprehensive Income (OCI) of Birr 13.96 million as depicted here below.
+
+| Financial Instruments | Effect on OCI: 15% increase | Effect on OCI: 15% decrease |
+| :--- | :--- | :--- |
+| Equity/ Share investment | 13,958,291 | -13,958,291 |
+| **Total (ETB)** | **13,958,291** | **(13,958,291)** |
+
+As per the policy of the Company such variation in fair value is accounted through Other Comprehensive Income (OCI) and hence it has no effect on retained earnings.
+
+### (III) CURRENCY RISK
+The Company is exposed to currency risk to the extent that currencies in which reinsurance contracts are denominated differ from functional currency of the Company. These contracts are primarily denominated in US Dollars.
+
+The summary quantitative information about the Company's exposure to currency risk arising from reinsurance contracts at the reporting date was as follows:
+
+---
+42
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+| Reinsurance contracts | June 30, 2022 |
+| :--- | :--- |
+| Reinsurance assets (receivables) | USD 224,745 |
+| Reinsurance liability (payables) | USD 227,331 |
+
+A reasonably possible strengthening or weakening of **Ethiopian Birr** against the **US Dollar** at the reporting date would have affected the measurement of insurance and reinsurance contracts and financial instruments and affected the profit or loss and equity by the amounts shown below: The analysis assumes that all other variables remain constant.
+
+| Reinsurance contracts | Effect on Profit/Loss | Effect on Profit/Loss | Effect on Equity | Effect on Equity |
+| :--- | :--- | :--- | :--- | :--- |
+| | **10% Strengthening** | **10% Weakening** | **10% Strengthening** | **10% Weakening** |
+| Receivables | (1,168,537) | 1,168,537 | (1,168,537) | 1,168,537 |
+| Payables | 1,205,625 | (7,569,888) | 1,205,625 | (7,569,888) |
+| **Total (ETB)** | **37,088** | **(37,088)** | **37,088** | **(37,088)** |
+
+The following exchange rate has been applied
+
+**June 30, 2022 Closing rate**
+
+| | Selling | Buying |
+| :--- | :--- | :--- |
+| **USD 1 =** | **Br. 51.9938** | **Br. 53.0337** |
+
+**(https://combanketh.et/en/exchange-rate/)**
+
+As the balance in receivable and payable is almost the same the impact is very minimal as observed above, which shows a tremendous improvement as compared to last year balances.
+
+### 4.2.3 CREDIT RISK
+
+Credit risk is the risk that one party to a financial instrument will fail to discharge an obligation and cause the other party to incur a financial loss. The Company is exposed to credit risk through its financial assets, which include bank deposits, fixed time deposits and receivables.
+
+### 4.2.3.1 MANAGEMENT OF CREDIT RISK
+
+Ethio-Re's credit risk philosophy considers ceding companies adhere to the reinsurance terms and conditions and submits statement of account and settle premium due in time. Any investment undertaken by Ethio-Re shall be undertaken in a manner that seeks to ensure the preservation of the principal investment.
+
+Bank deposits are placed within local Ethiopian banks and are spread over several banks to avoid undue concentration.
+
+Credit risk relating to receivables is mitigated by the large number of cedants and largely limited only in Ethiopia. A significant number of the companies from whom receivables are due are equally shareholders of the Company. In addition, the liability for outstanding claims is in respect of insurance contracts with the same counter parties. Receivables are presented at present value net of impairment
+
+43
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+**ETHIO RE**
+Annual Report 2021/22
+
+---
+
+provision. A periodic evaluation of cedants and retrocessionaires is carried out to minimize exposure to significant losses from insolvencies.
+
+### 4.2.3.2 EXPOSURE TO CREDIT RISK
+
+The carrying amount of financial assets and insurance contracts represents the maximum credit exposure. The maximum exposure to credit risk at the reporting date was:
+
+| Carrying amount | ETB |
+| :--- | :--- |
+| Time deposits | 1,720,913,273 |
+| Government Bond | 207,979,538 |
+| Staff loans | 2,951,233 |
+| Insurance Receivables – Ceding | 465,261,747 |
+| Insurance Receivables – Retrocession | 1,368,805 |
+| Cash and cash equivalents (bank balances) | 356,976,883 |
+| **Balances at 30 June 2022** | **2,755,451,479** |
+
+### 4.2.3.3 IMPAIRMENT LOSSES
+
+The ageing of reinsurance debtors' net balance at the reporting date was as follows:
+
+| Description | Gross Amount (ETB) |
+| :--- | :--- |
+| Current (0-29 days) | 82,104,783 |
+| Past due (30-90 days) | 71,997,461 |
+| Past due (91 – 180 days) | 87,337,269 |
+| Past due 181 – 360 days | 39,057,322 |
+| Past due 1 – 2 years | 104,897,948 |
+| Past due 2 – 3 years | 15,921,200 |
+| Past due 3 – 4 years | 1,877,766 |
+| Past due more than 4 years | 9,243,233 |
+| **Total** | **412,436,982** |
+| **Impairment** | **8,976,380** |
+
+The allowance account in respect of insurance receivables is used to record impairment losses unless the Company is satisfied that no recovery of the amount owing is possible. At that point the amount is considered irrecoverable and is written off against the financial asset directly.
+
+---
+**44**
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+The Company opted to use the simplified approach in applying the ECL model, which uses historical provision rate to measure lifetime expected credit losses at all times.
+
+During the year ended 30 June 2022, the Company's management has assessed the collectability & decided that all net receivables from cedants to be categorized in to two major groupings i.e., receivables below two years and above two years and impair 1.5% for the first category and 100% for the second category.
+
+Considering subsequent collections and the Cedant Companies agreement to settle the outstanding balance, the Company impaired Birr 8.98 million as indicated above.
+
+### 4.2.3.4 AMOUNT ARISING FROM EXPECTED CREDIT LOSSES (ECL)
+
+The following amounts were subject to ECL as they were classified at amortised cost:
+
+| Description | 2021/22 ETB | 2020/21 ETB |
+| :--- | :--- | :--- |
+| Staff loans | 2,951,233 | 1,269,726 |
+| Cash at bank | 356,976,883 | 139,526,881 |
+| Time deposits | 1,720,913,273 | 1,332,881,289 |
+| Government Bond | 200,843,125 | 149,643,125 |
+| **Total As at 30 June 2021** | **2,281,684,514** | **1,623,321,021** |
+
+When determining whether the credit risk (i.e., risk of default) on a financial instrument has increased significantly since initial recognition, the Company considers reasonable and supportable information that is relevant and available without undue cost or effort. This includes both the qualitative and quantitative information and analysis based on the Company's experience, expert credit assessment and forward-looking information.
+
+Whenever available, the Company monitors changes in credit risk by tracking published external credit ratings. Where external credit ratings are not available, the Company allocates each exposure to a credit risk graded based on data that is determined to be predictive of the risk of default including but not limited to audited financial statements, management account and cash flow projections and available regulatory and press information about borrowers.
+
+The Company assumed that the credit risk of a financial asset has not increased significantly since initial recognition if the financial asset has low credit risk at the reporting date.
+
+Key inputs into the measurement of expected credit losses (ECL) are performance default rates (PD), loss given default (LGD) and exposure at default (EAD). PD estimates the likelihood of a default happening over a specified period. LGD is the magnitude of the likely loss if there is default. EAD represents the expected exposure in the event of default. The Company measures ECL considering the risk of default over the maximum contractual period.
+
+The Company assumed a **zero percent rate** of default on its time deposit and cash at bank. This was based on the following factors and circumstances:
+
+*   The Company considers time deposits to be in default when a financial asset is more than 90 days past dues, all its time deposits were paid on the date of maturity.
+*   In assessing whether a borrower is in default, the Company considers indicators such as breaches of covenant and other indicators of financial distress, overdue status of another obligation of the same issuer and none of these conditions were observed.
+
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+45
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+**ETHIO RE**
+Annual Report 2021/22
+
+* Subsequent to 30 June 2022 the Company had already collected all its dues from the financial institutions it held financial assets with.
+* Based on enquiries made with other external sources there was no history of default on time deposits with the financial institutions invested.
+
+The Statutory deposit was considered as sovereign debt and recoverable in full, but for the sake of doubt 0.005% rate was applied in calculating expected credit losses.
+
+Accordingly, Birr 10,042 is taken as ECL impairment allowance for the Government bond.
+
+Staff loans were considered recoverable in full as the amounts are set to be deducted from salaries and in the event of employees leaving before settling their debts, all are obliged to have one other employee to sign as a surety and outstanding amounts will be deducted from their severance pay.
+
+### 4.2.4 LIQUIDITY RISK
+
+The table below analyses the Company's key financial and insurance assets and liabilities into relevant maturity groupings based on the remaining period at 30th June 2022 to the earlier of the re-pricing or contractual maturity date.
+
+| Description | Below 1 year | 1 – 5 years | > 5 years | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| **1 Assets** | | | | |
+| Cash and cash equivalent | 10,000 | | | 10,000 |
+| Reinsurance Premium Receivables - Ceding (Net of provision of impairment) | 465,261,747 | | | 465,261,747 |
+| Reinsurance Premium Receivables - Retro | 1,368,805 | | | 1,368,805 |
+| Investments | 82,500 | 200,760,625 | | 200,843,125 |
+| Bank Deposits (current and saving) | 356,966,883 | | | 356,966,883 |
+| Fixed time deposit at amortized cost | 1,720,913,273 | | | 1,720,913,273 |
+| Deferred tax Asset | 3,702,212 | | | 3,702,212 |
+| Staff loans | 1,446,831 | 1,504,402 | | 2,951,233 |
+| Advance Tax | 8,004,856 | | | 8,004,856 |
+| **Total Assets ‘A’** | **2,557,757,107** | **202,265,027** | **0** | **2,760,022,134** |
+
+***
+
+[Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation]
+
+**46**
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+# NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+| 2. Liabilities | | | | |
+| :--- | :---: | :---: | :---: | :---: |
+| Due to ceding companies | 61,461,903 | | | 61,461,903 |
+| Due to Retro-Reinsurers | 384,065,530 | | | 384,065,530 |
+| Provision for unearned premiums | 446,629,330 | | | 446,629,330 |
+| Provision for incurred but not reported claims (IBNR) | 87,423,182 | | | 87,423,182 |
+| Outstanding Claims Reserve | 366,044,926 | | | 366,044,926 |
+| Other payables | 16,145,596 | | | 16,145,596 |
+| Lease Liability | 2,261,893 | 6,007,438 | | 8,269,331 |
+| Employees Benefit Liability | 531,798 | | | 531,798 |
+| Deferred tax liability | 2,196,722 | | | 2,196,722 |
+| Provision for Income Tax | 11,638,753 | | | 11,638,753 |
+| **Total Liability 'B'** | **1,379,241,565** | **6,007,438** | **0** | **1,384,275,793** |
+| Liquidity gap A - B | 1,178,515,542 | 196,257,589 | 0 | 1,375,746,341 |
+| **Liquidity Ratio A: B** | **1.85: 1.00** | | | **1.99: 1.00** |
+
+Liquidity risk is the risk that the Company will encounter difficulty in raising funds to meet commitments associated with reinsurance contracts and other obligations as and when due. As can be seen from the above table for every one Birr current liability the Company maintains one birr and 85 cents in current assets, which is far above the regulatory threshold.
+
+### 4.2.4.1 MANAGEMENT OF LIQUIDITY RISK
+
+The Company manages its liquidity risk by holding an adequate liquidity buffer to pay out unexpected claims. Investment in short term securities, like treasury Bills, and Certificate of Deposits, shall be evenly distributed over 12 months to enable the Company to meet its unexpected liquidly problem without forfeiting interest accrued on Certificate of Deposits.
+
+The Company also prepares a one-year projected cash flow broken down in four quarters and this cash flow performance is monitored and evaluated.
+
+### 4.2.5 OPERATIONAL RISK
+
+Operational risk is the risk of direct or indirect loss arising from a variety of causes associated with the Company's processes, personnel, technology and infrastructure, and from external factors other than credit, market and liquidity risk such as non-compliance with legal and regulatory requirements and generally accepted standards of corporate behaviour. Operational risk arises from all the Company operations.
+
+Generally, Ethio-Re follows the Emerging Risk Initiative (ERI) risk radar updates. Moreover, it uses the following techniques to identify possible risk events in each respective work units and corporate level:
+
+*   Brainstorming sessions among appropriate staff members of respective Offices and with all Senior Management members;
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+**47**
+
+ETHIO RE
+Annual Report
+2021/22
+
+# NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+* Monthly reports received from different units of the Company;
+* Discussions with the Company internal and external auditors;
+* Analysis of key processes and systems at corporate level;
+* Different local and international media reports/ news;
+* Technical conferences and workshops;
+* Industry, Trade and Professional journals;
+* Assessing past experience of the Company (for example, using internal databases) and from experience in the local and international market.
+* Establishing Administrative Organization and Internal Control Systems to control risks during the operational process.
+* To mitigate risks like fraud and errors, the Company has established internal control systems whereby approval limits for underwriting, reinsurance, claims handling, payment authorization for major capital expenditures and general expenses, investment/divestment, cheque signatories are authorized by different levels of executive management aligned with the hierarchy of Ethio-Re's structure.
+
+### 4.2.6 CAPITAL MANAGEMENT
+Capital requirements are set and regulated by the National Bank of Ethiopia (NBE). These requirements are put in place to ensure solvency margins are maintained in the insurance industry. Further, objectives are set by the Company to maintain a strong credit rating and healthy capital ratios in order to support its business objectives and maximize shareholders value.
+
+### STRUCTURE OF CAPITAL
+The Company is wholly owned by Ethiopian nationals and/or organizations wholly owned by Ethiopian nationals. All shares rank equally with regard to the Company's residual assets and shareholders are entitled to one vote per share.
+
+As of 30 June 2022, the Company's capital was as follows:
+
+### SUBSCRIBED SHARE CAPITAL
+250,000 shares of Birr 10,000 each | ETB 2,500,000,000
+
+### 4.2.7 REGULATORY CAPITAL
+The Company registers Birr 1,390,600,347 paid up capital as at 30-06-2022 which is above the statutory limit of Birr 500 million set by the National Bank of Ethiopia.
+
+---
+48
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+# 5. CASH AND CASH EQUIVALENTS
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| **Saving accounts** | | | | |
+| Commercial Bank of Eth. | 197,824,133 | - | 197,824,133 | 57,743,891 |
+| **Current accounts** | | | | |
+| Abay Bank | 669,093 | - | 669,093 | - |
+| Abyssinia Bank | 17,857,674 | - | 17,857,674 | 458,094 |
+| Addis International Bank | 119,600 | - | 119,600 | 6,404 |
+| Awash International Bank | 31,092,929 | - | 31,092,929 | 6,356,449 |
+| Buna International Bank | 900 | - | 900 | 930 |
+| Commercial Bank of Ethiopia | 16,185,168 | - | 16,185,168 | 3,524,779 |
+| CBE Interest free Account | 492,156 | | 492,156 | 162,166 |
+| CBE Foreign Ex. Retention A | 1,667,872 | | 1,667,872 | 50,508 |
+| Coop. Bank Of Oromia | 4,802,512 | - | 4,802,512 | 1,414,315 |
+| Dashen Bank | 10,380,038 | - | 10,380,038 | 17,037,228 |
+| Debub Global Bank | 50,024,323 | | 50,024,323 | 30,918,495 |
+| Enat Bank | 872,177 | | 872,177 | - |
+| Nib International Bank | 315,475 | - | 315,475 | 4,802,135 |
+| Oromia International Bank | 13,540,819 | - | 13,540,819 | 402,555 |
+| United Bank | 10,951,402 | | 10,951,402 | 7,243,639 |
+| Zemen Bank | 85,406 | | 85,406 | 114,077 |
+| Wegagen Bank | - | 85,205 | 85,205 | 3,855,563 |
+| Cash on Hand | 10,000 | - | 10,000 | 5,436,653 |
+| **Total** | **356,891,678** | **85,205** | **356,976,883** | **139,527,881** |
+
+# 6. OTHER RECEIVABLES
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| Staff loans | 2,951,233 | - | 2,951,233 | 1,269,726 |
+| Sundry debtors | 558 | - | 558 | - |
+| Prepayment | 1,559,252 | - | 1,559,252 | 844,828 |
+| Advance tax | 7,821,515 | 183,341 | 8,004,856 | 3,730,427 |
+| **Total** | **12,332,559** | **183,341** | **12,515,900** | **5,844,981** |
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+49
+
+# NOTES TO FINANCIAL STATEMENTS
+### FOR THE YEAR ENDED 30 JUNE 2022
+
+**ETHIO RE**  
+Annual Report 2021/22
+
+---
+
+## 7. DUE FROM CEDING COMPANIES
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| Due from ceding companies | 443,383,987 | 30,832,292 | 474,216,279 | 432,772,670 |
+| Provision of impairment | 8,446,122 | 508,410 | 8,954,532 | 13,670,829 |
+| **Total** | **434,937,865** | **30,323,882** | **465,261,747** | **419,101,841** |
+
+---
+
+## 8. DEFERRED ACQUISITION COSTS
+
+| Class of Business | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2021** | **2021** | **2021** | **2020** |
+| Accident | 4,362,163 | | 4,362,163 | 3,637,084 |
+| Aviation | 903,209 | | 903,209 | 235,001 |
+| Burglary | 404,346 | | 404,346 | 485,866 |
+| Engineering | 20,972,490 | | 20,972,490 | 12,871,291 |
+| Employers Liability | 1,576,304 | | 1,576,304 | 1,427,320 |
+| Fire | 16,347,859 | | 16,347,859 | 12,020,501 |
+| Goods in transit | 584,753 | | 584,753 | 303,934 |
+| Liability | 3,891,373 | | 3,891,373 | 4,332,476 |
+| Marine | 33,512,174 | | 33,512,174 | 17,964,146 |
+| Medical | 201,278 | | 201,278 | 37,319 |
+| Motor | 19,457,755 | | 19,457,755 | 15,323,990 |
+| Pecuniary | 32,607,576 | | 32,607,576 | 22,928,117 |
+| Others | 18,445,450 | | 18,445,450 | 14,242,236 |
+| Life | - | 5,103,559 | 5,103,559 | 3,359,333 |
+| **Total** | **153,266,730** | **5,103,559** | **158,370,288** | **109,168,614** |
+
+A proportion of cedant acquisition costs is deferred and amortized over the period in which the related premium is earned. Deferred acquisition costs represent the proportion of cedant acquisition costs and other acquisition costs that relate to the unexpired term of the policies that are in force at year end.
+
+---
+**50**
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+**ETHIO RE**
+Rising with Africa
+2021/22
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+---
+
+### 9. TIME DEPOSITS
+
+| Name of Bank | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :--- | :--- | :--- | :--- |
+| Abyssinia Bank | 245,600,207 | 38,706,545 | 284,306,752 | 239,478,356 |
+| Addis Int. | 17,465,267 | - | 17,465,267 | 15,560,128 |
+| Awash | 356,259,169 | 45,523,490 | 401,782,659 | 279,953,647 |
+| Enat Bank | 50,959,760 | 15,005,075 | 65,964,836 | - |
+| Coop. Bank of Oromia | 74,682,078 | 33,221,340 | 107,903,417 | 68,923,047 |
+| Dashen Bank | 215,415,852 | 29,952,468 | 245,368,320 | 187,646,086 |
+| Debub Global | 53,490,144 | - | 53,490,144 | 25,812,055 |
+| Nib Int. | 160,270,432 | 34,116,784 | 194,387,215 | 177,950,342 |
+| Oromia | 225,760,560 | 15,088,548 | 240,849,109 | 230,231,427 |
+| United Bank | 39,505,154 | - | 39,505,154 | 37,415,916 |
+| Wegagen Bank | 62,855,831 | 7,034,570 | 69,890,401 | 69,910,285 |
+| **Total** | **1,502,264,454** | **218,648,820** | **1,720,913,273** | **1,333,881,290** |
+
+Time deposits have been recognized as financial assets at amortized cost. The effective interest rate on time deposits ranges from 12% to 13.5% per annum. The time deposits have a maturity of one year from the date of investment.
+
+The interest receivable related to time deposits is calculated using the effective interest rate method and is shown as follows;
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :--- | :--- | :--- | :--- |
+| | 77,498,310 | 13,102,335 | 90,600,645 | 78,026,619 |
+
+---
+
+### 10. EQUITY INVESTMENT
+
+The equity investment is measured at fair value through other comprehensive income as of June 30, 2020. The Company has invested in the under listed companies during the period 2019/20.
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :--- | :--- | :--- | :--- |
+| United Bank at Fair Value | 57,027,778 | - | 57,027,778 | 55,000,000 |
+| FV adjustments | 3,570,853 | - | 3,570,853 | 2,027,778 |
+| **United Bank at Fair Value** | **60,598,631** | **-** | **60,598,631** | **57,027,778** |
+| Addis-Africa International Convention & Exhibition Center(AAICEC) | 20,400,000 | - | 20,400,000 | 20,400,000 |
+| Awash Bank | 6,056,640 | - | 6,056,640 | - |
+| Wegagen Bank | - | 6,000,000 | 6,000,000 | 6,000,000 |
+| **Total** | **87,055,271** | **6,000,000** | **93,055,271** | **83,427,778** |
+
+The Company has purchased new equity shares from Awash Bank during the current year through auction, thus the Company has considered the acquisition cost as Fair Value.
+
+---
+*Stamp: The Federal Democratic Republic of Ethiopia - Audit Service Corporation*
+
+**51**
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report 2021/22
+
+---
+
+# 11. GRAND RENAISSANCE DAM BONDS
+
+A statutory deposit amounting to 15% of the paid-up capital must be maintained with the National Bank of Ethiopia. This deposit or any part thereof may not be withdrawn except with the written permission of the National Bank of Ethiopia, or be used as a pledge or security for any loan.
+
+The statutory requirement has been fulfilled by the deposit of Grand Renaissance Dam Bonds.
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Statutory deposit | 170,716,656 | 30,126,469 | 200,843,125 | 149,643,125 |
+| Interest Receivable | 6,074,487 | 1,071,968 | 7,146,455 | 4,602,282 |
+| ECL Impairment allowance for bond | 8,535 | 1,506 | 10,042 | 7,712 |
+| **Total** | **176,782,608** | **31,196,931** | **207,979,538** | **154,237,695** |
+
+The bond has been recognized as a financial asset at amortized cost. The effective biannual interest rate on the bond has changed from 2.75% to 3.75% effective from October 2020.
+
+---
+
+# 12. LEASES
+
+## RIGHT OF USE
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Cost** | | | | |
+| Balance at beginning of the year | 8,931,953 | - | 8,931,953 | 8,931,953 |
+| Addition | 10,143,660 | - | 10,143,660 | - |
+| FV adjustments | - | - | - | - |
+| Balance at end of the year | 19,075,613 | - | 19,075,613 | 8,931,953 |
+| **Depreciation** | | | | |
+| Balance at beginning of the year | (7,944,847) | - | (7,944,847) | (6,054,643) |
+| Additions | (1,955,663) | - | (1,955,663) | (1,890,204) |
+| Balance at end of the year | (9,900,510) | - | (9,900,510) | (7,944,847) |
+| **Net carrying value** | **9,175,103** | **-** | **9,175,103** | **987,106** |
+
+The right of use asset has been depreciated over 5 years which is equivalent to the lease term.
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Lease liability** | | | | |
+| Balance at beginning of the year | - | - | - | 2,097,405 |
+| Lease liability Addition | 7,776,412 | - | 7,776,412 | - |
+| Interest expense on Lease | 492,919 | - | 492,919 | 164,486 |
+| settlement & unrealized gain | - | - | - | (2,261,893) |
+| Balance at end of the year | 8,269,331 | - | 8,269,331 | - |
+
+The Company recognizes a lease liability at the present value of the lease payments that are not paid at that date. The Company uses an incremental borrowing rate that is based on the interest rate that the Company would have to pay on the commencement date of the lease for a loan of a similar term, and with a similar security, to obtain an asset of a similar value to the right-of-use asset in a similar economic environment. The rate used to compute the present value of this lease liability was 14.25%.
+
+---
+52
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+# 13. PROPERTY, PLANT AND EQUIPMENT
+
+| COST | Balance 01/07/21 | Additions | Balance 30/06/22 | Balance 30/06/21 |
+| :--- | :---: | :---: | :---: | :---: |
+| Partition work | 2,489,846 | - | 2,489,846 | 2,489,846 |
+| Motor Vehicles | 22,121,073 | - | 22,121,073 | 22,121,073 |
+| Office Equipment, furniture and fittings | 3,046,337 | 434,472 | 3,480,809 | 3,046,337 |
+| Computers & accessories | 1,126,013 | 462,462 | 1,588,475 | 1,126,013 |
+| **Sub total** | **28,783,269** | **896,934** | **29,680,203** | **28,783,269** |
+
+| DEPRECIATION | Balance 01/07/21 | Additions | Balance 30/06/22 | Total 30/06/21 |
+| :--- | :---: | :---: | :---: | :---: |
+| Partition work | 2,136,738 | 329,560 | 2,466,298 | 2,136,738 |
+| Motor Vehicles | 7,556,803 | 2,370,826 | 9,927,629 | 7,556,803 |
+| Office Equipment & furniture | 1,017,571 | 425,588 | 1,443,159 | 1,017,571 |
+| Computers & accessories | 675,169 | 245,962 | 921,131 | 675,169 |
+| **Sub total** | **11,386,281** | **3,371,936** | **14,758,217** | **11,386,281** |
+
+| NET BOOK VALUE | 17,396,988 | | 14,921,986 | 17,396,988 |
+| :--- | :---: | :---: | :---: | :---: |
+
+---
+
+**B- Intangible Asset**
+
+| COST | Balance 01/07/21 | Additions | Balance 30/06/22 | Total 30/06/21 |
+| :--- | :---: | :---: | :---: | :---: |
+| Intangible asset in progress | 23,394,786 | 1,616,941 | 25,011,727 | 23,394,786 |
+
+# 14. UNEARNED PREMIUM
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Provision for Unearned Premium | 564,589,470 | 30,581,689 | 595,171,159 | 471,943,302 |
+| Less: Retrocess. Share of Provision for UPR | 148,541,829 | - | 148,541,829 | 142,775,837 |
+| **Net Provision for Unearne** | **416,047,641** | **30,581,689** | **446,629,330** | **329,167,465** |
+
+The Unearned Premium Reserve (UPR) was determined by an independent actuary using the 8ths method which assumes quarterly reserving and is internationally accepted for reinsurers.
+
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+53
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report 2021/22
+
+---
+
+# 15. OTHER PAYABLES
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| Employees Income tax payable | 566,737 | - | 566,737 | 514,867 |
+| Withholding tax payable | 666,338 | - | 666,338 | 1,451,630 |
+| Pension Payable | 257,414 | - | 257,414 | 192,961 |
+| Sundry creditors | 9,583,812 | - | 9,583,812 | 5,924,446 |
+| Accrued staff leave | 2,821,173 | - | 2,821,173 | 1,681,665 |
+| Provision for audit fee | 799,250 | - | 799,250 | 385,250 |
+| Other accruals | 460,430 | - | 460,430 | 603,980 |
+| **Total** | **15,155,154** | **-** | **15,155,154** | **10,754,799** |
+
+---
+
+# 16. DUE TO CEDING COMPANIES
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| Due to Insurance Companies | 56,876,339 | 4,585,564 | 61,461,903 | 59,553,879 |
+
+---
+
+# 17. EMPLOYEE BENEFITS
+
+## 17.1 DEFINED BENEFIT PLANS
+
+The Company employees are entitled to a Severance Benefit. The Severance Benefit Entitlement is provided for under the Proclamation No. 377/2003. This benefit is required by law for employees who serve the Company for more than five years and who resign on their own initiation, or, where their employment contract is terminated by the Company. An employee whose contract of employment is terminated on his own initiative is entitled to normal severance pay. An employee whose contract of employment is terminated without notice by the Company shall be entitled, in addition to the normal severance pay, to two months' latest basic salary. The severance pay obligation highlighted below relates to its first year of operation from 1 July 2016.
+
+Ethio-Re provides bonus upon successful performance and profitability in a given fiscal year and upon approval by the BoD. All bonus requests shall be prepared and proposed by management and approved by the Board of Directors.
+
+The obligation is determined by an independent actuarial valuation carried out on an annual basis.
+
+### (A) PRESENT VALUE OF FUNDED OBLIGATIONS
+
+| | Gen. Ins | Long Term Ins | Total | Total |
+| :--- | :---: | :---: | :---: | :---: |
+| | **2022** | **2022** | **2022** | **2021** |
+| Active Members | 527,606 | 4,192 | 531,798 | 281,217 |
+| **Net Liability on Statement of Financial Position** | **527,606** | **4,192** | **531,798** | **281,217** |
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+54
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+### (B) RECONCILIATION OF BENEFIT OBLIGATIONS
+
+| | Total 2022 | Total 2021 |
+| :--- | :---: | :---: |
+| Opening benefit obligation | 281,217 | 212,152 |
+| Current service cost net of employees' contributions | 149,105 | 82,608 |
+| Interest cost | 26,564 | 36,117 |
+| Actuarial Gain (loss) | 413,641 | (49,660) |
+| Benefits and expenses paid | (338,729) | - |
+| **Closing benefit obligation** | **531,798** | **281,217** |
+
+---
+
+### (C) ACTUARIAL ASSUMPTIONS
+
+The principal actuarial assumptions at the reporting date used for the purpose of the severance benefit actuarial valuation are detailed below:
+
+*   **Discount rate:** 14.25%
+*   **Rate of salary increase:** 10%
+
+The discount rate was based on the rate of return of fixed term deposit due to lack of a deep and liquid market for long-term bonds in Ethiopia. The salary increase assumption rate of 10% per annum is the weighted average rate based on the job grades as provided by management.
+
+---
+
+### (D) SENSITIVITY ANALYSIS
+
+Reasonably possible changes at the reporting date, in any of the actuarial assumptions and assuming that all the other variables remain constant, would have affected the funded obligations as of 30 June, 2021 by the amounts shown below:
+
+---
+[Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation]
+
+55
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report
+2021/22
+
+### YEAR ENDED 30 JUNE 2022
+
+| | SENARIO 1, BASE | SENARIO 2, DISCOUNT RATE INCREASE BY 1% | SENARIO 3, SALARY RATE INCREASED BY 1% | SENARIO 4, DISCOUNT RATE DECREASED BY 1% | SENARIO 5 SALARY RATE DECREASE BY 1% |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Discount rate | 14.250% | 15.250% | 14.250% | 13.250% | 14.250% |
+| salary increase | 12.250% | 12.250% | 13.250% | 12.250% | 11.250% |
+| net liability at start of period | 281,217 | 281,217 | 281,217 | 281,217 | 281,217 |
+| Total net expense recognized in income statement | 175,669 | 175,669 | 175,669 | 175,669 | 175,669 |
+| Net finance costs recognized in profit and loss | 74,912 | 43,502 | 109,200 | 110,421 | 44,223 |
+| Employer contribution | | | | | |
+| Net liability at end of period | 531,798 | 500,388 | 566,086 | 567,307 | 501,109 |
+
+---
+
+### 17.2 DEFINED CONTRIBUTION PLAN
+
+Pensions are provided for employees by a separate pension fund to which both the company and employees contribute in accordance with Proclamation No. 715/2011. Under the arrangement, both the company and employees contribute defined percentages of employees' salaries. This pension fund is a defined contribution plan under which retirement benefits are determined by reference to the contributions to the fund. The Company's contributions for the schemes for the year amounted to ETB 1,778,965.41.
+
+---
+
+# 18. OUTSTANDING CLAIMS RESERVE
+
+Outstanding claims are computed on the basis of preliminary loss advice from ceding companies and outstanding claims reports sent by cedants. They are also determined on the basis of historical expenses and actuarial analysis.
+
+**18.2 Outstanding Claims Reserve**
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Gross Outstanding Claims Reserve | 807,688,663 | - | 807,688,663 | 654,656,817 |
+| Less: Retro cess. Share of Outstanding Claims Reserve | 441,643,736 | - | 441,643,736 | 352,804,430 |
+| **Net Outstanding Claims Reserve** | **366,044,926** | **-** | **366,044,926** | **301,852,387** |
+
+---
+
+*(Seal of The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+**56**
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+During the year, few major losses were reported by cedants in respect of Bond and PVT classes of businesses which amounts to Birr 72.7 million.
+
+As a result, the net outstanding claims has increased to from Birr 302 million to Birr 366 million.
+
+# 19. CAPITAL
+
+### (A) STRUCTURE OF CAPITAL
+
+The Company is wholly owned by Ethiopian nationals and/or organizations wholly owned by Ethiopian nationals. All shares rank equally with regard to the Company's residual assets and shareholders are entitled to one vote per share.
+
+As of 30 June 2022, the Company's capital was as follows:
+
+**2022**
+
+**Subscribed Share Capital**
+250,000 shares of Birr 10,000 each | ETB 2,500,000,000
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :--- | :--- | :--- | :--- |
+| Issued and Fully paid | 1,182,010,295 | 208,590,052 | 1,390,600,347 | 996,020,000 |
+
+### (B) NATURE AND PURPOSE OF RESERVES
+
+In accordance with National Bank of Ethiopia Directive No SRB/2/2022, any reinsurer at the end of each year, is required to transfer to its legal reserve an amount not less than 10% of its net profit until such reserve equals its paid-up capital.
+
+### (C) FORMATION FUND
+
+The Company had set aside Formation fund amounting to ETB 9,973,000 equivalent to 1% of the authorized share capital. This fund was intended to finance the pre-establishment costs.
+
+# 20. GROSS PREMIUM
+
+Premiums and related expenses are accounted for in profit or loss when earned or incurred. Gross earned premiums comprise gross premiums relating to risks assumed in the year after accounting for any movement in gross unearned premiums. Unearned premiums represent the proportion of the premiums written in the year that are attributable to the subsequent accounting period.
+
+The Company has two main divisions, General reinsurance and Long-term business. General reinsurance business is for contract durations typically running for one year, while Long-term business is for other business not considered as non-life business.
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+**57**
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report
+2021/22
+
+The gross premium for the financial year 2021/22 is analyzed as below:
+
+| Class of Business | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Accident | 29,556,680 | - | 29,556,680 | 26,830,648 |
+| Aviation | 23,275,510 | - | 23,275,510 | 120,098,995 |
+| Burglary | 5,169,306 | - | 5,169,306 | 3,906,346 |
+| Eng. | 132,411,600 | - | 132,411,600 | 86,817,649 |
+| Emp. Liability | 10,277,367 | - | 10,277,367 | 10,061,344 |
+| Fire | 186,981,384 | - | 186,981,384 | 155,255,685 |
+| Goods in Transit | 2,975,390 | - | 2,975,390 | 1,594,178 |
+| Liability | 34,741,505 | - | 34,741,505 | 27,706,792 |
+| Marine | 137,326,549 | - | 137,326,549 | 91,125,937 |
+| Medical | 319,552 | - | 319,552 | 617,397 |
+| Motor | 383,373,771 | - | 383,373,771 | 308,750,645 |
+| Pecuniary | 164,465,130 | - | 164,465,130 | 124,188,395 |
+| Others | 186,030,999 | - | 186,030,999 | 137,399,142 |
+| Group term life assurance | - | 39,500,894 | 39,500,894 | 30,874,757 |
+| Health insurance | - | 21,219,502 | 21,219,502 | 14,952,633 |
+| Funeral expense insurance | - | 80,142 | 80,142 | 71,698 |
+| **Total** | **1,296,904,743** | **60,800,538** | **1,357,705,282** | **1,140,252,241** |
+
+---
+
+### 21. CLAIMS INCURRED
+
+The expected loss ratio method was used to determine the provision for incurred but not reported (IBNR) claims for General business. An equivalent of one month of the annual gross premium was used to calculate the IBNR for long-term business. The valuation was performed by an independent actuary.
+
+As per the NBE Directive No. SRB.2.2022, IBNR claims shall be 10% of net earned premium or the amount determined by an actuary or the method proposed in writing by an actuary whichever is higher.
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+**58**
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+# NOTES TO FINANCIAL STATEMENTS
+### FOR THE YEAR ENDED 30 JUNE 2022
+
+| Class of Business | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Accident | 10,133,095 | - | 10,133,095 | 8,499,128 |
+| Aviation | 3,836,009 | - | 3,836,009 | (14,275,967) |
+| Burglary | 95,291 | - | 95,291 | 442,077 |
+| Eng. | 17,904,770 | - | 17,904,770 | 12,360,322 |
+| Emp. Liability | 1,701,052 | - | 1,701,052 | 3,015,235 |
+| Fire | 29,165,004 | - | 29,165,004 | 32,546,201 |
+| Goods in Transit | 87,690 | - | 87,690 | 218,735 |
+| Liability | 9,099,721 | - | 9,099,721 | 14,693,975 |
+| Marine | 14,957,081 | - | 14,957,081 | 6,918,604 |
+| Medical | 207,127 | - | 207,127 | 358,934 |
+| Motor | 269,475,237 | - | 269,475,237 | 225,937,703 |
+| Pecuniary | 20,709,518 | - | 20,709,518 | 13,561,655 |
+| Others | 39,919,490 | - | 39,919,490 | 11,555,843 |
+| Group Term Life Assurance | - | 7,684,743 | 7,684,743 | 5,464,255 |
+| Health Insurance | - | 17,675,205 | 17,675,205 | 13,197,331 |
+| Funeral Expense Insurance | - | 518,627 | 518,627 | 864 |
+| **Total** | **417,291,085** | **25,878,575** | **443,169,660** | **334,494,895** |
+
+---
+
+# 22. CEDANT ACQUISITION COSTS
+
+| Class of Business | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Accident | 10,960,119 | | 10,960,119 | 9,169,106 |
+| Aviation | 1,198,553 | | 1,198,553 | 4,717,789 |
+| Burglary | 1,914,071 | | 1,914,071 | 1,369,967 |
+| Engineering | 36,363,095 | | 36,363,095 | 29,898,821 |
+| Employers Liability | 3,523,356 | | 3,523,356 | 3,445,613 |
+| Fire | 63,456,862 | | 63,456,862 | 53,109,414 |
+| Goods in Transit | 849,213 | | 849,213 | 596,567 |
+| Liability | 10,004,197 | | 10,004,197 | 7,557,870 |
+| Marine | 39,868,546 | | 39,868,546 | 33,572,357 |
+| Medical | 58,255 | | 58,255 | 271,179 |
+| Motor | 37,309,561 | | 37,309,561 | 31,203,001 |
+| Pecuniary | 53,978,096 | | 53,978,096 | 34,220,259 |
+| Others | 34,846,099 | | 34,846,099 | 21,078,748 |
+| Life | - | 8,139,863 | 8,139,863 | 6,440,410 |
+| **Total** | **294,330,023** | **8,139,863** | **302,469,886** | **236,651,101** |
+
+---
+
+*(Seal of The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+**59**
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report 2021/22
+
+---
+
+### 23. NET FINANCE COSTS
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Interest on Saving Accounts | 7,569,012 | - | 7,569,012 | 3,066,529 |
+| Interest on Fixed timed deposits | 144,316,452 | 18,434,031 | 162,750,483 | 139,004,804 |
+| Interest on Grand Ren. Dam Bond | 9,658,104 | 1,704,371 | 11,362,475 | 9,068,901 |
+| Dividend income | 6,181,230 | - | 6,181,230 | 3,158,411 |
+| Interest on current account | 524,522 | - | 524,522 | 578,309 |
+| Interest on staff loan | 352,675 | - | 352,675 | 232,644 |
+| Realized/Unrealized exchange gains | 2,161,668 | - | 2,161,668 | 744,405 |
+| **Investment and finance Income** | **170,763,663** | **20,138,402** | **190,902,065** | **155,854,003** |
+| Interest on lease liability | 492,919 | - | 492,919 | 151,037 |
+| Interest on employee benefits liability | 364,449 | 15,185 | 379,635 | 263,438 |
+| **Investment and finance Costs** | **857,368** | **15,185** | **872,553** | **414,475** |
+| **Net Investment Income** | **169,906,295** | **20,123,217** | **190,029,512** | **155,439,528** |
+
+---
+
+### 24. OPERATING AND OTHER EXPENSES
+
+| | Gen. Ins 2022 | Long Term Ins 2022 | Total 2022 | Total 2021 |
+| :--- | :---: | :---: | :---: | :---: |
+| Administrative and general | 46,788,881 | (957,863) | 45,831,018 | 72,538,009 |
+| Staff costs | 27,824,154 | 587,969 | 28,412,123 | 18,077,262 |
+| Depreciation | 3,328,241 | 64,746 | 3,392,987 | 3,170,518 |
+| Directors allowance | 880,000 | - | 880,000 | 1,040,000 |
+| Audit fees | 398,098 | - | 398,098 | 331,200 |
+| **Total expenses** | **79,219,373** | **(305,148)** | **78,914,225** | **95,156,989** |
+
+---
+
+### 25. INCOME TAXES
+
+The Company is subject to income taxes in Ethiopia. The rate of business income tax applicable to a Company is 30%. In accordance with tax legislation, the taxpayer is allowed a number of deductible expenditures in determining taxable income.
+
+#### 25.1 INCOME TAX EXPENSE
+
+The Current income tax expenses for the year ended 30 June 2022 is computed as follows:
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+**60**
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+### INCOME TAX COMPUTATION
+For the year ended June 30th, 2022
+Adjusted tax calculation
+
+| Description | Gen.Ins | Long Term Ins | Total 2022 |
+| :--- | :---: | :---: | :---: |
+| **PROFIT PER ACCOUNTS** | **198,888,104** | **33,711,378** | **232,599,481** |
+| | | | |
+| **Add:** | | | |
+| Amortization of Right Of Use (ROU) | 1,880,813 | 74,850 | 1,955,663 |
+| Interest on least liability & Interest on employee benefits liability | 857,368 | 15,185 | 872,553 |
+| Depreciation of fixed assets per IFRS | 3,328,241 | 64,746 | 3,392,987 |
+| | - | - | - |
+| **Less:** | | | |
+| Depreciation of fixed assets per I.Tax Proc. | (4,294,088) | (178,920) | (4,473,008) |
+| Rent Expenses for the year 2021-22 | (2,259,237) | (94,135) | (2,353,372) |
+| Amortization of differed establishement cost | | | - |
+| **Disallowed expenses:** | | | |
+| Loss on exchange unrealized | 1,774,368 | - | 1,774,368 |
+| Entertainment | 1,452,034 | 60,501 | 1,512,536 |
+| unrealized Exchange gain | (648,165) | - | (648,165) |
+| Severance pay provision | 143,141 | 5,964 | 149,105 |
+| Provision for annual leave | 1,369,319 | 23,564 | 1,392,882 |
+| Employee vehicle Benefit in kind | 183,725 | | 183,725 |
+| Provision for Receivable | (2,788,853) | (1,925,113) | (4,713,967) |
+| **Tax exempted Income** | | | |
+| Interest Income | (168,249,320) | (20,138,402) | (188,387,723) |
+| **Taxable Profit Current year** | **31,637,447** | **11,619,619** | **43,257,066** |
+| | | | |
+| Current Income Tax @ 30% | 9,491,234 | 3,485,886 | 12,977,120 |
+| Less:Tax Refund from ERCA | 1,338,366 | | 1,338,366 |
+| **Income Tax payable** | **8,152,868** | **3,485,886** | **11,638,753** |
+
+---
+*(Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+61
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+ETHIO RE
+Annual Report
+2021/22
+
+### 25.2 DEFERRED TAX EXPENSES
+
+| Description | | 2022 |
+| :--- | :--- | :--- |
+| **Deferred tax Asset (liability)** | | **(1,324,433)** |
+| **Movement in Deferred tax Asset (liability)** | | |
+| **FV of Equity** | | |
+| Increase in Fair Value of Equity Inv.-United Bank | 3,570,853 | |
+| Deferred tax liability - @ 30% | | (1,071,256) |
+| **Movement accounted in OCI** | | **(1,071,256)** |
+| | | |
+| **PPE** | | |
+| Carrying amount | 15,232,128 | |
+| Tax base | 11,480,575 | |
+| Temporary difference | (3,751,553) | |
+| Deferred tax liability - @ 30% | | (1,125,466) |
+| **Annual Leave & Severance Pay** | | |
+| Carrying amount | 3,352,971 | |
+| Tax base | - | |
+| | (3,352,971) | |
+| | | 1,005,891 |
+| **Dam Bond** | | |
+| Carrying amount | 207,979,538 | |
+| Tax base | 207,989,580 | |
+| | 10,042 | |
+| | | 3,013 |
+| **Debtor** | | |
+| Carrying amount | 464,756,856 | |
+| Tax base | 473,734,550 | |
+| | 8,977,694 | |
+| | | 2,693,308 |
+| **Movement accounted in PL** | | **2,576,746** |
+| | | |
+| **Deferred tax Asset (liability) CF** | | **1,505,490** |
+| | | |
+| Total Movement in Deferred tax Expense | | 2,829,923 |
+| | | |
+| Deferred tax Asset CF | | 3,702,212 |
+| Deferred tax Liability CF | | 2,196,722 |
+
+---
+*Seal: The Federal Democratic Republic of Ethiopia Audit Service Corporation*
+
+62
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+NOTES TO FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2022
+
+### 25.3 TOTAL INCOME TAX EXPENSE FOR THE YEAR ENDED 30 JUNE 2022 IS AS FOLLOWS:
+
+| Tax Expense | Gen.Ins | Long Term Ins | Total |
+| :--- | :--- | :--- | :--- |
+| **Current Income Tax Expense** | | | |
+| Current Income Tax (Note 25.1) | 9,491,234 | 3,485,886 | 12,977,120 |
+| **Deferred Tax Expense** | | | |
+| Movement in deferred tax (Note 25.2) | (3,901,179) | - | (3,901,179) |
+| **Total Tax Expenses** | **5,590,055** | **3,485,886** | **9,075,941** |
+
+---
+
+### 26. EARNINGS PER SHARE (EPS)
+
+Earnings per share is calculated by dividing the profit/loss for the year by the weighted average number of ordinary shares in issue during the year.
+
+| | | | 2022 ETB | 2021 ETB |
+| :--- | :--- | :--- | :--- | :--- |
+| Profit attributable to Shareholders | | | 223,523,541 | 194,978,668 |
+| Weighted average number of ordinary shares issued | | | 106,890 | 86,581 |
+| Basic and diluted Earnings Per Share | | | 2,091 | 2,252 |
+| Basic and diluted EPS in % | | | 20.91% | 22.52% |
+
+There were no potentially dilutive shares outstanding at 30 June 2022. The diluted earnings per share is therefore the same as the basic earnings per share.
+
+---
+
+### 27. RELATED PARTIES
+
+For the purposes of these financial statements, a party is considered to be related to the Company if:
+
+*   The party has the ability, directly or indirectly through one or more intermediaries, to control the Company or exercise significant influence over the Company in making financial and operating policy decisions, or has joint control over the Company;
+*   The Company and the party are subject to common control; and
+*   The party is a member of key management personnel of the Company or the Company's parent, or close family member of such an individual.
+
+#### ULTIMATE PARENT COMPANY
+
+The entity has no ultimate parent company. The Company's shareholdings comprise various insurance companies, banking institutions and individuals in Ethiopia. The shareholding as at 30th June 2022 is as follows:
+
+63
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+**ETHIO RE**
+Annual Report 2021/22
+
+| Shareholder Category | Composition | Percentage Shareholding |
+| :--- | :--- | :--- |
+| Insurance companies | Seventeen insurance companies. Ethiopian insurance Corporation (EIC) is a major shareholder in this category with 20.07% | 67.05% |
+| Banks | Seven banks in Ethiopia. Commercial Bank of Ethiopia (CBE) is a major shareholder with 20.07% | 30.87% |
+| Individuals | Eighty Eight individuals. | 2.07% |
+| Trade unions | One trade union | 0.01% |
+| **Total** | | **100.00%** |
+
+Related party transactions were made on terms equivalent to those that prevail in arm's length transactions with the exception of loans provided to staff at below market rates. These transactions include loans, deposits and foreign currency transactions. The volumes of the related party transactions, outstanding balances at the end of the year and the related expenses and incomes for the year are as follows:
+
+### (A) OTHER RELATED PARTY TRANSACTIONS
+
+| | 2022 | 2021 |
+| :--- | :---: | :---: |
+| | ETB | ETB |
+| BBF | 146,513,932 | 75,199,571 |
+| Premiums written | 361,349,643 | 393,146,539 |
+| Claims paid | (109,771,515) | (67,666,565) |
+| Commission | (97,304,270) | (88,433,924) |
+| Profit commission | (22,613,225) | (22,613,225) |
+| **Net amount** | **278,174,565** | **289,632,395** |
+| Amounts paid by EIC | (225,431,654) | (143,118,463) |
+| **Amounts outstanding from EIC** | **52,742,911** | **146,513,932** |
+
+Commercial Bank of Ethiopia (*CBE is a major shareholder with 20.07% shareholding and holds saving and current bank accounts for Ethiopian Re)
+
+| | 2022 | 2021 |
+| :--- | :---: | :---: |
+| | ETB | ETB |
+| Savings account | 197,824,133 | 57,743,891 |
+| Current account | 16,185,168 | 3,524,779 |
+| **Total Balance** | **214,009,302** | **61,268,670** |
+
+Other shareholder banks (Other six shareholder banks hold saving and current accounts and Time Deposits for Ethiopian Re)
+
+---
+64
+
+**ETHIO RE**
+Rising with Africa
+2021/22
+
+**NOTES TO FINANCIAL STATEMENTS**
+FOR THE YEAR ENDED 30 JUNE 2022
+
+| | 2022 | 2021 |
+| :--- | :---: | :---: |
+| | **ETB** | **ETB** |
+| Savings account | 197,824,133 | 57,743,891 |
+| Interest free Account | 492,156 | - |
+| Foreign Ex.Retention A | 1,667,872 | - |
+| Current account | 16,185,168 | 3,524,779 |
+| **Total Balance** | **216,169,330** | **61,268,670** |
+
+Other shareholder insurance companies are cedants for Ethiopian Re. All business related to gross premiums written (both for General and Life business) is attributable to the shareholder insurance companies.
+
+Birr 4,731,830 is paid for travel and accommodation for the local CEOs' of Insurance Companies to strength the business relationship with the cedants.
+
+### (B) REMUNERATION OF DIRECTORS AND KEY MANAGEMENT PERSONNEL
+
+The directors of the Company are paid monthly transport allowance of Birr 10,000 in addition to the annual remuneration of up to Birr 150,000 upon the approval of the annual general meeting.
+
+The table below displays the annual transport allowance paid during the reporting year
+
+| | 2022 | 2021 |
+| :--- | :---: | :---: |
+| | **ETB** | **ETB** |
+| Directors allowances | 880,000 | 1,040,000 |
+
+Key management members received the following remuneration during the financial year ended 30 June, 2022:
+
+| | 2021 | 2020 |
+| :--- | :---: | :---: |
+| | **ETB** | **ETB** |
+| Short-term benefits | 11,556,902 | 8,364,517 |
+| Post-employment benefits | 143,141 | 101,087 |
+
+Compensation of the Company's key management personnel includes salaries, medical benefit, housing allowance, pension contribution, executive allowance, transport allowance, bonus payment, annual leave expense and life insurance. These amounts are also included in staff costs (see note 24).
+
+The Company also provides emergency loans to all employees.
+
+The loan balance at 30th June 2022 in respect of Key management is Birr 1,880,994-.
+
+Apart from the employee benefits provided above, there were no other transactions between the Company and its key management personnel.
+
+*(Seal of The Federal Democratic Republic of Ethiopia Audit Service Corporation)*
+
+**65**
+
+ETHIO RE
+Annual Report
+2021/22
+
+---
+
+# 28. EMPLOYEES
+
+The number of employees of the company at the end of the year is as follows:
+
+| | 30th June 2022 |
+| :--- | :---: |
+| Number of employees | 27 |
+| New entrants | 6 |
+| **Total number of employees** | **33** |
+
+---
+
+# 29. CONTINGENT LIABILITY
+
+In the opinion of the Directors, there were no contingent liability.
+
+---
+
+# 30. COMMITMENTS
+
+The Company has the following commitment as at 30th June 2022:
+
+*   MSG GLOBAL (related with IT software implementation) **Birr 13,760,014**
+
+---
+
+# 31. EVENTS AFTER THE REPORTING DATE
+
+In the opinion of the Directors, there were no significant post balance sheet events which could have material effect on the state of affairs of the company as at 30th June 2022 and on the profit for the period ended on that date which have not be adequately provided for or disclosed.
+
+---
+66
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+---
+
+**AWARD FOR SUPPORT GIVEN FOR THE ASSOCIATION OF THE DEAF**
+
+[Image: Three people on a stage, one receiving an award. A banner in the background reads: "...abration of Ethiopian National Association of the Deaf's (ENAD's) Golden Jubilee and ternational Week of Deaf People in Ethiopia..."]
+
+---
+
+**[Certificate Image]**
+
+| የኢትዮጵያ መስማት የተሳናቸው ብሔራዊ ማህበር | Ethiopian National Association of the Deaf |
+| :--- | :--- |
+| **የእውቅና ምስክር ወረቀት** | **Certificate of Recognition** |
+| ለ ኢትዮጵያ ጠቅላላ መድህን አክሲዮን ማ. ለማህበሩና ለመስማት የተሳናቸው ኢትዮጵያውያን እድገት ላደረጉት ለየት ያለ አስተዋጽኦ የማህበሩን 50ኛ አመት ክብረ በዓል ምክንያት በማድረግ ጥቅምት 24 ቀን 2015 ዓ.ም. ይህ የምስክር ወረቀት ተበርክቷል። | This certificate is given to **ETHIOPIAN REINSURANCE** in recognition of the exceptional contribution made to the development of ENAD and the Ethiopian Deaf Community on the occasion of ENAD's Golden jubilee celebration on the 3rd of November 2022. |
+| (Signature) <br> አመልወርቅ መስፍን ዘለቀ <br> ዋና ሥራ አስኪያጅ <br> Amelewerk Mesfin Zeleke <br> General Manager <br> **የማህበሩ ዳይሬክተር** | (Signature) <br> ጳውሎስ ካሱ አበበ (ዶ/ር) <br> Paulos Kassu Abebe (Phd) <br> President <br> **ENAD President** |
+
+---
+
+67
+
+ETHIO RE
+Annual Report
+2021/22
+
+ETHIO RE SENIOR MANAGEMENT
+
+[Image: Ethiopian Reinsurance Senior Management team posing in front of a company backdrop]
+
+[Image: Group photo of participants at the CEO Forum on a staircase]
+CEO FORUM: WE STRIVE FOR MARKET CAPACITY BUILDING
+
+[Images: Two photos showing individuals receiving and holding awards during a ceremony]
+RECOGNITION AWARD FOR THE INSURANCE MONTH
+
+68
+
+ETHIO RE
+Rising with Africa
+2021/22
+
+---
+
+![Group photo of participants at a forum]
+“BREATHING LIFE INTO THE LIFE ASSURANCE BUSINESS” THE FIRST GLOBAL LIFE ASSURANCE FORUM ORGANIZED IN PARTNERSHIP WITH ADDIS ABABA UNIVERSITY, PUBLIC FINANCIAL INSTITUTIONS AGENCY AND ASSOCIATION OF ETHIOPIAN INSURERS.
+
+---
+
+![Group photo of people at Entoto Natural Park]
+ENTOTO NATURAL PARK: RESTORING NATURE WITH THE MAIN PROJECT OF THE ETHIOPIAN HERITAGE TRUST.
+
+---
+
+![Collage of photos showing people planting trees]
+GREEN LEGACY PROJECT: ETHIO-RE EMPLOYEES PLANTING THEIR PRINT FOR FUTURE GENERATIONS
+
+---
+
+69
+
+ETHIO RE
+Annual Report
+2021/22
+
+**ETHIO-RE STRIVING FOR MARKET CAPACITY BUILDING**
+
+---
+
+![Group photo of participants at a master class training session. A banner in the background reads: "RE Ethiopian Reinsurance, OUR CREDIT RATING GCR, RISING WITH AFRICA"]
+
+**Master class training On Contractors plant and machinery insurance /CPM/ organized by Ethio- Re November 28,2022 Addis Ababa**
+
+---
+
+**HANDS-ON PRACTICAL TRAINING –IN PARTNERSHIP WITH RIES ENGINEERING.**
+
+![Two photos showing training participants. One group is standing in front of Komatsu banners, and the other group is in a workshop setting with heavy machinery.]
+
+---
+
+![Group photo of participants at a practical training session. A banner in the background reads: "RE Ethiopian Reinsurance, የኢትዮጵያ ጠቅላላ መድን, Rising with Africa"]
+
+**PRACTICAL TRAINING ON EML, AND CPM FOR NICE STAFFS.**
+
+---
+
+70
+
+Ethiopian Re insurance S.Co, (Ethio-Re)
+Master Class Training on Basics of Risk Based Internal Auditing
+August 1 and 2, 2022
+
+RE
+Ethiopian Reinsurance
+የኢትዮጵያ ሪኢንሹራንስ
+
+RE
+Ethiopian Reinsurance
+የኢትዮጵያ ጠለፋ መድን
+
+የኢትዮጵያ ጠለፋ መድን ኩባንያ አ.ማ.
+Ethiopian Reinsurance Company S.C.
+
+Africa Avenue | Kirkos Subcity | Woreda 9
+Tel: +251-115-575757 | 115-582790 | 92 | 93
+Fax:+251 115 575758
+P.O. Box 12687 , Addis Ababa, Ethiopia
+Email: info@ethiopianre.com
+Website: www.ethiopianre.com

@@ -1,0 +1,72 @@
+{
+  "doc_id": "20191010_Pharmaceutical-Manufacturing-Opportunites-in-Ethiopia_VF_part1",
+  "sections": [
+    {
+      "title": "**Eic**",
+      "page_start": 1,
+      "page_end": 1,
+      "child_sections": [],
+      "key_entities": [
+        "Ethiopia",
+        "Emerging",
+        "Africa",
+        "Attractive",
+        "Enablers",
+        "ETHIOPIAN",
+        "INVESTMENT",
+        "COMMISSION"
+      ],
+      "summary": "# Ethiopia * Emerging manufacturing hub in Africa * Attractive investment opportunities * Enablers & support --- **EIC** ETHIOPIAN INVESTMENT COMMISSION የኢትዮጵያ ኢንቨስትመንት ኮሚሽን",
+      "data_types_present": [
+        "text"
+      ]
+    },
+    {
+      "title": "Ethiopian Investment Commission",
+      "page_start": 1,
+      "page_end": 6,
+      "child_sections": [
+        {
+          "title": "# Our Investment Promotion Objectives are",
+          "page_start": 2,
+          "page_end": 6,
+          "child_sections": [],
+          "key_entities": [
+            "Investment",
+            "Promotion",
+            "Objectives",
+            "Coordination",
+            "FDIs",
+            "Ethiopia",
+            "Link",
+            "Pitch",
+            "Learn",
+            "Growing"
+          ],
+          "summary": "# Our Investment Promotion Objectives are: * **Coordination and collaboration** to attract FDIs to Ethiopia * Link up and network with the international community for **soliciting support** * Pitch potential manufacturing **opportunities** in Ethiopia & enablers * Learn Ethiopia’s effort in developing the **manufacturing sector in general** **Investment** - Why do business in Ethiopia? *** **Growing & dynamic Economy**, access",
+          "data_types_present": [
+            "numeric",
+            "text"
+          ]
+        }
+      ],
+      "key_entities": [
+        "Ethiopia",
+        "Emerging",
+        "Africa",
+        "Attractive",
+        "Enablers",
+        "ETHIOPIAN",
+        "INVESTMENT",
+        "COMMISSION",
+        "Investment",
+        "Promotion"
+      ],
+      "summary": "# Ethiopia * Emerging manufacturing hub in Africa * Attractive investment opportunities * Enablers & support --- **EIC** ETHIOPIAN INVESTMENT COMMISSION የኢትዮጵያ ኢንቨስትመንት ኮሚሽን # Our Investment Promotion Objectives are: * **Coordination and collaboration** to attract FDIs to Ethiopia * Link up and network with the international community for **soliciting support** * Pitch potential manufacturing **opportunities** in Ethiopia & enablers",
+      "data_types_present": [
+        "numeric",
+        "text"
+      ]
+    }
+  ]
+}

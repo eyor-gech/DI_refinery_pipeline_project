@@ -1,0 +1,14 @@
+{
+  "doc_id": "ETS-Annual-Report-2023_2024_part3",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.9999974534953243,
+  "domain_hint": "general",
+  "estimated_extraction_cost": "needs_layout_model",
+  "character_count": 63676,
+  "character_density": 0.004235267007268234,
+  "whitespace_ratio": 0.15516050003140902,
+  "image_area_ratio": 0.18822152151157087,
+  "font_metadata_presence": true
+}
